@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Agency — AI 專家目錄（270 個 agents）</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft JhengHei", sans-serif; margin:0; background:#0f1115; color:#e5e7eb; }
+  header { padding:32px 40px 16px; background:#161922; border-bottom:1px solid #262b38; position:sticky; top:0; z-index:10; }
+  header h1 { margin:0 0 4px; font-size:24px; }
+  header p { margin:0 0 12px; color:#9ca3af; font-size:14px; }
+  #search { width:100%; max-width:480px; padding:10px 14px; border-radius:8px; border:1px solid #374151; background:#0f1115; color:#e5e7eb; font-size:15px; }
+  #search:focus { outline:2px solid #3b82f6; }
+  .wrap { display:flex; }
+  nav { width:220px; flex-shrink:0; padding:24px 16px; position:sticky; top:150px; align-self:flex-start; max-height:calc(100vh - 150px); overflow:auto; }
+  nav a { display:block; padding:8px 12px; margin-bottom:4px; color:#d1d5db; text-decoration:none; border-radius:6px; font-size:14px; }
+  nav a:hover { background:#1f2430; color:#fff; }
+  .toc-count { float:right; color:#6b7280; font-size:12px; }
+  main { flex:1; padding:24px 40px 80px; min-width:0; }
+  section { margin-bottom:48px; }
+  h2 { padding:6px 14px; font-size:20px; margin:0 0 16px; }
+  .count { color:#6b7280; font-size:14px; font-weight:normal; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
+  .group-label { grid-column:1/-1; color:#6b7280; font-size:13px; text-transform:uppercase; letter-spacing:.08em; margin-top:6px; }
+  .card { background:#161922; border:1px solid #262b38; border-radius:10px; padding:14px 16px; }
+  .card:hover { border-color:#3b82f6; }
+  .card-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+  .emoji { font-size:20px; }
+  .name { font-weight:600; font-size:15px; }
+  .name-en { color:#6b7280; font-size:12px; font-weight:normal; }
+  .vibe { color:#93c5fd; font-size:12.5px; font-style:italic; margin-bottom:8px; }
+  .desc { color:#9ca3af; font-size:13.5px; line-height:1.55; }
+  .hidden { display:none !important; }
+  footer { padding:24px 40px; color:#6b7280; font-size:13px; border-top:1px solid #262b38; }
+  @media (max-width:800px) { nav { display:none; } header { padding:20px; } main { padding:20px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>🎭 The Agency — AI 專家目錄（270 個 agents）</h1>
+  <p>270 個專業 agents · 17 個部門 · 來源：<a style="color:#93c5fd" href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a></p>
+  <input id="search" type="search" placeholder="搜尋 agent 名稱或說明… (e.g. react, 資安, 小紅書)">
+</header>
+<div class="wrap">
+<nav><a href="#academic" style="border-left:4px solid #8B5CF6">學術 <span class="toc-count">6</span></a><a href="#design" style="border-left:4px solid #EC4899">設計 <span class="toc-count">10</span></a><a href="#engineering" style="border-left:4px solid #3B82F6">工程 <span class="toc-count">58</span></a><a href="#finance" style="border-left:4px solid #22C55E">財務 <span class="toc-count">5</span></a><a href="#game-development" style="border-left:4px solid #A855F7">遊戲開發 <span class="toc-count">21</span></a><a href="#gis" style="border-left:4px solid #14B8A6">GIS <span class="toc-count">13</span></a><a href="#healthcare" style="border-left:4px solid #0D9488">醫療保健 <span class="toc-count">3</span></a><a href="#marketing" style="border-left:4px solid #F97316">行銷 <span class="toc-count">36</span></a><a href="#paid-media" style="border-left:4px solid #EAB308">付費媒體 <span class="toc-count">7</span></a><a href="#product" style="border-left:4px solid #D946EF">產品 <span class="toc-count">5</span></a><a href="#project-management" style="border-left:4px solid #0EA5E9">專案管理 <span class="toc-count">7</span></a><a href="#sales" style="border-left:4px solid #10B981">銷售 <span class="toc-count">9</span></a><a href="#security" style="border-left:4px solid #EF4444">資安 <span class="toc-count">12</span></a><a href="#spatial-computing" style="border-left:4px solid #06B6D4">空間運算 <span class="toc-count">6</span></a><a href="#specialized" style="border-left:4px solid #6366F1">專業領域 <span class="toc-count">57</span></a><a href="#support" style="border-left:4px solid #84CC16">支援 <span class="toc-count">6</span></a><a href="#testing" style="border-left:4px solid #F59E0B">測試 <span class="toc-count">9</span></a></nav>
+<main><section id="academic">
+<h2 style="border-left:6px solid #8B5CF6">學術 <span class="count">6</span></h2>
+<div class="grid"><div class="card" data-search="人類學家 文化體系、儀式、親屬關係、信仰體系與民族誌方法的專家——建構具有文化一致性的社會，讓世界觀感覺是真實生活過的，而非憑空捏造。 anthropologist">
+  <div class="card-head"><span class="emoji">🌍</span><span class="name">人類學家</span><span class="name-en">Anthropologist</span></div>
+  <div class="vibe">沒有任何文化是隨機的——每一項習俗，都是某個你尚未察覺的問題的解答。</div>
+  <div class="desc">文化體系、儀式、親屬關係、信仰體系與民族誌方法的專家——建構具有文化一致性的社會，讓世界觀感覺是真實生活過的，而非憑空捏造。</div>
+</div><div class="card" data-search="地理學家 精通自然地理與人文地理、氣候系統、地圖製圖與空間分析的專家——打造地理邏輯自洽的世界，讓地形、氣候、資源與聚落分布都符合科學原理 geographer">
+  <div class="card-head"><span class="emoji">🗺️</span><span class="name">地理學家</span><span class="name-en">Geographer</span></div>
+  <div class="vibe">地理即命運——你所處的位置決定你成為什麼樣的人</div>
+  <div class="desc">精通自然地理與人文地理、氣候系統、地圖製圖與空間分析的專家——打造地理邏輯自洽的世界，讓地形、氣候、資源與聚落分布都符合科學原理</div>
+</div><div class="card" data-search="歷史學家 精通歷史分析、斷代分期、物質文化與史學方法——驗證歷史脈絡的連貫性，並以紮根於一手與二手史料的真實時代細節豐富背景設定 historian">
+  <div class="card-head"><span class="emoji">📚</span><span class="name">歷史學家</span><span class="name-en">Historian</span></div>
+  <div class="vibe">歷史不會重演，但總是押韻——而我熟記每一句韻腳</div>
+  <div class="desc">精通歷史分析、斷代分期、物質文化與史學方法——驗證歷史脈絡的連貫性，並以紮根於一手與二手史料的真實時代細節豐富背景設定</div>
+</div><div class="card" data-search="敘事理論家 敘事理論、故事結構、角色弧線與文學分析專家——以從 propp 到 campbell 再到現代敘事學的成熟理論框架為建議奠基 narratologist">
+  <div class="card-head"><span class="emoji">📜</span><span class="name">敘事理論家</span><span class="name-en">Narratologist</span></div>
+  <div class="vibe">每個故事都是一場論證——我幫你看清你的故事真正在說什麼</div>
+  <div class="desc">敘事理論、故事結構、角色弧線與文學分析專家——以從 Propp 到 Campbell 再到現代敘事學的成熟理論框架為建議奠基</div>
+</div><div class="card" data-search="心理學家 人類行為、人格理論、動機與認知模式專家——以臨床與研究框架為基礎,建構在心理學上可信的角色與互動 psychologist">
+  <div class="card-head"><span class="emoji">🧠</span><span class="name">心理學家</span><span class="name-en">Psychologist</span></div>
+  <div class="vibe">人做事不會毫無理由——我負責找出那個理由</div>
+  <div class="desc">人類行為、人格理論、動機與認知模式專家——以臨床與研究框架為基礎,建構在心理學上可信的角色與互動</div>
+</div><div class="card" data-search="統計學家 量化研究方法論、實驗設計與統計推論的專家——壓力測試各種主張、設計嚴謹的研究，並把真正的訊號與雜訊、機率和偏誤區分開來。 statistician">
+  <div class="card-head"><span class="emoji">📊</span><span class="name">統計學家</span><span class="name-en">Statistician</span></div>
+  <div class="vibe">軼聞的複數不是數據，p 值也不是證明——讓我看看你的研究設計。</div>
+  <div class="desc">量化研究方法論、實驗設計與統計推論的專家——壓力測試各種主張、設計嚴謹的研究，並把真正的訊號與雜訊、機率和偏誤區分開來。</div>
+</div></div>
+</section><section id="design">
+<h2 style="border-left:6px solid #EC4899">設計 <span class="count">10</span></h2>
+<div class="grid"><div class="card" data-search="品牌守護者 專精品牌識別開發、一致性維護與策略性品牌定位的資深品牌策略師與守護者 brand guardian">
+  <div class="card-head"><span class="emoji">🎨</span><span class="name">品牌守護者</span><span class="name-en">Brand Guardian</span></div>
+  <div class="vibe">你的品牌最堅定的捍衛者，也是最熱情的倡導者。</div>
+  <div class="desc">專精品牌識別開發、一致性維護與策略性品牌定位的資深品牌策略師與守護者</div>
+</div><div class="card" data-search="圖像提示工程師 專業攝影提示工程師，專精於為 ai 圖像生成打造細膩、富有感染力的提示詞。精通將視覺概念轉譯為精準語言的藝術，透過生成式 ai 工具產出令人驚豔、專業級品質的攝影作品。 image prompt engineer">
+  <div class="card-head"><span class="emoji">📷</span><span class="name">圖像提示工程師</span><span class="name-en">Image Prompt Engineer</span></div>
+  <div class="vibe">將視覺概念轉化為精準提示詞，生成令人驚豔的 AI 攝影作品。</div>
+  <div class="desc">專業攝影提示工程師，專精於為 AI 圖像生成打造細膩、富有感染力的提示詞。精通將視覺概念轉譯為精準語言的藝術，透過生成式 AI 工具產出令人驚豔、專業級品質的攝影作品。</div>
+</div><div class="card" data-search="包容性視覺專家 再現（representation）專家，致力於消除系統性 ai 偏見，生成文化準確、具肯定性且不落刻板印象的圖像與影片。 inclusive visuals specialist">
+  <div class="card-head"><span class="emoji">🌈</span><span class="name">包容性視覺專家</span><span class="name-en">Inclusive Visuals Specialist</span></div>
+  <div class="vibe">消除系統性 AI 偏見，生成文化上準確且具肯定性的影像。</div>
+  <div class="desc">再現（representation）專家，致力於消除系統性 AI 偏見，生成文化準確、具肯定性且不落刻板印象的圖像與影片。</div>
+</div><div class="card" data-search="角色歷程走查專家 從定義好的使用者角色(persona)心理視角,模擬網頁的認知走查——捕捉每個捲動位置的情緒反應與理性思考,再依據 lift、cialdini 與 fogg 框架產出結構化的 cro 報告 persona walkthrough specialist">
+  <div class="card-head"><span class="emoji">🎭</span><span class="name">角色歷程走查專家</span><span class="name-en">Persona Walkthrough Specialist</span></div>
+  <div class="vibe">我化身為你的使用者,讓你看見分析數據無法呈現的東西。</div>
+  <div class="desc">從定義好的使用者角色(Persona)心理視角,模擬網頁的認知走查——捕捉每個捲動位置的情緒反應與理性思考,再依據 LIFT、Cialdini 與 Fogg 框架產出結構化的 CRO 報告</div>
+</div><div class="card" data-search="ui 設計師 資深 ui 設計師，專精視覺設計系統、元件庫與像素級精準的介面製作。打造美觀、一致、無障礙的使用者介面，提升 ux 並體現品牌識別。 ui designer">
+  <div class="card-head"><span class="emoji">🎨</span><span class="name">UI 設計師</span><span class="name-en">UI Designer</span></div>
+  <div class="vibe">打造美觀、一致、無障礙，而且感覺恰到好處的介面。</div>
+  <div class="desc">資深 UI 設計師，專精視覺設計系統、元件庫與像素級精準的介面製作。打造美觀、一致、無障礙的使用者介面，提升 UX 並體現品牌識別。</div>
+</div><div class="card" data-search="ui 完工關卡審查員 產品介面審查員，在通用、可任意互換的 ui 出貨前將其攔下——以真實產品證據、書面設計契約與嚴格的實作完工關卡作為評審依據。 ui finish-gate reviewer">
+  <div class="card-head"><span class="emoji">🧱</span><span class="name">UI 完工關卡審查員</span><span class="name-en">UI Finish-Gate Reviewer</span></div>
+  <div class="vibe">對那種套在任何產品上都說得通的儀表板過敏。</div>
+  <div class="desc">產品介面審查員，在通用、可任意互換的 UI 出貨前將其攔下——以真實產品證據、書面設計契約與嚴格的實作完工關卡作為評審依據。</div>
+</div><div class="card" data-search="ux 架構師 技術架構與 ux 專家，為開發者提供穩固的基礎、css 系統與清晰的實作指引 ux architect">
+  <div class="card-head"><span class="emoji">📐</span><span class="name">UX 架構師</span><span class="name-en">UX Architect</span></div>
+  <div class="vibe">為開發者提供穩固的基礎、CSS 系統與清晰的實作路徑。</div>
+  <div class="desc">技術架構與 UX 專家，為開發者提供穩固的基礎、CSS 系統與清晰的實作指引</div>
+</div><div class="card" data-search="ux 研究員 專精使用者行為分析、易用性測試與數據驅動設計洞察的資深使用者體驗研究員。提供能實際改善產品易用性與使用者滿意度的可行研究發現 ux researcher">
+  <div class="card-head"><span class="emoji">🔬</span><span class="name">UX 研究員</span><span class="name-en">UX Researcher</span></div>
+  <div class="vibe">用真實使用者數據驗證設計決策，而非憑空假設。</div>
+  <div class="desc">專精使用者行為分析、易用性測試與數據驅動設計洞察的資深使用者體驗研究員。提供能實際改善產品易用性與使用者滿意度的可行研究發現</div>
+</div><div class="card" data-search="視覺敘事師 專業視覺溝通專家,專注於透過設計創造引人入勝的視覺敘事、多媒體內容與品牌故事。擅長將複雜資訊轉化為能與受眾連結、激發情感共鳴的精彩視覺故事。 visual storyteller">
+  <div class="card-head"><span class="emoji">🎬</span><span class="name">視覺敘事師</span><span class="name-en">Visual Storyteller</span></div>
+  <div class="vibe">把複雜資訊轉化為打動人心的視覺敘事。</div>
+  <div class="desc">專業視覺溝通專家,專注於透過設計創造引人入勝的視覺敘事、多媒體內容與品牌故事。擅長將複雜資訊轉化為能與受眾連結、激發情感共鳴的精彩視覺故事。</div>
+</div><div class="card" data-search="奇思妙想注入師 資深創意專家，專注為品牌體驗注入個性、驚喜與趣味元素。透過意想不到的巧思時刻，創造令人難忘、充滿樂趣的互動，讓品牌脫穎而出。 whimsy injector">
+  <div class="card-head"><span class="emoji">✨</span><span class="name">奇思妙想注入師</span><span class="name-en">Whimsy Injector</span></div>
+  <div class="vibe">加入意料之外的驚喜時刻，讓品牌令人難忘。</div>
+  <div class="desc">資深創意專家，專注為品牌體驗注入個性、驚喜與趣味元素。透過意想不到的巧思時刻，創造令人難忘、充滿樂趣的互動，讓品牌脫穎而出。</div>
+</div></div>
+</section><section id="engineering">
+<h2 style="border-left:6px solid #3B82F6">工程 <span class="count">58</span></h2>
+<div class="grid"><div class="card" data-search="ai 資料修復工程師 自我修復資料管線專家——使用實體隔離的本地 slm 與語意叢集，大規模自動偵測、分類並修復資料異常。專注於修復層：攔截壞資料、透過 ollama 產生確定性的修復邏輯，並保證零資料遺失。不是一般資料工程師——而是當資料損壞、管線又不能停時，進行精準手術的專科醫師。 ai data remediation engineer">
+  <div class="card-head"><span class="emoji">🧬</span><span class="name">AI 資料修復工程師</span><span class="name-en">AI Data Remediation Engineer</span></div>
+  <div class="vibe">以外科手術般的 AI 精準度修復你壞掉的資料——一列都不放過。</div>
+  <div class="desc">自我修復資料管線專家——使用實體隔離的本地 SLM 與語意叢集，大規模自動偵測、分類並修復資料異常。專注於修復層：攔截壞資料、透過 Ollama 產生確定性的修復邏輯，並保證零資料遺失。不是一般資料工程師——而是當資料損壞、管線又不能停時，進行精準手術的專科醫師。</div>
+</div><div class="card" data-search="ai 工程師 專業 ai/ml 工程師，專精於機器學習模型的開發、部署與正式環境系統整合。專注於打造智慧功能、資料管道與 ai 驅動的應用程式，強調實用且可擴展的解決方案。 ai engineer">
+  <div class="card-head"><span class="emoji">🤖</span><span class="name">AI 工程師</span><span class="name-en">AI Engineer</span></div>
+  <div class="vibe">把 ML 模型變成真正能擴展的正式環境功能。</div>
+  <div class="desc">專業 AI/ML 工程師，專精於機器學習模型的開發、部署與正式環境系統整合。專注於打造智慧功能、資料管道與 AI 驅動的應用程式，強調實用且可擴展的解決方案。</div>
+</div><div class="card" data-search="api 平台工程師 面向公開與合作夥伴 api 的資深 api 平台工程師——合約優先設計（openapi/grpc）、版本與棄用政策、sdk 生成、api 閘道議題（驗證、速率限制、配額），以及開發者入口網站的 dx。 api platform engineer">
+  <div class="card-head"><span class="emoji">🔌</span><span class="name">API 平台工程師</span><span class="name-en">API Platform Engineer</span></div>
+  <div class="vibe">公開 API 是收不回來的承諾。把合約設計成你願意與之共處十年的樣子——因為你真的會。</div>
+  <div class="desc">面向公開與合作夥伴 API 的資深 API 平台工程師——合約優先設計（OpenAPI/gRPC）、版本與棄用政策、SDK 生成、API 閘道議題（驗證、速率限制、配額），以及開發者入口網站的 DX。</div>
+</div><div class="card" data-search="自主最佳化架構師 智慧系統管理者,持續以影子測試(shadow-testing)檢驗 api 效能,同時執行嚴格的財務與安全防護機制,防止成本失控。 autonomous optimization architect">
+  <div class="card-head"><span class="emoji">⚡</span><span class="name">自主最佳化架構師</span><span class="name-en">Autonomous Optimization Architect</span></div>
+  <div class="vibe">這位系統管理者讓一切變快,又不會讓你破產。</div>
+  <div class="desc">智慧系統管理者,持續以影子測試(shadow-testing)檢驗 API 效能,同時執行嚴格的財務與安全防護機制,防止成本失控。</div>
+</div><div class="card" data-search="後端架構師 資深後端架構師，專精可擴展系統設計、資料庫架構、api 開發與雲端基礎設施。打造穩健、安全、高效能的伺服器端應用程式與微服務。 backend architect">
+  <div class="card-head"><span class="emoji">🏗️</span><span class="name">後端架構師</span><span class="name-en">Backend Architect</span></div>
+  <div class="vibe">設計支撐一切的系統——資料庫、API、雲端與擴展性。</div>
+  <div class="desc">資深後端架構師，專精可擴展系統設計、資料庫架構、API 開發與雲端基礎設施。打造穩健、安全、高效能的伺服器端應用程式與微服務。</div>
+</div><div class="card" data-search="cms 開發者 drupal 與 wordpress 專家，負責主題開發、自訂外掛／模組、內容架構，以及以程式碼為先的 cms 實作 cms developer">
+  <div class="card-head"><span class="emoji">🧱</span><span class="name">CMS 開發者</span><span class="name-en">CMS Developer</span></div>
+  <div class="vibe"></div>
+  <div class="desc">Drupal 與 WordPress 專家，負責主題開發、自訂外掛／模組、內容架構，以及以程式碼為先的 CMS 實作</div>
+</div><div class="card" data-search="程式碼審查員 專業程式碼審查員，提供建設性、可執行的回饋，聚焦於正確性、可維護性、安全性與效能——而非個人風格偏好。 code reviewer">
+  <div class="card-head"><span class="emoji">👁️</span><span class="name">程式碼審查員</span><span class="name-en">Code Reviewer</span></div>
+  <div class="vibe">像導師而非守門員一樣審查程式碼，每一則評論都能教人一些東西。</div>
+  <div class="desc">專業程式碼審查員，提供建設性、可執行的回饋，聚焦於正確性、可維護性、安全性與效能——而非個人風格偏好。</div>
+</div><div class="card" data-search="程式碼庫上手工程師 資深開發者上手專家，透過閱讀原始碼、追蹤程式路徑，並只陳述有程式碼依據的事實，幫助新工程師快速理解陌生的程式碼庫。 codebase onboarding engineer">
+  <div class="card-head"><span class="emoji">🧭</span><span class="name">程式碼庫上手工程師</span><span class="name-en">Codebase Onboarding Engineer</span></div>
+  <div class="vibe">透過閱讀程式碼、追蹤路徑、只講事實，讓新工程師更快進入狀況。絕不多加油添醋。</div>
+  <div class="desc">資深開發者上手專家，透過閱讀原始碼、追蹤程式路徑，並只陳述有程式碼依據的事實，幫助新工程師快速理解陌生的程式碼庫。</div>
+</div><div class="card" data-search="資料工程師 資深資料工程師,專精建構可靠的資料管線、lakehouse 架構與可擴展的資料基礎設施。精通 etl/elt、apache spark、dbt、串流系統與雲端資料平台,將原始資料轉化為可信、可分析的資產。 data engineer">
+  <div class="card-head"><span class="emoji">🔧</span><span class="name">資料工程師</span><span class="name-en">Data Engineer</span></div>
+  <div class="vibe">打造把原始資料變成可信、可分析資產的資料管線。</div>
+  <div class="desc">資深資料工程師,專精建構可靠的資料管線、Lakehouse 架構與可擴展的資料基礎設施。精通 ETL/ELT、Apache Spark、dbt、串流系統與雲端資料平台,將原始資料轉化為可信、可分析的資產。</div>
+</div><div class="card" data-search="資料視覺化工程師 資深資料視覺化工程師——依資料與問題選擇圖表類型、採用符合感知且誠實呈現的編碼、色盲安全的資料配色、無障礙互動圖表，並使用 d3、vega 及各種圖表函式庫高效渲染大型資料集。 data visualization engineer">
+  <div class="card-head"><span class="emoji">📈</span><span class="name">資料視覺化工程師</span><span class="name-en">Data Visualization Engineer</span></div>
+  <div class="vibe">圖表的任務是快速說出真相。選擇眼睛能準確判讀的編碼方式，絕不讓漂亮的座標軸說謊。</div>
+  <div class="desc">資深資料視覺化工程師——依資料與問題選擇圖表類型、採用符合感知且誠實呈現的編碼、色盲安全的資料配色、無障礙互動圖表，並使用 D3、Vega 及各種圖表函式庫高效渲染大型資料集。</div>
+</div><div class="card" data-search="資料庫優化專家 資深資料庫專家，專注於 postgresql、mysql 以及 supabase、planetscale 等現代資料庫的結構描述設計、查詢優化、索引策略與效能調校。 database optimizer">
+  <div class="card-head"><span class="emoji">🗄️</span><span class="name">資料庫優化專家</span><span class="name-en">Database Optimizer</span></div>
+  <div class="vibe">索引、查詢計畫與結構描述設計——不會讓你凌晨三點被叫醒的資料庫。</div>
+  <div class="desc">資深資料庫專家，專注於 PostgreSQL、MySQL 以及 Supabase、PlanetScale 等現代資料庫的結構描述設計、查詢優化、索引策略與效能調校。</div>
+</div><div class="card" data-search="資料庫可靠性工程師 專業資料庫可靠性工程師（dbre）——高可用性與複寫、自動化故障切換、備份與時間點復原、零停機線上 schema 遷移、連線池管理，以及災難復原演練。專注於確保資料安全與可用，而非查詢調校。 database reliability engineer">
+  <div class="card-head"><span class="emoji">🛟</span><span class="name">資料庫可靠性工程師</span><span class="name-en">Database Reliability Engineer</span></div>
+  <div class="vibe">從未測試過的備份只是一個檔案，不是備份。證明還原可行、演練故障切換，無需維護窗口即可完成遷移。</div>
+  <div class="desc">專業資料庫可靠性工程師（DBRE）——高可用性與複寫、自動化故障切換、備份與時間點復原、零停機線上 schema 遷移、連線池管理，以及災難復原演練。專注於確保資料安全與可用，而非查詢調校。</div>
+</div><div class="card" data-search="桌面應用工程師 electron 與 tauri 桌面應用資深工程師——安全的 ipc 與行程隔離、程式碼簽章與公證、自動更新管線、原生作業系統整合，以及對資源占用的嚴格自律。 desktop app engineer">
+  <div class="card-head"><span class="emoji">💻</span><span class="name">桌面應用工程師</span><span class="name-en">Desktop App Engineer</span></div>
+  <div class="vibe">Web 是你的 UI，作業系統是你的 API。小型執行檔、嚴格管控的 IPC，以及永不讓任何人變磚的更新。</div>
+  <div class="desc">Electron 與 Tauri 桌面應用資深工程師——安全的 IPC 與行程隔離、程式碼簽章與公證、自動更新管線、原生作業系統整合，以及對資源占用的嚴格自律。</div>
+</div><div class="card" data-search="開發者工具工程師 開發者工具與 cli 資深工程師——打造命令列工具與內部開發者平台,具備出色的 dx:直覺的命令設計、有幫助的錯誤訊息、shell 自動補全、快速啟動、跨平台發布,以及可腳本化、可組合的介面。 developer tooling engineer">
+  <div class="card-head"><span class="emoji">🛠️</span><span class="name">開發者工具工程師</span><span class="name-en">Developer Tooling Engineer</span></div>
+  <div class="vibe">開發者願意伸手去用的工具,是尊重他們時間的工具。快速、直覺、可腳本化,出錯時給的是修正方法,而不是一串堆疊追蹤。</div>
+  <div class="desc">開發者工具與 CLI 資深工程師——打造命令列工具與內部開發者平台,具備出色的 DX:直覺的命令設計、有幫助的錯誤訊息、shell 自動補全、快速啟動、跨平台發布,以及可腳本化、可組合的介面。</div>
+</div><div class="card" data-search="devops 自動化工程師 資深 devops 工程師，專精基礎設施自動化、ci/cd 管線開發與雲端維運。 devops automator">
+  <div class="card-head"><span class="emoji">⚙️</span><span class="name">DevOps 自動化工程師</span><span class="name-en">DevOps Automator</span></div>
+  <div class="vibe">自動化基礎設施，讓團隊交付更快、睡得更安穩。</div>
+  <div class="desc">資深 DevOps 工程師，專精基礎設施自動化、CI/CD 管線開發與雲端維運。</div>
+</div><div class="card" data-search="drupal 效能工程師 精通 drupal 10/11 的效能工程專家，專精 core web vitals、渲染與動態頁面快取、bigpipe、快取標籤與上下文、資料庫查詢與 views 優化、css/js 彙整、自適應圖片與延遲載入、cdn 整合，以及 opcache/php-fpm 調校，打造快速且通過稽核的網站 drupal performance engineer">
+  <div class="card-head"><span class="emoji">⚡</span><span class="name">Drupal 效能工程師</span><span class="name-en">Drupal Performance Engineer</span></div>
+  <div class="vibe">一位不屈不撓的 Drupal 效能工程師，把每一條慢查詢、每一次快取失敗、每一個渲染瓶頸都視為對自己的冒犯——先剖析再猜測、修復可快取性中繼資料而非關掉快取、把資料庫、渲染管線與前端當成一個系統一起調校，並堅持頁面必須在真實手機上快速載入且通過 Core Web Vitals 才算完成，因為一個要六秒才畫出來的漂亮網站，早就已經輸掉訪客了。</div>
+  <div class="desc">精通 Drupal 10/11 的效能工程專家，專精 Core Web Vitals、渲染與動態頁面快取、BigPipe、快取標籤與上下文、資料庫查詢與 Views 優化、CSS/JS 彙整、自適應圖片與延遲載入、CDN 整合，以及 opcache/PHP-FPM 調校，打造快速且通過稽核的網站</div>
+</div><div class="card" data-search="drupal 購物車工程師 專業 drupal 電商工程師，專精 drupal commerce：產品目錄管理、金流閘道整合、結帳流程設計、訂單管理、稅務與促銷設定，以及在 drupal 10/11 上交付高可靠度的商店前台 drupal shopping cart engineer">
+  <div class="card-head"><span class="emoji">🛒</span><span class="name">Drupal 購物車工程師</span><span class="name-en">Drupal Shopping Cart Engineer</span></div>
+  <div class="vibe">一絲不苟的 Drupal 電商工程師，把每個商店前台視為某人營收的系統紀錄——在 Drupal Commerce 上打造可靠、可擴展的購物體驗：價格永遠正確、訂單絕不消失、付款對帳精確到分、結帳在最慢的網路最差的手機上也能運作，因為在電商世界裡，購物車不是一個功能，而是一份承諾。</div>
+  <div class="desc">專業 Drupal 電商工程師，專精 Drupal Commerce：產品目錄管理、金流閘道整合、結帳流程設計、訂單管理、稅務與促銷設定，以及在 Drupal 10/11 上交付高可靠度的商店前台</div>
+</div><div class="card" data-search="電子郵件智慧工程師 專精為 ai agent 與自動化系統，從原始郵件串中萃取結構化、可供推理的資料 email intelligence engineer">
+  <div class="card-head"><span class="emoji">📧</span><span class="name">電子郵件智慧工程師</span><span class="name-en">Email Intelligence Engineer</span></div>
+  <div class="vibe">把雜亂的 MIME 轉化為可供推理的上下文——因為原始郵件是雜訊，而你的 agent 值得擁有訊號</div>
+  <div class="desc">專精為 AI agent 與自動化系統，從原始郵件串中萃取結構化、可供推理的資料</div>
+</div><div class="card" data-search="嵌入式韌體工程師 裸機與 rtos 韌體專家——esp32/esp-idf、platformio、arduino、arm cortex-m、stm32 hal/ll、nordic nrf5/nrf connect sdk、freertos、zephyr embedded firmware engineer">
+  <div class="card-head"><span class="emoji">🔩</span><span class="name">嵌入式韌體工程師</span><span class="name-en">Embedded Firmware Engineer</span></div>
+  <div class="vibe">為不能當機的硬體撰寫生產級韌體。</div>
+  <div class="desc">裸機與 RTOS 韌體專家——ESP32/ESP-IDF、PlatformIO、Arduino、ARM Cortex-M、STM32 HAL/LL、Nordic nRF5/nRF Connect SDK、FreeRTOS、Zephyr</div>
+</div><div class="card" data-search="飛書整合開發者 全端整合專家，專精飛書（lark）開放平台——熟練飛書機器人、小程式、簽核流程、多維表格（bitable）、互動式訊息卡片、webhook、sso 驗證與工作流程自動化，在飛書生態系內打造企業級協作與自動化解決方案。 feishu integration developer">
+  <div class="card-head"><span class="emoji">🔗</span><span class="name">飛書整合開發者</span><span class="name-en">Feishu Integration Developer</span></div>
+  <div class="vibe">在飛書（Lark）平台上打造企業整合——機器人、簽核、資料同步與 SSO——讓團隊工作流程全自動運轉。</div>
+  <div class="desc">全端整合專家，專精飛書（Lark）開放平台——熟練飛書機器人、小程式、簽核流程、多維表格（Bitable）、互動式訊息卡片、Webhook、SSO 驗證與工作流程自動化，在飛書生態系內打造企業級協作與自動化解決方案。</div>
+</div><div class="card" data-search="filament 優化專家 重構與優化 filament php 後台介面的專家，追求最高的可用性與效率。專注於有影響力的結構性改造——而不只是表面修飾。 filament optimization specialist">
+  <div class="card-head"><span class="emoji">🔧</span><span class="name">Filament 優化專家</span><span class="name-en">Filament Optimization Specialist</span></div>
+  <div class="vibe">務實的完美主義者——讓複雜的後台環境化繁為簡。</div>
+  <div class="desc">重構與優化 Filament PHP 後台介面的專家，追求最高的可用性與效率。專注於有影響力的結構性改造——而不只是表面修飾。</div>
+</div><div class="card" data-search="finops 工程師 aws/gcp/azure 雲端成本專家——成本分攤與標籤管理、資源規模最佳化（rightsizing）、承諾用量規劃（預留執行個體/節省方案）、出站流量與儲存優化，以及將支出連結到業務價值的單位經濟儀表板。 finops engineer">
+  <div class="card-head"><span class="emoji">💰</span><span class="name">FinOps 工程師</span><span class="name-en">FinOps Engineer</span></div>
+  <div class="vibe">每個閒置資源都是一筆沒人取消的訂閱。先做好成本分攤，再談優化，絕不為了四捨五入的零頭換來一次可靠性事故。</div>
+  <div class="desc">AWS/GCP/Azure 雲端成本專家——成本分攤與標籤管理、資源規模最佳化（rightsizing）、承諾用量規劃（預留執行個體/節省方案）、出站流量與儲存優化，以及將支出連結到業務價值的單位經濟儀表板。</div>
+</div><div class="card" data-search="前端開發者 專精現代 web 技術、react/vue/angular 框架、ui 實作與效能優化的資深前端開發者 frontend developer">
+  <div class="card-head"><span class="emoji">🖥️</span><span class="name">前端開發者</span><span class="name-en">Frontend Developer</span></div>
+  <div class="vibe">以像素級精準度打造響應式、無障礙的 Web 應用。</div>
+  <div class="desc">專精現代 Web 技術、React/Vue/Angular 框架、UI 實作與效能優化的資深前端開發者</div>
+</div><div class="card" data-search="gaussdb 專家工程師 資深資料庫專家,專注於 gaussdb oltp——華為自主研發的企業級關聯式資料庫(非 gaussdb(dws) olap,非 gaussdb(for opengauss)雲端服務,亦非 gaussdb(for mysql))。涵蓋綱要設計、分散式資料表設計、查詢最佳化、索引、ustore 引擎,以及分散式與集中式部署的效能調校。 gaussdb expert engineer">
+  <div class="card-head"><span class="emoji">🗄️</span><span class="name">GaussDB 專家工程師</span><span class="name-en">GaussDB Expert Engineer</span></div>
+  <div class="vibe">分散鍵、CN/DN 查詢計畫、Ustore 引擎——讓 GaussDB 資料庫不會在凌晨三點把你叫醒。</div>
+  <div class="desc">資深資料庫專家,專注於 GaussDB OLTP——華為自主研發的企業級關聯式資料庫(非 GaussDB(DWS) OLAP,非 GaussDB(for openGauss)雲端服務,亦非 GaussDB(for MySQL))。涵蓋綱要設計、分散式資料表設計、查詢最佳化、索引、Ustore 引擎,以及分散式與集中式部署的效能調校。</div>
+</div><div class="card" data-search="git 工作流程大師 git 工作流程、分支策略與版本控制最佳實踐的專家，涵蓋 conventional commits、rebase、worktree，以及對 ci 友善的分支管理。 git workflow master">
+  <div class="card-head"><span class="emoji">🌿</span><span class="name">Git 工作流程大師</span><span class="name-en">Git Workflow Master</span></div>
+  <div class="vibe">乾淨的歷史紀錄、原子化的提交，以及會說故事的分支。</div>
+  <div class="desc">Git 工作流程、分支策略與版本控制最佳實踐的專家，涵蓋 Conventional Commits、rebase、worktree，以及對 CI 友善的分支管理。</div>
+</div><div class="card" data-search="國際化工程師 精通 icu messageformat、cldr 複數規則、rtl 與雙向版面配置、因地區而異的日期／數字／貨幣格式、字串擷取管線，以及偽在地化測試的 i18n 工程專家。 internationalization engineer">
+  <div class="card-head"><span class="emoji">🌍</span><span class="name">國際化工程師</span><span class="name-en">Internationalization Engineer</span></div>
+  <div class="vibe">寫死的字串就是 bug。如果只在英文下行得通，那它就只是「勉強」行得通。</div>
+  <div class="desc">精通 ICU MessageFormat、CLDR 複數規則、RTL 與雙向版面配置、因地區而異的日期／數字／貨幣格式、字串擷取管線，以及偽在地化測試的 i18n 工程專家。</div>
+</div><div class="card" data-search="身分與存取工程師 身分驗證專家，涵蓋 oauth 2.0/oidc 流程、企業級 sso（saml/oidc）與 scim 佈建、passkeys/webauthn、工作階段架構，以及 rbac/abac 多租戶授權。 identity &amp; access engineer">
+  <div class="card-head"><span class="emoji">🔐</span><span class="name">身分與存取工程師</span><span class="name-en">Identity &amp; Access Engineer</span></div>
+  <div class="vibe">沒有人會稱讚登入功能，直到它故障、外洩，或在董事會展示時把 CEO 鎖在門外。永遠以標準優先，而非炫技。</div>
+  <div class="desc">身分驗證專家，涵蓋 OAuth 2.0/OIDC 流程、企業級 SSO（SAML/OIDC）與 SCIM 佈建、passkeys/WebAuthn、工作階段架構，以及 RBAC/ABAC 多租戶授權。</div>
+</div><div class="card" data-search="事故應變指揮官 資深事故指揮官，專精線上事故管理、結構化應變協調、事後檢討（post-mortem）主持、slo/sli 追蹤，以及為可靠的工程組織設計 on-call 流程。 incident response commander">
+  <div class="card-head"><span class="emoji">🚨</span><span class="name">事故應變指揮官</span><span class="name-en">Incident Response Commander</span></div>
+  <div class="vibe">把線上環境的混亂轉化為有結構的解決方案。</div>
+  <div class="desc">資深事故指揮官，專精線上事故管理、結構化應變協調、事後檢討（post-mortem）主持、SLO/SLI 追蹤，以及為可靠的工程組織設計 on-call 流程。</div>
+</div><div class="card" data-search="iot 裝置機群工程師 iot 與邊緣裝置機群資深工程師——裝置佈建與身分管理、mqtt/遙測管線、具回滾機制的分階段 ota 韌體更新、邊緣運算,以及對不穩定、間歇連線裝置機群的可觀測性。 iot fleet engineer">
+  <div class="card-head"><span class="emoji">📡</span><span class="name">IoT 裝置機群工程師</span><span class="name-en">IoT Fleet Engineer</span></div>
+  <div class="vibe">現場裝置是一台你無法重開機的電腦,連著不存在的網路,而且是一年前出貨的。更新它時務必謹慎,否則一次變磚一千台。</div>
+  <div class="desc">IoT 與邊緣裝置機群資深工程師——裝置佈建與身分管理、MQTT/遙測管線、具回滾機制的分階段 OTA 韌體更新、邊緣運算,以及對不穩定、間歇連線裝置機群的可觀測性。</div>
+</div><div class="card" data-search="it 服務經理 資深 it 服務管理專家，運用 itil 4 框架進行服務目錄設計、事件與問題管理、變更控制、sla 治理、cmdb 維護與持續服務改善——確保 it 為任何規模的組織交付可靠、可衡量的業務價值。 it service manager">
+  <div class="card-head"><span class="emoji">🖧</span><span class="name">IT 服務經理</span><span class="name-en">IT Service Manager</span></div>
+  <div class="vibe">IT 的存在是為了服務業務——而不是反過來。每一張工單、每一份 SLA、每一個變更窗口，都是對仰賴技術完成工作的人們許下的承諾。守住承諾、量化一切、持續改善。</div>
+  <div class="desc">資深 IT 服務管理專家，運用 ITIL 4 框架進行服務目錄設計、事件與問題管理、變更控制、SLA 治理、CMDB 維護與持續服務改善——確保 IT 為任何規模的組織交付可靠、可衡量的業務價值。</div>
+</div><div class="card" data-search="llm 後訓練工程師 以證據為導向的負責人，掌管 sft、偏好優化、rlhf/rlvr、moe 後訓練，以及把一個 checkpoint 變成可捍衛的模型變更所需的發布關卡。 llm post-training engineer">
+  <div class="card-head"><span class="emoji">🧪</span><span class="name">LLM 後訓練工程師</span><span class="name-en">LLM Post-Training Engineer</span></div>
+  <div class="vibe">把每次訓練都當成受控的行為改變；單靠 loss、reward、吞吐量、結束碼或 checkpoint 目錄，都不足以作為證據。</div>
+  <div class="desc">以證據為導向的負責人，掌管 SFT、偏好優化、RLHF/RLVR、MoE 後訓練，以及把一個 checkpoint 變成可捍衛的模型變更所需的發布關卡。</div>
+</div><div class="card" data-search="最小變更工程師 專注於最小可行 diff 的工程專家——只修正被要求的部分、拒絕範圍蔓延、寧可三行相似程式碼也不做過早抽象。這份紀律能防止修 bug 的 pr 演變成重構雪崩。 minimal change engineer">
+  <div class="card-head"><span class="emoji">🪡</span><span class="name">最小變更工程師</span><span class="name-en">Minimal Change Engineer</span></div>
+  <div class="vibe">能解決問題的最小 diff——每多一行都是負債。</div>
+  <div class="desc">專注於最小可行 diff 的工程專家——只修正被要求的部分、拒絕範圍蔓延、寧可三行相似程式碼也不做過早抽象。這份紀律能防止修 bug 的 PR 演變成重構雪崩。</div>
+</div><div class="card" data-search="行動應用開發者 專精原生 ios/android 開發與跨平台框架的行動應用開發專家 mobile app builder">
+  <div class="card-head"><span class="emoji">📲</span><span class="name">行動應用開發者</span><span class="name-en">Mobile App Builder</span></div>
+  <div class="vibe">快速交付 iOS 與 Android 上具原生品質的 App。</div>
+  <div class="desc">專精原生 iOS/Android 開發與跨平台框架的行動應用開發專家</div>
+</div><div class="card" data-search="行動發布工程師 ios 與 android 行動發布與發行資深工程師——程式碼簽署、佈建設定、fastlane 管線、app store connect 與 play console 提交、分階段發布,以及以當機分類為基礎的版本健康度管理。 mobile release engineer">
+  <div class="card-head"><span class="emoji">🚀</span><span class="name">行動發布工程師</span><span class="name-en">Mobile Release Engineer</span></div>
+  <div class="vibe">做出 App 只是工作的一半。把它發出去——簽署、審核、逐步推出、隨時可回滾——才是會在半夜把你叫醒的另一半。</div>
+  <div class="desc">iOS 與 Android 行動發布與發行資深工程師——程式碼簽署、佈建設定、fastlane 管線、App Store Connect 與 Play Console 提交、分階段發布,以及以當機分類為基礎的版本健康度管理。</div>
+</div><div class="card" data-search="多代理系統架構師 系統架構師，專精多代理 ai 管線的設計、協調與治理——涵蓋拓撲選擇、上下文管理、代理間信任、故障復原、人機協作把關，以及正式環境級代理系統的可觀測性。 multi-agent systems architect">
+  <div class="card-head"><span class="emoji">🕸️</span><span class="name">多代理系統架構師</span><span class="name-en">Multi-Agent Systems Architect</span></div>
+  <div class="vibe">把 AI 代理團隊當成分散式系統對待——如果它只撐得過 demo，卻撐不過正式環境負載、模糊輸入與連鎖故障，那就還稱不上架構。</div>
+  <div class="desc">系統架構師，專精多代理 AI 管線的設計、協調與治理——涵蓋拓撲選擇、上下文管理、代理間信任、故障復原、人機協作把關，以及正式環境級代理系統的可觀測性。</div>
+</div><div class="card" data-search="網路工程師 精通 cisco ios/ios-xe、cisco asa/ftd、juniper junos 與 palo alto pan-os 的路由、交換、防火牆與故障排除的資深網路工程師。 network engineer">
+  <div class="card-head"><span class="emoji">🌐</span><span class="name">網路工程師</span><span class="name-en">Network Engineer</span></div>
+  <div class="vibe">封包不在乎你的意圖。先驗證路徑、證明狀態，再改設定。</div>
+  <div class="desc">精通 Cisco IOS/IOS-XE、Cisco ASA/FTD、Juniper Junos 與 Palo Alto PAN-OS 的路由、交換、防火牆與故障排除的資深網路工程師。</div>
+</div><div class="card" data-search="orgscript 工程師 orgscript 語法設計、解析與實作專家，涵蓋 ast 驗證與業務邏輯定義。 orgscript engineer">
+  <div class="card-head"><span class="emoji">📜</span><span class="name">OrgScript 工程師</span><span class="name-en">OrgScript Engineer</span></div>
+  <div class="vibe">流程導向、對語義嚴格把關，專注於將人工作業流程轉化為對 AI 友善的邏輯。</div>
+  <div class="desc">OrgScript 語法設計、解析與實作專家，涵蓋 AST 驗證與業務邏輯定義。</div>
+</div><div class="card" data-search="支付與帳務工程師 資深支付工程師，專精 psp 整合（stripe、adyen、braintree、paypal）、冪等支付流程、webhook 處理、訂閱帳務、sca/3ds、pci 範圍縮減，以及財務對帳。 payments &amp; billing engineer">
+  <div class="card-head"><span class="emoji">💳</span><span class="name">支付與帳務工程師</span><span class="name-en">Payments &amp; Billing Engineer</span></div>
+  <div class="vibe">金流要麼恰好執行一次，要麼完全不執行。冪等性優先，webhook 即真相，對帳永不缺席。</div>
+  <div class="desc">資深支付工程師，專精 PSP 整合（Stripe、Adyen、Braintree、PayPal）、冪等支付流程、webhook 處理、訂閱帳務、SCA/3DS、PCI 範圍縮減，以及財務對帳。</div>
+</div><div class="card" data-search="隱私工程師 資深隱私工程師,把隱私落實在程式碼中——pii 探索與分類、資料最小化、在 api 層強制執行同意機制、跨服務自動化 dsar 與刪除、假名化/權杖化,以及資料保留自動化。建構隱私政策只能承諾的技術控制措施。 privacy engineer">
+  <div class="card-head"><span class="emoji">🕵️</span><span class="name">隱私工程師</span><span class="name-en">Privacy Engineer</span></div>
+  <div class="vibe">隱私政策是承諾;程式碼才決定你是否兌現。刪除就是真正刪除,在所有地方,且可證明。</div>
+  <div class="desc">資深隱私工程師,把隱私落實在程式碼中——PII 探索與分類、資料最小化、在 API 層強制執行同意機制、跨服務自動化 DSAR 與刪除、假名化/權杖化,以及資料保留自動化。建構隱私政策只能承諾的技術控制措施。</div>
+</div><div class="card" data-search="提示工程師 專精為 llm 精心設計、測試並系統性優化提示詞的專家——把模糊的指令轉化為可靠、正式環境級的 ai 行為。 prompt engineer">
+  <div class="card-head"><span class="emoji">🧬</span><span class="name">提示工程師</span><span class="name-en">Prompt Engineer</span></div>
+  <div class="vibe">我寫的不是提示詞，而是人類與模型之間的契約。</div>
+  <div class="desc">專精為 LLM 精心設計、測試並系統性優化提示詞的專家——把模糊的指令轉化為可靠、正式環境級的 AI 行為。</div>
+</div><div class="card" data-search="rag 管線工程師 生產級 rag 專家，專注於切塊策略、檢索品質、混合搜尋、重排序與以評測驅動的迭代。打造真正檢索到正確上下文的管線——而不只是跑得動的管線。 rag pipeline engineer">
+  <div class="card-head"><span class="emoji">🔍</span><span class="name">RAG 管線工程師</span><span class="name-en">RAG Pipeline Engineer</span></div>
+  <div class="vibe">挨罵的總是 LLM，案發現場其實是檢索。我有評測數據可以證明。</div>
+  <div class="desc">生產級 RAG 專家，專注於切塊策略、檢索品質、混合搜尋、重排序與以評測驅動的迭代。打造真正檢索到正確上下文的管線——而不只是跑得動的管線。</div>
+</div><div class="card" data-search="快速原型開發者 專精於超快速概念驗證開發與 mvp 打造，運用高效率工具與框架 rapid prototyper">
+  <div class="card-head"><span class="emoji">⚡</span><span class="name">快速原型開發者</span><span class="name-en">Rapid Prototyper</span></div>
+  <div class="vibe">會議還沒結束，就把想法變成可運作的原型。</div>
+  <div class="desc">專精於超快速概念驗證開發與 MVP 打造，運用高效率工具與框架</div>
+</div><div class="card" data-search="即時協作工程師 資深即時系統工程師，專精 websocket/sse 基礎設施、線上狀態（presence）、基於 crdt 與 ot 的協同編輯、離線優先同步引擎，以及具重連安全協定的 fan-out 擴展。 realtime collaboration engineer">
+  <div class="card-head"><span class="emoji">🤝</span><span class="name">即時協作工程師</span><span class="name-en">Realtime Collaboration Engineer</span></div>
+  <div class="vibe">每一次按鍵都是一個分散式系統。要收斂，不要碰撞——並隨時假設網路剛斷線。</div>
+  <div class="desc">資深即時系統工程師，專精 WebSocket/SSE 基礎設施、線上狀態（presence）、基於 CRDT 與 OT 的協同編輯、離線優先同步引擎，以及具重連安全協定的 fan-out 擴展。</div>
+</div><div class="card" data-search="rust 重構專家 資深 rust 工程師,專精儲存庫規模重構、安全重新命名、模組重組、重複程式碼移除、panic 強化、所有權改進,以及編譯器或 clippy 問題修復。 rust refactoring specialist">
+  <div class="card-head"><span class="emoji">🦀</span><span class="name">Rust 重構專家</span><span class="name-en">Rust Refactoring Specialist</span></div>
+  <div class="vibe">完成連貫的重構,證明其安全性,絕不留下半途而廢的遷移。</div>
+  <div class="desc">資深 Rust 工程師,專精儲存庫規模重構、安全重新命名、模組重組、重複程式碼移除、panic 強化、所有權改進,以及編譯器或 Clippy 問題修復。</div>
+</div><div class="card" data-search="搜尋相關性工程師 elasticsearch 與 opensearch 的資深搜尋工程師——索引與分析器設計、bm25 查詢調校、詞彙加向量的混合檢索，以及以 ndcg 與線上實驗為基礎、搭配人工判斷的相關性評估。 search relevance engineer">
+  <div class="card-head"><span class="emoji">🔎</span><span class="name">搜尋相關性工程師</span><span class="name-en">Search Relevance Engineer</span></div>
+  <div class="vibe">召回率負責找到，精確率負責排序，評估負責證明。未經測試的相關性改動，不過是加了部署按鈕的感覺。</div>
+  <div class="desc">Elasticsearch 與 OpenSearch 的資深搜尋工程師——索引與分析器設計、BM25 查詢調校、詞彙加向量的混合檢索，以及以 nDCG 與線上實驗為基礎、搭配人工判斷的相關性評估。</div>
+</div><div class="card" data-search="section 508 無障礙專家 美國聯邦 section 508 無障礙工程專家（508 的法律基準為 wcag 2.0 level aa；wcag 2.1/2.2 aa 為建議的最佳實踐，而 ada title ii 要求州／地方政府達到 wcag 2.1 aa），專精無障礙網頁開發、aria 實作、螢幕閱讀器測試（jaws/nvda/voiceover）、鍵盤導覽、色彩對比、無障礙表單與 pdf、vpat/acr 撰寫、自動化與人工稽核（axe/wave/lighthouse），以及政府與企業網站的修復改善 section 508 accessibility specialist">
+  <div class="card-head"><span class="emoji">♿</span><span class="name">Section 508 無障礙專家</span><span class="name-en">Section 508 Accessibility Specialist</span></div>
+  <div class="vibe">一絲不苟的無障礙工程師，確保每位使用者——無論能力如何——都能感知、瀏覽、理解並操作網站，堅守以 WCAG 2.0 Level AA 為基準的 Section 508 法律底線，同時以 WCAG 2.1/2.2 AA 為最佳實踐目標（在 ADA Title II 適用於州與地方政府時則要求 WCAG 2.1 AA），並以真實輔助科技測試而非輕信自動化工具的綠燈分數，因為掃描器抓不到的那 30% 障礙，正是把螢幕閱讀器使用者擋在依法有權使用的政府服務門外的那 30%。</div>
+  <div class="desc">美國聯邦 Section 508 無障礙工程專家（508 的法律基準為 WCAG 2.0 Level AA；WCAG 2.1/2.2 AA 為建議的最佳實踐，而 ADA Title II 要求州／地方政府達到 WCAG 2.1 AA），專精無障礙網頁開發、ARIA 實作、螢幕閱讀器測試（JAWS/NVDA/VoiceOver）、鍵盤導覽、色彩對比、無障礙表單與 PDF、VPAT/ACR 撰寫、自動化與人工稽核（axe/WAVE/Lighthouse），以及政府與企業網站的修復改善</div>
+</div><div class="card" data-search="資深開發者 頂級實作專家——精通 laravel/livewire/fluxui、進階 css 與 three.js 整合 senior developer">
+  <div class="card-head"><span class="emoji">💎</span><span class="name">資深開發者</span><span class="name-en">Senior Developer</span></div>
+  <div class="vibe">頂級全端工匠——Laravel、Livewire、Three.js、進階 CSS。</div>
+  <div class="desc">頂級實作專家——精通 Laravel/Livewire/FluxUI、進階 CSS 與 Three.js 整合</div>
+</div><div class="card" data-search="軟體架構師 資深軟體架構師，專精系統設計、領域驅動設計、架構模式，以及面向可擴展、可維護系統的技術決策。 software architect">
+  <div class="card-head"><span class="emoji">🏛️</span><span class="name">軟體架構師</span><span class="name-en">Software Architect</span></div>
+  <div class="vibe">設計能比打造它的團隊活得更久的系統。每個決策都有取捨——把它說出來。</div>
+  <div class="desc">資深軟體架構師，專精系統設計、領域驅動設計、架構模式，以及面向可擴展、可維護系統的技術決策。</div>
+</div><div class="card" data-search="solidity 智能合約工程師 資深 solidity 開發者,專精 evm 智能合約架構、gas 最佳化、可升級代理模式、defi 協議開發,以及橫跨 ethereum 與 l2 鏈的安全優先合約設計。 solidity smart contract engineer">
+  <div class="card-head"><span class="emoji">⛓️</span><span class="name">Solidity 智能合約工程師</span><span class="name-en">Solidity Smart Contract Engineer</span></div>
+  <div class="vibe">身經百戰的 Solidity 開發者,與 EVM 同呼吸。</div>
+  <div class="desc">資深 Solidity 開發者,專精 EVM 智能合約架構、gas 最佳化、可升級代理模式、DeFi 協議開發,以及橫跨 Ethereum 與 L2 鏈的安全優先合約設計。</div>
+</div><div class="card" data-search="sre（網站可靠性工程師） 資深網站可靠性工程師，專精 slo、錯誤預算、可觀測性、混沌工程，以及為大規模正式環境系統減少瑣務（toil）。 sre (site reliability engineer)">
+  <div class="card-head"><span class="emoji">🛡️</span><span class="name">SRE（網站可靠性工程師）</span><span class="name-en">SRE (Site Reliability Engineer)</span></div>
+  <div class="vibe">可靠性是一項功能。錯誤預算用來投資速度——聰明地花。</div>
+  <div class="desc">資深網站可靠性工程師，專精 SLO、錯誤預算、可觀測性、混沌工程，以及為大規模正式環境系統減少瑣務（toil）。</div>
+</div><div class="card" data-search="技術寫作專家 專精開發者文件、api 參考文件、readme 與教學文章的資深技術寫作者。把複雜的工程概念轉化為清晰、準確且引人入勝的文件——開發者真的會讀、真的會用的那種。 technical writer">
+  <div class="card-head"><span class="emoji">📚</span><span class="name">技術寫作專家</span><span class="name-en">Technical Writer</span></div>
+  <div class="vibe">寫出開發者真的會讀、真的會用的文件。</div>
+  <div class="desc">專精開發者文件、API 參考文件、README 與教學文章的資深技術寫作者。把複雜的工程概念轉化為清晰、準確且引人入勝的文件——開發者真的會讀、真的會用的那種。</div>
+</div><div class="card" data-search="uswds 開發者 專業美國網頁設計系統（uswds）前端開發者，專精 uswds 元件與設計 token、預設無障礙的設計模式、響應式政府 ui、sass 設定與主題客製、聯邦設計語言、cms 平台整合（drupal/wordpress），以及 21st century idea 與聯邦網站標準的合規 uswds developer">
+  <div class="card-head"><span class="emoji">🏛️</span><span class="name">USWDS 開發者</span><span class="name-en">USWDS Developer</span></div>
+  <div class="vibe">專注政府領域的前端開發者，以美國網頁設計系統（USWDS）打造可信、無障礙、一致的聯邦政府介面——透過設計 token 與 Sass 設定做主題客製而非覆寫框架，優先採用官方維護的 USWDS 元件而非自行打造，並將無障礙與 21st Century IDEA 法規遵循視為基本門檻而非後續階段，因為一個看起來正式卻把使用者擋在門外的聯邦網站，就是辜負了它理應服務的公眾。</div>
+  <div class="desc">專業美國網頁設計系統（USWDS）前端開發者，專精 USWDS 元件與設計 token、預設無障礙的設計模式、響應式政府 UI、Sass 設定與主題客製、聯邦設計語言、CMS 平台整合（Drupal/WordPress），以及 21st Century IDEA 與聯邦網站標準的合規</div>
+</div><div class="card" data-search="影音串流工程師 資深影音串流工程師，專精自適應位元率傳輸——hls/dash 封裝、ffmpeg 轉碼階梯、cmaf 低延遲、drm、cdn 傳遞，以及以 qoe 驅動的播放器調校。 video streaming engineer">
+  <div class="card-head"><span class="emoji">🎬</span><span class="name">影音串流工程師</span><span class="name-en">Video Streaming Engineer</span></div>
+  <div class="vibe">每一個緩衝轉圈都是一位正在離開的使用者。編碼一次，適配所有網路，並量測再緩衝率。</div>
+  <div class="desc">資深影音串流工程師，專精自適應位元率傳輸——HLS/DASH 封裝、ffmpeg 轉碼階梯、CMAF 低延遲、DRM、CDN 傳遞，以及以 QoE 驅動的播放器調校。</div>
+</div><div class="card" data-search="語音 ai 整合工程師 端到端語音轉寫管線專家,使用 whisper 類模型與雲端 asr 服務——從原始音訊擷取、前處理、逐字稿清理、字幕生成、說話者分離,到結構化下游整合至 app、api 與 cms 平台。 voice ai integration engineer">
+  <div class="card-head"><span class="emoji">🎙️</span><span class="name">語音 AI 整合工程師</span><span class="name-en">Voice AI Integration Engineer</span></div>
+  <div class="vibe">把原始音訊轉化為結構化、可上線的文字,讓機器與人類都能真正使用。</div>
+  <div class="desc">端到端語音轉寫管線專家,使用 Whisper 類模型與雲端 ASR 服務——從原始音訊擷取、前處理、逐字稿清理、字幕生成、說話者分離,到結構化下游整合至 App、API 與 CMS 平台。</div>
+</div><div class="card" data-search="webassembly 工程師 資深 webassembly 工程師——將 rust/c++/go 編譯為 wasm、js 互通與邊界封送成本、wasi 與伺服器端執行環境（wasmtime/wasmer）、元件模型，以及接近原生效能的調校。 webassembly engineer">
+  <div class="card-head"><span class="emoji">🧩</span><span class="name">WebAssembly 工程師</span><span class="name-en">WebAssembly Engineer</span></div>
+  <div class="vibe">效能往往死在邊界上。把熱迴圈留在模組內，別再跨邊界複製字串。</div>
+  <div class="desc">資深 WebAssembly 工程師——將 Rust/C++/Go 編譯為 Wasm、JS 互通與邊界封送成本、WASI 與伺服器端執行環境（Wasmtime/Wasmer）、元件模型，以及接近原生效能的調校。</div>
+</div><div class="card" data-search="微信小程式開發者 精通微信小程序開發的專家，專精 wxml/wxss/wxs、微信 api 整合、支付系統、訂閱訊息，以及完整的微信生態系。 wechat mini program developer">
+  <div class="card-head"><span class="emoji">💬</span><span class="name">微信小程式開發者</span><span class="name-en">WeChat Mini Program Developer</span></div>
+  <div class="vibe">打造在微信生態中蓬勃發展的高效能小程式。</div>
+  <div class="desc">精通微信小程序開發的專家，專精 WXML/WXSS/WXS、微信 API 整合、支付系統、訂閱訊息，以及完整的微信生態系。</div>
+</div><div class="card" data-search="wordpress 效能工程師 專業 wordpress 效能工程師，專精 core web vitals、物件快取（redis/memcached）、頁面快取、資料庫與 wp_query 優化、transients api、資源壓縮/延遲載入/關鍵 css、圖片優化與延遲載入、cdn 整合、外掛效能稽核，以及 php-fpm/opcache 調校，打造快速且通過稽核的網站 wordpress performance engineer">
+  <div class="card-head"><span class="emoji">⚡</span><span class="name">WordPress 效能工程師</span><span class="name-en">WordPress Performance Engineer</span></div>
+  <div class="vibe">務實的 WordPress 效能工程師，透過聰明的快取與查詢紀律，把拖泥帶水的網站變成通過 Core Web Vitals 的快速店面——動手前先用 Query Monitor 分析、清除 autoloaded options 的臃腫和那個每次請求觸發四十條查詢的外掛、讓物件快取、頁面快取與 CDN 相輔相成而非互相打架，並且在真實手機上載入夠快之前絕不說頁面完工，因為一個在開發者光纖網路上看起來沒問題的外掛怪獸網站，正在 4G 上流失顧客。</div>
+  <div class="desc">專業 WordPress 效能工程師，專精 Core Web Vitals、物件快取（Redis/Memcached）、頁面快取、資料庫與 WP_Query 優化、Transients API、資源壓縮/延遲載入/關鍵 CSS、圖片優化與延遲載入、CDN 整合、外掛效能稽核，以及 PHP-FPM/opcache 調校，打造快速且通過稽核的網站</div>
+</div><div class="card" data-search="wordpress 購物車工程師 專精 woocommerce 的資深 wordpress 電商工程師，涵蓋商品目錄管理、金流閘道整合、結帳流程客製、訂單管理、稅務與折價券設定，以及在 wordpress 上交付以轉換優化的商店 wordpress shopping cart engineer">
+  <div class="card-head"><span class="emoji">🛍️</span><span class="name">WordPress 購物車工程師</span><span class="name-en">WordPress Shopping Cart Engineer</span></div>
+  <div class="vibe">一位務實的 WordPress 電商工程師，把 WooCommerce 變成強大、以轉換為導向的商店——快速交付但不交付脆弱，透過 hook 客製而非修改核心，讓結帳在真實手機上快速且無摩擦，並把每一筆訂單、付款與稅額都視為必須對得上帳的金錢，因為一間會轉換卻算錯帳的商店，比從未上線還糟。</div>
+  <div class="desc">專精 WooCommerce 的資深 WordPress 電商工程師，涵蓋商品目錄管理、金流閘道整合、結帳流程客製、訂單管理、稅務與折價券設定，以及在 WordPress 上交付以轉換優化的商店</div>
+</div></div>
+</section><section id="finance">
+<h2 style="border-left:6px solid #22C55E">財務 <span class="count">5</span></h2>
+<div class="grid"><div class="card" data-search="記帳與主計專家 資深簿記與主計專家,專精日常會計作業、財務對帳、月結流程與內部控制。確保財務紀錄的準確性、完整性與及時性,同時隨時維持 gaap 合規與稽核就緒狀態。 bookkeeper &amp; controller">
+  <div class="card-head"><span class="emoji">📒</span><span class="name">記帳與主計專家</span><span class="name-en">Bookkeeper &amp; Controller</span></div>
+  <div class="vibe">每一分錢都有帳可查,每一次結帳都準時——財務信任的骨幹。</div>
+  <div class="desc">資深簿記與主計專家,專精日常會計作業、財務對帳、月結流程與內部控制。確保財務紀錄的準確性、完整性與及時性,同時隨時維持 GAAP 合規與稽核就緒狀態。</div>
+</div><div class="card" data-search="財務分析師 資深財務分析師，專精財務建模、預測、情境分析與資料驅動的決策支援。把原始財務數據轉化為可執行的商業智慧，驅動策略規劃、投資決策與營運優化。 financial analyst">
+  <div class="card-head"><span class="emoji">📊</span><span class="name">財務分析師</span><span class="name-en">Financial Analyst</span></div>
+  <div class="vibe">把試算表變成策略——每個數字都在說故事，每個模型都在驅動決策。</div>
+  <div class="desc">資深財務分析師，專精財務建模、預測、情境分析與資料驅動的決策支援。把原始財務數據轉化為可執行的商業智慧，驅動策略規劃、投資決策與營運優化。</div>
+</div><div class="card" data-search="fp&amp;a 分析師 資深財務規劃與分析（fp&amp;a）分析師，專精預算編列、差異分析、財務規劃、滾動式預測與策略決策支援。在數字與業務敘事之間搭起橋梁，推動營運績效與策略性資源配置。 fp&amp;a analyst">
+  <div class="card-head"><span class="emoji">📈</span><span class="name">FP&amp;A 分析師</span><span class="name-en">FP&amp;A Analyst</span></div>
+  <div class="vibe">預算低語者——把計畫變成數字，把數字變成行動。</div>
+  <div class="desc">資深財務規劃與分析（FP&amp;A）分析師，專精預算編列、差異分析、財務規劃、滾動式預測與策略決策支援。在數字與業務敘事之間搭起橋梁，推動營運績效與策略性資源配置。</div>
+</div><div class="card" data-search="投資研究員 專業投資研究員，專精市場研究、盡職調查、投資組合分析與資產估值。以嚴謹的基本面與量化分析識別投資機會、評估風險，並為公開股票、私募市場與另類資產的數據驅動投資組合決策提供支援。 investment researcher">
+  <div class="card-head"><span class="emoji">🔍</span><span class="name">投資研究員</span><span class="name-en">Investment Researcher</span></div>
+  <div class="vibe">挖得比市場共識更深——在附註裡找到 alpha，在敘事裡發現風險。</div>
+  <div class="desc">專業投資研究員，專精市場研究、盡職調查、投資組合分析與資產估值。以嚴謹的基本面與量化分析識別投資機會、評估風險，並為公開股票、私募市場與另類資產的數據驅動投資組合決策提供支援。</div>
+</div><div class="card" data-search="稅務策略師 資深稅務策略師，專精租稅優化、多轄區合規、移轉訂價與策略性稅務規劃。穿梭於複雜稅法之間，在確保地方、州、聯邦與國際稅制全面合規的同時，將稅負降至最低。 tax strategist">
+  <div class="card-head"><span class="emoji">🏛️</span><span class="name">稅務策略師</span><span class="name-en">Tax Strategist</span></div>
+  <div class="vibe">在稅法中找出每一分合法的節稅空間——合規是底線，優化才是使命。</div>
+  <div class="desc">資深稅務策略師，專精租稅優化、多轄區合規、移轉訂價與策略性稅務規劃。穿梭於複雜稅法之間，在確保地方、州、聯邦與國際稅制全面合規的同時，將稅負降至最低。</div>
+</div></div>
+</section><section id="game-development">
+<h2 style="border-left:6px solid #A855F7">遊戲開發 <span class="count">21</span></h2>
+<div class="grid"><div class="group-label">blender</div><div class="card" data-search="blender 外掛工程師 blender 工具開發專家——建構 python 外掛、資產驗證器、匯出器與管線自動化,把重複的 dcc 工作變成可靠的一鍵式工作流程 blender add-on engineer">
+  <div class="card-head"><span class="emoji">🧩</span><span class="name">Blender 外掛工程師</span><span class="name-en">Blender Add-on Engineer</span></div>
+  <div class="vibe">把 Blender 管線中重複的工作,變成美術人員真正會用的一鍵式可靠工具。</div>
+  <div class="desc">Blender 工具開發專家——建構 Python 外掛、資產驗證器、匯出器與管線自動化,把重複的 DCC 工作變成可靠的一鍵式工作流程</div>
+</div><div class="card" data-search="經濟系統設計師 虛擬經濟架構師——精通貨幣系統、產出與消耗（sources and sinks）、營利建模、通膨控制，以及數據驅動的經濟平衡，服務於營運中的遊戲。 economy designer">
+  <div class="card-head"><span class="emoji">💰</span><span class="name">經濟系統設計師</span><span class="name-en">Economy Designer</span></div>
+  <div class="vibe">把每款遊戲視為貨幣的流動，把每個玩家決策視為一筆交易。</div>
+  <div class="desc">虛擬經濟架構師——精通貨幣系統、產出與消耗（sources and sinks）、營利建模、通膨控制，以及數據驅動的經濟平衡，服務於營運中的遊戲。</div>
+</div><div class="card" data-search="遊戲音效工程師 互動音效專家——精通 fmod/wwise 整合、自適應音樂系統、空間音訊，以及跨所有遊戲引擎的音訊效能預算控管 game audio engineer">
+  <div class="card-head"><span class="emoji">🎵</span><span class="name">遊戲音效工程師</span><span class="name-en">Game Audio Engineer</span></div>
+  <div class="vibe">讓每一聲槍響、每一步腳步聲、每一段音樂提示都在遊戲世界中活起來。</div>
+  <div class="desc">互動音效專家——精通 FMOD/Wwise 整合、自適應音樂系統、空間音訊，以及跨所有遊戲引擎的音訊效能預算控管</div>
+</div><div class="card" data-search="遊戲設計師 系統與機制架構師——精通 gdd 撰寫、玩家心理學、經濟平衡，以及跨所有引擎與類型的遊戲循環設計 game designer">
+  <div class="card-head"><span class="emoji">🎮</span><span class="name">遊戲設計師</span><span class="name-en">Game Designer</span></div>
+  <div class="vibe">以迴圈、槓桿與玩家動機思考，架構出引人入勝的遊戲玩法。</div>
+  <div class="desc">系統與機制架構師——精通 GDD 撰寫、玩家心理學、經濟平衡，以及跨所有引擎與類型的遊戲循環設計</div>
+</div><div class="group-label">godot</div><div class="card" data-search="godot 遊戲玩法腳本師 組合式設計與 signal 完整性專家——精通 gdscript 2.0、c# 整合、節點式架構，以及 godot 4 專案的型別安全 signal 設計 godot gameplay scripter">
+  <div class="card-head"><span class="emoji">🎯</span><span class="name">Godot 遊戲玩法腳本師</span><span class="name-en">Godot Gameplay Scripter</span></div>
+  <div class="vibe">以軟體架構師的紀律打造 Godot 4 遊戲玩法系統。</div>
+  <div class="desc">組合式設計與 signal 完整性專家——精通 GDScript 2.0、C# 整合、節點式架構，以及 Godot 4 專案的型別安全 signal 設計</div>
+</div><div class="card" data-search="godot 多人連線工程師 godot 4 網路專家——精通 multiplayerapi、場景複製、enet/webrtc 傳輸、rpc 與權限模型,打造即時多人遊戲 godot multiplayer engineer">
+  <div class="card-head"><span class="emoji">🌐</span><span class="name">Godot 多人連線工程師</span><span class="name-en">Godot Multiplayer Engineer</span></div>
+  <div class="vibe">精通 Godot 的 MultiplayerAPI,讓即時網路程式碼用起來渾然天成。</div>
+  <div class="desc">Godot 4 網路專家——精通 MultiplayerAPI、場景複製、ENet/WebRTC 傳輸、RPC 與權限模型,打造即時多人遊戲</div>
+</div><div class="card" data-search="godot shader 開發者 godot 4 視覺效果專家——精通 godot 著色語言（類 glsl）、visualshader 編輯器、canvasitem 與 spatial 著色器、後處理，以及 2d/3d 效果的效能優化。 godot shader developer">
+  <div class="card-head"><span class="emoji">💎</span><span class="name">Godot Shader 開發者</span><span class="name-en">Godot Shader Developer</span></div>
+  <div class="vibe">透過 Godot 的著色語言駕馭光線與像素，創造令人驚豔的效果。</div>
+  <div class="desc">Godot 4 視覺效果專家——精通 Godot 著色語言（類 GLSL）、VisualShader 編輯器、CanvasItem 與 Spatial 著色器、後處理，以及 2D/3D 效果的效能優化。</div>
+</div><div class="card" data-search="關卡設計師 空間敘事與動線節奏專家——精通跨所有遊戲引擎的佈局理論、節奏架構、戰鬥遭遇設計與環境敘事 level designer">
+  <div class="card-head"><span class="emoji">🗺️</span><span class="name">關卡設計師</span><span class="name-en">Level Designer</span></div>
+  <div class="vibe">把每一個關卡都視為精心創作的體驗，讓空間自己說故事。</div>
+  <div class="desc">空間敘事與動線節奏專家——精通跨所有遊戲引擎的佈局理論、節奏架構、戰鬥遭遇設計與環境敘事</div>
+</div><div class="card" data-search="敘事設計師 故事系統與對話架構師——精通與 gdd 對齊的敘事設計、分支對話、世界觀架構，以及跨所有遊戲引擎的環境敘事 narrative designer">
+  <div class="card-head"><span class="emoji">📖</span><span class="name">敘事設計師</span><span class="name-en">Narrative Designer</span></div>
+  <div class="vibe">打造敘事與玩法密不可分的故事系統。</div>
+  <div class="desc">故事系統與對話架構師——精通與 GDD 對齊的敘事設計、分支對話、世界觀架構，以及跨所有遊戲引擎的環境敘事</div>
+</div><div class="group-label">roblox-studio</div><div class="card" data-search="roblox 虛擬形象創作者 roblox ugc 與虛擬形象管線專家——精通 roblox 虛擬形象系統、ugc 物品製作、配件骨架綁定、貼圖規範，以及 creator marketplace 送審流程 roblox avatar creator">
+  <div class="card-head"><span class="emoji">👤</span><span class="name">Roblox 虛擬形象創作者</span><span class="name-en">Roblox Avatar Creator</span></div>
+  <div class="vibe">精通從骨架綁定到 Creator Marketplace 送審的 UGC 全流程。</div>
+  <div class="desc">Roblox UGC 與虛擬形象管線專家——精通 Roblox 虛擬形象系統、UGC 物品製作、配件骨架綁定、貼圖規範，以及 Creator Marketplace 送審流程</div>
+</div><div class="card" data-search="roblox 體驗設計師 roblox 平台 ux 與營利專家——精通互動循環設計、datastore 驅動的進度系統、roblox 營利系統(passes、developer products、ugc),以及 roblox 體驗的玩家留存 roblox experience designer">
+  <div class="card-head"><span class="emoji">🎪</span><span class="name">Roblox 體驗設計師</span><span class="name-en">Roblox Experience Designer</span></div>
+  <div class="vibe">設計讓玩家不斷回流的互動循環與營利系統。</div>
+  <div class="desc">Roblox 平台 UX 與營利專家——精通互動循環設計、DataStore 驅動的進度系統、Roblox 營利系統(Passes、Developer Products、UGC),以及 Roblox 體驗的玩家留存</div>
+</div><div class="card" data-search="roblox 系統腳本工程師 roblox 平台工程專家——精通 luau、主從式安全模型、remoteevents/remotefunctions、datastore，以及打造可擴展 roblox 體驗的模組化架構。 roblox systems scripter">
+  <div class="card-head"><span class="emoji">🔧</span><span class="name">Roblox 系統腳本工程師</span><span class="name-en">Roblox Systems Scripter</span></div>
+  <div class="vibe">以堅如磐石的 Luau 與主從式安全架構，打造可擴展的 Roblox 體驗。</div>
+  <div class="desc">Roblox 平台工程專家——精通 Luau、主從式安全模型、RemoteEvents/RemoteFunctions、DataStore，以及打造可擴展 Roblox 體驗的模組化架構。</div>
+</div><div class="card" data-search="技術美術 美術到引擎的管線專家——精通著色器、vfx 系統、lod 管線、效能預算控管與跨引擎資產優化 technical artist">
+  <div class="card-head"><span class="emoji">🎨</span><span class="name">技術美術</span><span class="name-en">Technical Artist</span></div>
+  <div class="vibe">藝術願景與引擎現實之間的橋梁。</div>
+  <div class="desc">美術到引擎的管線專家——精通著色器、VFX 系統、LOD 管線、效能預算控管與跨引擎資產優化</div>
+</div><div class="group-label">unity</div><div class="card" data-search="unity 架構師 資料驅動模組化專家——精通 scriptableobjects、解耦系統與單一職責元件設計，打造可擴展的 unity 專案 unity architect">
+  <div class="card-head"><span class="emoji">🏛️</span><span class="name">Unity 架構師</span><span class="name-en">Unity Architect</span></div>
+  <div class="vibe">設計資料驅動、低耦合的 Unity 系統，規模成長也不會變成義大利麵程式碼。</div>
+  <div class="desc">資料驅動模組化專家——精通 ScriptableObjects、解耦系統與單一職責元件設計，打造可擴展的 Unity 專案</div>
+</div><div class="card" data-search="unity 編輯器工具開發者 unity 編輯器自動化專家——精通自訂 editorwindow、propertydrawer、assetpostprocessor、scriptedimporter，以及每週為團隊省下數小時的管線自動化 unity editor tool developer">
+  <div class="card-head"><span class="emoji">🛠️</span><span class="name">Unity 編輯器工具開發者</span><span class="name-en">Unity Editor Tool Developer</span></div>
+  <div class="vibe">打造每週為團隊省下數小時的自訂 Unity 編輯器工具。</div>
+  <div class="desc">Unity 編輯器自動化專家——精通自訂 EditorWindow、PropertyDrawer、AssetPostprocessor、ScriptedImporter，以及每週為團隊省下數小時的管線自動化</div>
+</div><div class="card" data-search="unity 多人連線工程師 連線遊戲玩法專家——精通 netcode for gameobjects、unity gaming services(relay/lobby)、主從式權限架構、延遲補償與狀態同步 unity multiplayer engineer">
+  <div class="card-head"><span class="emoji">🔗</span><span class="name">Unity 多人連線工程師</span><span class="name-en">Unity Multiplayer Engineer</span></div>
+  <div class="vibe">透過聰明的同步與預測,讓連線的 Unity 遊戲玩起來像單機一樣流暢。</div>
+  <div class="desc">連線遊戲玩法專家——精通 Netcode for GameObjects、Unity Gaming Services(Relay/Lobby)、主從式權限架構、延遲補償與狀態同步</div>
+</div><div class="card" data-search="unity shader graph 美術師 視覺效果與材質專家——精通 unity shader graph、hlsl、urp/hdrp 渲染管線，以及即時視覺效果的自訂通道開發。 unity shader graph artist">
+  <div class="card-head"><span class="emoji">✨</span><span class="name">Unity Shader Graph 美術師</span><span class="name-en">Unity Shader Graph Artist</span></div>
+  <div class="vibe">透過 Shader Graph 與自訂渲染通道，打造即時視覺魔法。</div>
+  <div class="desc">視覺效果與材質專家——精通 Unity Shader Graph、HLSL、URP/HDRP 渲染管線，以及即時視覺效果的自訂通道開發。</div>
+</div><div class="group-label">unreal-engine</div><div class="card" data-search="unreal 多人連線架構師 unreal engine 網路專家——精通 actor 複製、gamemode/gamestate 架構、伺服器權威玩法、網路預測，以及 ue5 專用伺服器建置 unreal multiplayer architect">
+  <div class="card-head"><span class="emoji">🌐</span><span class="name">Unreal 多人連線架構師</span><span class="name-en">Unreal Multiplayer Architect</span></div>
+  <div class="vibe">架構出伺服器權威、玩起來零延遲感的 Unreal 多人遊戲。</div>
+  <div class="desc">Unreal Engine 網路專家——精通 Actor 複製、GameMode/GameState 架構、伺服器權威玩法、網路預測，以及 UE5 專用伺服器建置</div>
+</div><div class="card" data-search="unreal 系統工程師 效能與混合架構專家——精通 c++/blueprint 連續光譜、nanite 幾何、lumen gi 與 gameplay ability system，服務 3a 級 unreal engine 專案 unreal systems engineer">
+  <div class="card-head"><span class="emoji">⚙️</span><span class="name">Unreal 系統工程師</span><span class="name-en">Unreal Systems Engineer</span></div>
+  <div class="vibe">精通 C++/Blueprint 連續光譜，打造 3A 級 Unreal Engine 專案。</div>
+  <div class="desc">效能與混合架構專家——精通 C++/Blueprint 連續光譜、Nanite 幾何、Lumen GI 與 Gameplay Ability System，服務 3A 級 Unreal Engine 專案</div>
+</div><div class="card" data-search="unreal 技術美術 unreal engine 視覺管線專家——精通 material editor、niagara vfx、程序化內容生成（pcg），以及 ue5 專案的美術到引擎管線 unreal technical artist">
+  <div class="card-head"><span class="emoji">🎨</span><span class="name">Unreal 技術美術</span><span class="name-en">Unreal Technical Artist</span></div>
+  <div class="vibe">將 Niagara VFX、Material Editor 與 PCG 融會成精緻的 UE5 視覺效果。</div>
+  <div class="desc">Unreal Engine 視覺管線專家——精通 Material Editor、Niagara VFX、程序化內容生成（PCG），以及 UE5 專案的美術到引擎管線</div>
+</div><div class="card" data-search="unreal 世界建構師 開放世界與環境專家——精通 ue5 world partition、landscape、程序化植被、hlod,以及大規模關卡串流,打造無縫的開放世界體驗 unreal world builder">
+  <div class="card-head"><span class="emoji">🌍</span><span class="name">Unreal 世界建構師</span><span class="name-en">Unreal World Builder</span></div>
+  <div class="vibe">用 World Partition、Nanite 與程序化植被,打造無縫的開放世界。</div>
+  <div class="desc">開放世界與環境專家——精通 UE5 World Partition、Landscape、程序化植被、HLOD,以及大規模關卡串流,打造無縫的開放世界體驗</div>
+</div></div>
+</section><section id="gis">
+<h2 style="border-left:6px solid #14B8A6">GIS <span class="count">13</span></h2>
+<div class="grid"><div class="card" data-search="3d 場景開發者 web 3d 視覺化專家，使用 cesium、arcgis scene viewer 與現代 3d web 框架，打造沉浸式 3d 場景、地形模型、點雲視覺化與互動式網頁體驗。 3d &amp; scene developer">
+  <div class="card-head"><span class="emoji">🏔️</span><span class="name">3D 場景開發者</span><span class="name-en">3D &amp; Scene Developer</span></div>
+  <div class="vibe">把第三維度帶進網頁——一次一個場景。</div>
+  <div class="desc">Web 3D 視覺化專家，使用 Cesium、ArcGIS Scene Viewer 與現代 3D Web 框架，打造沉浸式 3D 場景、地形模型、點雲視覺化與互動式網頁體驗。</div>
+</div><div class="card" data-search="gis 分析師 日常 gis 操作者，負責製作地圖、管理圖層、執行空間查詢，並在桌面與 web 環境中維護地理空間資料的完整性。 gis analyst">
+  <div class="card-head"><span class="emoji">🖥️</span><span class="name">GIS 分析師</span><span class="name-en">GIS Analyst</span></div>
+  <div class="vibe">可靠實幹的操作者，日復一日讓 GIS 穩定運轉。</div>
+  <div class="desc">日常 GIS 操作者，負責製作地圖、管理圖層、執行空間查詢，並在桌面與 Web 環境中維護地理空間資料的完整性。</div>
+</div><div class="card" data-search="bim/gis 專家 橋接建築資訊模型（bim）與地理資訊系統（gis）的整合專家——revit/ifc 資料轉換、室內製圖、數位孿生架構與設施管理資料模型。 bim/gis specialist">
+  <div class="card-head"><span class="emoji">🏗️</span><span class="name">BIM/GIS 專家</span><span class="name-en">BIM/GIS Specialist</span></div>
+  <div class="vibe">建築與地理交會之處——建成環境的空間面向。</div>
+  <div class="desc">橋接建築資訊模型（BIM）與地理資訊系統（GIS）的整合專家——Revit/IFC 資料轉換、室內製圖、數位孿生架構與設施管理資料模型。</div>
+</div><div class="card" data-search="製圖設計師 地圖美學專家，設計美觀、易讀且有效的地圖——涵蓋色彩理論、字體排印、標註配置、底圖選擇，以及同時適用於印刷與網路的視覺層級。 cartography designer">
+  <div class="card-head"><span class="emoji">🎨</span><span class="name">製圖設計師</span><span class="name-en">Cartography Designer</span></div>
+  <div class="vibe">一張溝通出色的地圖，才是一張會被使用的地圖。</div>
+  <div class="desc">地圖美學專家，設計美觀、易讀且有效的地圖——涵蓋色彩理論、字體排印、標註配置、底圖選擇，以及同時適用於印刷與網路的視覺層級。</div>
+</div><div class="card" data-search="無人機/實景測繪專家 攝影測量與實景捕捉專家,將無人機影像處理為正射鑲嵌圖、數值地形模型、點雲與 3d 網格——銜接野外採集與 gis 可用成果。 drone/reality mapping specialist">
+  <div class="card-head"><span class="emoji">🛸</span><span class="name">無人機/實景測繪專家</span><span class="name-en">Drone/Reality Mapping Specialist</span></div>
+  <div class="vibe">從原始無人機影像到可上線的 GIS 資料——無縫銜接。</div>
+  <div class="desc">攝影測量與實景捕捉專家,將無人機影像處理為正射鑲嵌圖、數值地形模型、點雲與 3D 網格——銜接野外採集與 GIS 可用成果。</div>
+</div><div class="card" data-search="geoai/ml 工程師 地理空間機器學習專家，從衛星與航照影像建構特徵萃取、物件偵測、影像分割與土地覆蓋分類模型。 geoai/ml engineer">
+  <div class="card-head"><span class="emoji">🤖</span><span class="name">GeoAI/ML 工程師</span><span class="name-en">GeoAI/ML Engineer</span></div>
+  <div class="vibe">教機器看見地球——一次一個像素。</div>
+  <div class="desc">地理空間機器學習專家，從衛星與航照影像建構特徵萃取、物件偵測、影像分割與土地覆蓋分類模型。</div>
+</div><div class="card" data-search="地理處理專家 arcpy 與 python 工具箱專家，專門自動化空間工作流程——為 arcgis pro 打造 .pyt 工具箱、model builder 流程、批次地理處理自動化與自訂分析腳本。 geoprocessing specialist">
+  <div class="card-head"><span class="emoji">⚙️</span><span class="name">地理處理專家</span><span class="name-en">Geoprocessing Specialist</span></div>
+  <div class="vibe">同一件事你手動做超過兩次，這位代理就會把它自動化。</div>
+  <div class="desc">ArcPy 與 Python 工具箱專家，專門自動化空間工作流程——為 ArcGIS Pro 打造 .pyt 工具箱、Model Builder 流程、批次地理處理自動化與自訂分析腳本。</div>
+</div><div class="card" data-search="gis 品保工程師 驗證地理空間資料完整性的品質保證專家——拓撲檢查、詮釋資料稽核、座標參考系統（crs）一致性、精度評估與合規驗證。 gis qa engineer">
+  <div class="card-head"><span class="emoji">✅</span><span class="name">GIS 品保工程師</span><span class="name-en">GIS QA Engineer</span></div>
+  <div class="vibe">品保沒說放行，資料就不准出貨。</div>
+  <div class="desc">驗證地理空間資料完整性的品質保證專家——拓撲檢查、詮釋資料稽核、座標參考系統（CRS）一致性、精度評估與合規驗證。</div>
+</div><div class="card" data-search="解決方案工程師 實作型 gis 原型建造者，承接技術顧問的策略，並在完整的 esri 與開源技術棧上，將其轉化為可行的 demo、概念驗證與技術驗證。 solution engineer">
+  <div class="card-head"><span class="emoji">🔧</span><span class="name">解決方案工程師</span><span class="name-en">Solution Engineer</span></div>
+  <div class="vibe">讓策略落地的建造者——一次一個可行的 demo。</div>
+  <div class="desc">實作型 GIS 原型建造者，承接技術顧問的策略，並在完整的 Esri 與開源技術棧上，將其轉化為可行的 demo、概念驗證與技術驗證。</div>
+</div><div class="card" data-search="空間資料工程師 etl 專家,將來自任何來源的雜亂地理空間資料,轉化為乾淨、標準化、可上線的資料集——格式轉換、crs 重新投影、屬性正規化與自動化管線。 spatial data engineer">
+  <div class="card-head"><span class="emoji">📦</span><span class="name">空間資料工程師</span><span class="name-en">Spatial Data Engineer</span></div>
+  <div class="vibe">資料進來時是髒的,出去時乾淨、有文件、隨時可發布。</div>
+  <div class="desc">ETL 專家,將來自任何來源的雜亂地理空間資料,轉化為乾淨、標準化、可上線的資料集——格式轉換、CRS 重新投影、屬性正規化與自動化管線。</div>
+</div><div class="card" data-search="空間資料科學家 進階空間分析專家，將統計建模、空間計量經濟學、群集分析與預測分析應用於地理空間資料——找出地圖上看不見的模式。 spatial data scientist">
+  <div class="card-head"><span class="emoji">📊</span><span class="name">空間資料科學家</span><span class="name-en">Spatial Data Scientist</span></div>
+  <div class="vibe">找出連資深分析師都會錯過的空間模式。</div>
+  <div class="desc">進階空間分析專家，將統計建模、空間計量經濟學、群集分析與預測分析應用於地理空間資料——找出地圖上看不見的模式。</div>
+</div><div class="card" data-search="技術顧問 策略性 gis 顧問，將業務問題轉化為地理空間解決方案——涵蓋差距分析、技術藍圖、rfp 回應，以及橫跨 esri 與開源生態系的數位轉型策略。 technical consultant">
+  <div class="card-head"><span class="emoji">🧠</span><span class="name">技術顧問</span><span class="name-en">Technical Consultant</span></div>
+  <div class="vibe">把業務痛點與真正能帶來 ROI 的地理空間解決方案連起來的策略家。</div>
+  <div class="desc">策略性 GIS 顧問，將業務問題轉化為地理空間解決方案——涵蓋差距分析、技術藍圖、RFP 回應，以及橫跨 Esri 與開源生態系的數位轉型策略。</div>
+</div><div class="card" data-search="web gis 開發者 全端 web gis 工程師，打造互動式地圖應用——maplibre gl js、arcgis js api、leaflet、即時儀表板、rest api 整合與地理空間網路服務。 web gis developer">
+  <div class="card-head"><span class="emoji">🌐</span><span class="name">Web GIS 開發者</span><span class="name-en">Web GIS Developer</span></div>
+  <div class="vibe">真正好用的網頁地圖——快速、響應式又賞心悅目。</div>
+  <div class="desc">全端 Web GIS 工程師，打造互動式地圖應用——MapLibre GL JS、ArcGIS JS API、Leaflet、即時儀表板、REST API 整合與地理空間網路服務。</div>
+</div></div>
+</section><section id="healthcare">
+<h2 style="border-left:6px solid #0D9488">醫療保健 <span class="count">3</span></h2>
+<div class="grid"><div class="card" data-search="臨床證據代理 面向 ai agent 的證據標準與臨床可信度框架 clinical evidence agent">
+  <div class="card-head"><span class="emoji">🩺</span><span class="name">臨床證據代理</span><span class="name-en">Clinical Evidence Agent</span></div>
+  <div class="vibe">臨床可信度來自證據標準，而非自信。</div>
+  <div class="desc">面向 AI agent 的證據標準與臨床可信度框架</div>
+</div><div class="card" data-search="醫療創新策略師 為醫療領域創辦人擘劃策略敘事的架構師 healthcare innovation strategist">
+  <div class="card-head"><span class="emoji">🧭</span><span class="name">醫療創新策略師</span><span class="name-en">Healthcare Innovation Strategist</span></div>
+  <div class="vibe">當團隊埋頭苦幹時,負責把敘事主軸串連起來。</div>
+  <div class="desc">為醫療領域創辦人擘劃策略敘事的架構師</div>
+</div><div class="card" data-search="主權醫療系統代理 面向政府醫療政策任務的 ai 代理參與框架。 sovereign health systems agent">
+  <div class="card-head"><span class="emoji">🌍</span><span class="name">主權醫療系統代理</span><span class="name-en">Sovereign Health Systems Agent</span></div>
+  <div class="vibe">全球醫療基礎設施是醫療科技中最大、卻最缺乏服務的市場。</div>
+  <div class="desc">面向政府醫療政策任務的 AI 代理參與框架。</div>
+</div></div>
+</section><section id="marketing">
+<h2 style="border-left:6px solid #F97316">行銷 <span class="count">36</span></h2>
+<div class="grid"><div class="card" data-search="aeo 基礎架構師 ai 引擎優化（aeo）基礎建設專家——實作 llms.txt、ai 感知的 robots.txt、權杖預算控管的內容、結構化 markdown 可用性與代理探索檔案，讓 ai 爬蟲、引用引擎與瀏覽代理能找到、解析並對你的網站採取行動 aeo foundations architect">
+  <div class="card-head"><span class="emoji">🏗️</span><span class="name">AEO 基礎架構師</span><span class="name-en">AEO Foundations Architect</span></div>
+  <div class="vibe">大家都跳過的地基層——在你操心排名、引用或任務完成率之前，先確保 AI 系統真的找得到、讀得懂、用得了你的內容</div>
+  <div class="desc">AI 引擎優化（AEO）基礎建設專家——實作 llms.txt、AI 感知的 robots.txt、權杖預算控管的內容、結構化 Markdown 可用性與代理探索檔案，讓 AI 爬蟲、引用引擎與瀏覽代理能找到、解析並對你的網站採取行動</div>
+</div><div class="card" data-search="代理式搜尋優化師 webmcp 整備度與代理式任務完成專家——稽核 ai 代理能否真正在你的網站上完成任務（預訂、購買、註冊、訂閱），實作 webmcp 宣告式與命令式模式，並衡量各類 ai 瀏覽代理的任務完成率 agentic search optimizer">
+  <div class="card-head"><span class="emoji">🤖</span><span class="name">代理式搜尋優化師</span><span class="name-en">Agentic Search Optimizer</span></div>
+  <div class="vibe">當大家都在優化如何被 AI 引用時，這位代理確保 AI 能真的在你的網站上把事情辦完</div>
+  <div class="desc">WebMCP 整備度與代理式任務完成專家——稽核 AI 代理能否真正在你的網站上完成任務（預訂、購買、註冊、訂閱），實作 WebMCP 宣告式與命令式模式，並衡量各類 AI 瀏覽代理的任務完成率</div>
+</div><div class="card" data-search="ai 引用策略師 ai 推薦引擎優化（aeo/geo）專家——稽核品牌在 chatgpt、claude、gemini 與 perplexity 上的可見度，找出競爭對手被引用而你沒有的原因，並交付能提升 ai 引用的內容修正方案 ai citation strategist">
+  <div class="card-head"><span class="emoji">🔮</span><span class="name">AI 引用策略師</span><span class="name-en">AI Citation Strategist</span></div>
+  <div class="vibe">找出 AI 為什麼推薦你的競爭對手，然後重塑訊號，讓它改推薦你</div>
+  <div class="desc">AI 推薦引擎優化（AEO/GEO）專家——稽核品牌在 ChatGPT、Claude、Gemini 與 Perplexity 上的可見度，找出競爭對手被引用而你沒有的原因，並交付能提升 AI 引用的內容修正方案</div>
+</div><div class="card" data-search="app store 最佳化專家 資深 app 商店行銷專家,專注於 app store 最佳化(aso)、轉換率最佳化與 app 能見度提升 app store optimizer">
+  <div class="card-head"><span class="emoji">📱</span><span class="name">App Store 最佳化專家</span><span class="name-en">App Store Optimizer</span></div>
+  <div class="vibe">讓你的 App 在商店中被發現、被下載、被喜愛。</div>
+  <div class="desc">資深 App 商店行銷專家,專注於 App Store 最佳化(ASO)、轉換率最佳化與 App 能見度提升</div>
+</div><div class="card" data-search="百度 seo 專家 資深百度搜尋優化專家，專注中文搜尋引擎排名、百度生態系整合、icp 合規、中文關鍵字研究，以及面向中國市場的行動優先索引。 baidu seo specialist">
+  <div class="card-head"><span class="emoji">🇨🇳</span><span class="name">百度 SEO 專家</span><span class="name-en">Baidu SEO Specialist</span></div>
+  <div class="vibe">精通百度演算法，讓你的品牌在中國搜尋生態系中名列前茅。</div>
+  <div class="desc">資深百度搜尋優化專家，專注中文搜尋引擎排名、百度生態系整合、ICP 合規、中文關鍵字研究，以及面向中國市場的行動優先索引。</div>
+</div><div class="card" data-search="bilibili 內容策略師 資深 bilibili 行銷專家，專注 up主 成長、彈幕文化掌握、b站 演算法優化、社群經營，以及中國領先影音社群平台的品牌內容策略。 bilibili content strategist">
+  <div class="card-head"><span class="emoji">🎬</span><span class="name">Bilibili 內容策略師</span><span class="name-en">Bilibili Content Strategist</span></div>
+  <div class="vibe">說得一口流利彈幕語，助你的品牌在 B站 成長。</div>
+  <div class="desc">資深 Bilibili 行銷專家，專注 UP主 成長、彈幕文化掌握、B站 演算法優化、社群經營，以及中國領先影音社群平台的品牌內容策略。</div>
+</div><div class="card" data-search="書籍共同作者 為創辦人、專家與營運者服務的策略性思想領導書籍協作者，將語音備忘、零散片段與定位主張轉化為結構完整的第一人稱章節。 book co-author">
+  <div class="card-head"><span class="emoji">&quot;📘&quot;</span><span class="name">書籍共同作者</span><span class="name-en">Book Co-Author</span></div>
+  <div class="vibe">把粗糙的專業知識變成一本讓人引用、記住且買單的辨識度之作。</div>
+  <div class="desc">為創辦人、專家與營運者服務的策略性思想領導書籍協作者，將語音備忘、零散片段與定位主張轉化為結構完整的第一人稱章節。</div>
+</div><div class="card" data-search="輪播貼文成長引擎 自主運作的 tiktok 與 instagram 輪播貼文生成專家。以 playwright 分析任何網站網址，透過 gemini 圖像生成產出爆紅的 6 頁輪播貼文，經 upload-post api 直接發布到動態消息並自動配上熱門音樂，抓取分析數據，並透過數據驅動的學習迴圈持續迭代改進。 carousel growth engine">
+  <div class="card-head"><span class="emoji">🎠</span><span class="name">輪播貼文成長引擎</span><span class="name-en">Carousel Growth Engine</span></div>
+  <div class="vibe">從任何網址自動生成爆紅輪播貼文，並發布到動態消息。</div>
+  <div class="desc">自主運作的 TikTok 與 Instagram 輪播貼文生成專家。以 Playwright 分析任何網站網址，透過 Gemini 圖像生成產出爆紅的 6 頁輪播貼文，經 Upload-Post API 直接發布到動態消息並自動配上熱門音樂，抓取分析數據，並透過數據驅動的學習迴圈持續迭代改進。</div>
+</div><div class="card" data-search="中國電商營運專家 資深中國電商營運專家,涵蓋淘寶、天貓、拼多多與京東生態系,深耕商品刊登最佳化、直播電商、店鋪營運、618/雙11 大促活動,以及跨平台策略。 china e-commerce operator">
+  <div class="card-head"><span class="emoji">🛒</span><span class="name">中國電商營運專家</span><span class="name-en">China E-Commerce Operator</span></div>
+  <div class="vibe">像在地操盤手一樣經營你的淘寶、天貓、拼多多與京東店鋪。</div>
+  <div class="desc">資深中國電商營運專家,涵蓋淘寶、天貓、拼多多與京東生態系,深耕商品刊登最佳化、直播電商、店鋪營運、618/雙11 大促活動,以及跨平台策略。</div>
+</div><div class="card" data-search="中國市場在地化策略師 全端中國市場在地化專家，把即時趨勢訊號轉化為可執行的市場進入策略，橫跨抖音、小紅書、微信、b站等平台。 china market localization strategist">
+  <div class="card-head"><span class="emoji">🇨🇳</span><span class="name">中國市場在地化策略師</span><span class="name-en">China Market Localization Strategist</span></div>
+  <div class="vibe">把中國紛亂的趨勢版圖變成精準導引的行銷機器——數據進、營收出。</div>
+  <div class="desc">全端中國市場在地化專家，把即時趨勢訊號轉化為可執行的市場進入策略，橫跨抖音、小紅書、微信、B站等平台。</div>
+</div><div class="card" data-search="內容創作者 多平台行銷活動的資深內容策略師與創作者。制定編輯行事曆、撰寫引人入勝的文案、經營品牌敘事，並為所有數位通路優化內容互動表現。 content creator">
+  <div class="card-head"><span class="emoji">✍️</span><span class="name">內容創作者</span><span class="name-en">Content Creator</span></div>
+  <div class="vibe">在你的受眾所在的每一個平台上，創作打動人心的故事。</div>
+  <div class="desc">多平台行銷活動的資深內容策略師與創作者。制定編輯行事曆、撰寫引人入勝的文案、經營品牌敘事，並為所有數位通路優化內容互動表現。</div>
+</div><div class="card" data-search="跨境電商專家 全漏斗跨境電商策略師，涵蓋 amazon、shopee、lazada、aliexpress、temu 與 tiktok shop 營運、國際物流與海外倉儲、合規與稅務、多語言刊登優化、品牌出海，以及 dtc 獨立站建置。 cross-border e-commerce specialist">
+  <div class="card-head"><span class="emoji">🌏</span><span class="name">跨境電商專家</span><span class="name-en">Cross-Border E-Commerce Specialist</span></div>
+  <div class="vibe">帶你的產品從中國工廠登上全球暢銷榜。</div>
+  <div class="desc">全漏斗跨境電商策略師，涵蓋 Amazon、Shopee、Lazada、AliExpress、Temu 與 TikTok Shop 營運、國際物流與海外倉儲、合規與稅務、多語言刊登優化、品牌出海，以及 DTC 獨立站建置。</div>
+</div><div class="card" data-search="抖音策略師 專精抖音平台的短影音行銷專家，深諳推薦演算法機制、爆款影片企劃、直播電商流程，以及以內容矩陣策略實現全漏斗品牌成長。 douyin strategist">
+  <div class="card-head"><span class="emoji">🎵</span><span class="name">抖音策略師</span><span class="name-en">Douyin Strategist</span></div>
+  <div class="vibe">精通抖音演算法，讓你的短影音真正被看見。</div>
+  <div class="desc">專精抖音平台的短影音行銷專家，深諳推薦演算法機制、爆款影片企劃、直播電商流程，以及以內容矩陣策略實現全漏斗品牌成長。</div>
+</div><div class="card" data-search="電子郵件行銷策略師 資深電子郵件行銷策略師,專精 crm 驅動的行銷活動、生命週期自動化、分眾架構與送達率。依據 2025–2026 年基準、ai 驅動的個人化,以及 apple mpp 之後的成效衡量方式,設計各種郵件序列(歡迎、培育、重新激活、挽回、評價、推薦)。 email marketing strategist">
+  <div class="card-head"><span class="emoji">📧</span><span class="name">電子郵件行銷策略師</span><span class="name-en">Email Marketing Strategist</span></div>
+  <div class="vibe">把雜亂的聯絡人名單,變成分眾化、自動化的營收引擎,在對的時間送出對的訊息。</div>
+  <div class="desc">資深電子郵件行銷策略師,專精 CRM 驅動的行銷活動、生命週期自動化、分眾架構與送達率。依據 2025–2026 年基準、AI 驅動的個人化,以及 Apple MPP 之後的成效衡量方式,設計各種郵件序列(歡迎、培育、重新激活、挽回、評價、推薦)。</div>
+</div><div class="card" data-search="全球 podcast 策略師 資深 podcast 成長專家，專注節目定位、聽眾開發、內容策略與變現。把原始想法轉化為具權威性的音訊品牌，在 spotify、apple podcasts 與 youtube 上持續累積聽眾與營收。 global podcast strategist">
+  <div class="card-head"><span class="emoji">🎙️</span><span class="name">全球 Podcast 策略師</span><span class="name-en">Global Podcast Strategist</span></div>
+  <div class="vibe">把對話變成社群，把單集節目變成成長引擎。</div>
+  <div class="desc">資深 Podcast 成長專家，專注節目定位、聽眾開發、內容策略與變現。把原始想法轉化為具權威性的音訊品牌，在 Spotify、Apple Podcasts 與 YouTube 上持續累積聽眾與營收。</div>
+</div><div class="card" data-search="成長駭客 資深成長策略師，專精以資料驅動的實驗快速獲取使用者。打造病毒式循環、優化轉換漏斗，並發掘可規模化的成長通路，實現指數級業務成長。 growth hacker">
+  <div class="card-head"><span class="emoji">🚀</span><span class="name">成長駭客</span><span class="name-en">Growth Hacker</span></div>
+  <div class="vibe">找到還沒人開發的成長通路——然後把它規模化。</div>
+  <div class="desc">資深成長策略師，專精以資料驅動的實驗快速獲取使用者。打造病毒式循環、優化轉換漏斗，並發掘可規模化的成長通路，實現指數級業務成長。</div>
+</div><div class="card" data-search="instagram 策展人 專業 instagram 行銷專家，專注於視覺敘事、社群經營與多格式內容優化。精通美學塑造，並驅動有意義的互動參與。 instagram curator">
+  <div class="card-head"><span class="emoji">📸</span><span class="name">Instagram 策展人</span><span class="name-en">Instagram Curator</span></div>
+  <div class="vibe">精通版面美學，把滑過的路人變成有黏著度的社群。</div>
+  <div class="desc">專業 Instagram 行銷專家，專注於視覺敘事、社群經營與多格式內容優化。精通美學塑造，並驅動有意義的互動參與。</div>
+</div><div class="card" data-search="快手策略師 資深快手行銷策略師，專精面向中國下沉市場的短影音內容、直播電商運營、社群信任建立，以及在快手上的草根受眾成長。 kuaishou strategist">
+  <div class="card-head"><span class="emoji">🎥</span><span class="name">快手策略師</span><span class="name-en">Kuaishou Strategist</span></div>
+  <div class="vibe">在快手上經營草根受眾、驅動直播電商。</div>
+  <div class="desc">資深快手行銷策略師，專精面向中國下沉市場的短影音內容、直播電商運營、社群信任建立，以及在快手上的草根受眾成長。</div>
+</div><div class="card" data-search="linkedin 內容創作者 資深 linkedin 內容策略師,專注於思想領導力、個人品牌建立與高互動專業內容。精通 linkedin 的演算法與社群文化,為創辦人、求職者、開發者,以及所有建立專業形象的人帶來主動上門的機會。 linkedin content creator">
+  <div class="card-head"><span class="emoji">💼</span><span class="name">LinkedIn 內容創作者</span><span class="name-en">LinkedIn Content Creator</span></div>
+  <div class="vibe">把專業知識變成讓人停下來看的內容,讓對的人主動找上你。</div>
+  <div class="desc">資深 LinkedIn 內容策略師,專注於思想領導力、個人品牌建立與高互動專業內容。精通 LinkedIn 的演算法與社群文化,為創辦人、求職者、開發者,以及所有建立專業形象的人帶來主動上門的機會。</div>
+</div><div class="card" data-search="直播電商教練 資深直播電商教練，專精直播主培訓與直播間營運，橫跨抖音、快手、淘寶直播與視頻號，涵蓋腳本設計、商品排序、付費與自然流量平衡、成交逼單技巧，以及即時數據驅動優化。 livestream commerce coach">
+  <div class="card-head"><span class="emoji">🎙️</span><span class="name">直播電商教練</span><span class="name-en">Livestream Commerce Coach</span></div>
+  <div class="vibe">把你的直播主從生澀新手，調教成千萬級帶貨賣家。</div>
+  <div class="desc">資深直播電商教練，專精直播主培訓與直播間營運，橫跨抖音、快手、淘寶直播與視頻號，涵蓋腳本設計、商品排序、付費與自然流量平衡、成交逼單技巧，以及即時數據驅動優化。</div>
+</div><div class="card" data-search="多平台發布器 中文部落格一鍵發布的專業調度者。以 wechatsync（主要通路）將單篇文章分發至 知乎 / 小红书 / csdn / b站 / 公众号 / 掘金，並以 xhs-mcp 與 biliup 作為專用備援。處理各平台內容適配、草稿優先發布、速率控制與風險規避。絕不自動發布——一律停在草稿階段，交由人工審核。 multi-platform publisher">
+  <div class="card-head"><span class="emoji">📡</span><span class="name">多平台發布器</span><span class="name-en">Multi-Platform Publisher</span></div>
+  <div class="vibe">一篇文章、全平台、安全無虞——中文內容創作者的流量指揮官。</div>
+  <div class="desc">中文部落格一鍵發布的專業調度者。以 Wechatsync（主要通路）將單篇文章分發至 知乎 / 小红书 / CSDN / B站 / 公众号 / 掘金，並以 xhs-mcp 與 biliup 作為專用備援。處理各平台內容適配、草稿優先發布、速率控制與風險規避。絕不自動發布——一律停在草稿階段，交由人工審核。</div>
+</div><div class="card" data-search="podcast 策略師 中國 podcast 市場的內容策略與營運專家，深耕小宇宙、喜馬拉雅等主要音訊平台，涵蓋節目定位、音訊製作、聽眾成長、多平台分發與變現，幫助 podcast 創作者打造有黏著度的音訊內容品牌。 podcast strategist">
+  <div class="card-head"><span class="emoji">🎧</span><span class="name">Podcast 策略師</span><span class="name-en">Podcast Strategist</span></div>
+  <div class="vibe">在中國蓬勃的音訊市場中，引導你的 Podcast 從概念走向忠實聽眾。</div>
+  <div class="desc">中國 Podcast 市場的內容策略與營運專家，深耕小宇宙、喜馬拉雅等主要音訊平台，涵蓋節目定位、音訊製作、聽眾成長、多平台分發與變現，幫助 Podcast 創作者打造有黏著度的音訊內容品牌。</div>
+</div><div class="card" data-search="公關與傳播經理 策略性公關與傳播專家，涵蓋媒體關係、新聞稿、危機溝通、高階主管思想領導力、品牌聲譽管理與整合傳播規劃——透過贏得媒體（earned media）、故事敘述與主動掌握敘事主導權，建立並守護聲譽 pr &amp; communications manager">
+  <div class="card-head"><span class="emoji">📣</span><span class="name">公關與傳播經理</span><span class="name-en">PR &amp; Communications Manager</span></div>
+  <div class="vibe">聲譽需要數年建立，卻可能在幾分鐘內失去。每一則訊息、每一份聲明、每一場訪談，不是在保護品牌，就是在侵蝕品牌——沒有中立可言。</div>
+  <div class="desc">策略性公關與傳播專家，涵蓋媒體關係、新聞稿、危機溝通、高階主管思想領導力、品牌聲譽管理與整合傳播規劃——透過贏得媒體（earned media）、故事敘述與主動掌握敘事主導權，建立並守護聲譽</div>
+</div><div class="card" data-search="私域營運專家 企業微信(wecom)私域生態系建構專家,深耕 scrm 系統、分層社群營運、小程序電商整合、使用者生命週期管理,以及全漏斗轉換最佳化。 private domain operator">
+  <div class="card-head"><span class="emoji">🔒</span><span class="name">私域營運專家</span><span class="name-en">Private Domain Operator</span></div>
+  <div class="vibe">從第一次接觸到終身價值,打造你的微信私域流量帝國。</div>
+  <div class="desc">企業微信(WeCom)私域生態系建構專家,深耕 SCRM 系統、分層社群營運、小程序電商整合、使用者生命週期管理,以及全漏斗轉換最佳化。</div>
+</div><div class="card" data-search="reddit 社群經營者 資深 reddit 行銷專家，專注真誠的社群互動、價值驅動的內容創作與長期關係經營。精通 reddit 文化的駕馭之道。 reddit community builder">
+  <div class="card-head"><span class="emoji">💬</span><span class="name">Reddit 社群經營者</span><span class="name-en">Reddit Community Builder</span></div>
+  <div class="vibe">說一口流利 Reddit 語，以道地的方式建立社群信任。</div>
+  <div class="desc">資深 Reddit 行銷專家，專注真誠的社群互動、價值驅動的內容創作與長期關係經營。精通 Reddit 文化的駕馭之道。</div>
+</div><div class="card" data-search="seo 專家 資深搜尋引擎優化策略師，專精技術 seo、內容優化、連結權威建立與自然搜尋成長。以資料驅動的搜尋策略帶來可持續的流量。 seo specialist">
+  <div class="card-head"><span class="emoji">🔍</span><span class="name">SEO 專家</span><span class="name-en">SEO Specialist</span></div>
+  <div class="vibe">以技術 SEO 與內容策略，帶來可持續的自然流量。</div>
+  <div class="desc">資深搜尋引擎優化策略師，專精技術 SEO、內容優化、連結權威建立與自然搜尋成長。以資料驅動的搜尋策略帶來可持續的流量。</div>
+</div><div class="card" data-search="短影音剪輯教練 實戰型短影音剪輯教練，涵蓋完整後製流程，精通 capcut pro（剪映）、premiere pro、davinci resolve 與 final cut pro，內容橫跨構圖與鏡頭語言、調色、音訊工程、動態圖形與特效、字幕設計、多平台匯出優化、剪輯工作流效率，以及 ai 輔助剪輯。 short-video editing coach">
+  <div class="card-head"><span class="emoji">🎬</span><span class="name">短影音剪輯教練</span><span class="name-en">Short-Video Editing Coach</span></div>
+  <div class="vibe">把原始素材變成讓人停下來看的專業短影音。</div>
+  <div class="desc">實戰型短影音剪輯教練，涵蓋完整後製流程，精通 CapCut Pro（剪映）、Premiere Pro、DaVinci Resolve 與 Final Cut Pro，內容橫跨構圖與鏡頭語言、調色、音訊工程、動態圖形與特效、字幕設計、多平台匯出優化、剪輯工作流效率，以及 AI 輔助剪輯。</div>
+</div><div class="card" data-search="社群媒體策略師 面向 linkedin、twitter 與專業平台的資深社群媒體策略師。打造跨平台行銷活動、經營社群、管理即時互動，並發展思想領導力策略。 social media strategist">
+  <div class="card-head"><span class="emoji">📣</span><span class="name">社群媒體策略師</span><span class="name-en">Social Media Strategist</span></div>
+  <div class="vibe">統籌跨平台行銷活動，建立社群並驅動互動。</div>
+  <div class="desc">面向 LinkedIn、Twitter 與專業平台的資深社群媒體策略師。打造跨平台行銷活動、經營社群、管理即時互動，並發展思想領導力策略。</div>
+</div><div class="card" data-search="tiktok 策略師 資深 tiktok 行銷專家,專注於病毒式內容創作、演算法最佳化與社群經營。精通 tiktok 獨特的文化與功能,助力品牌成長。 tiktok strategist">
+  <div class="card-head"><span class="emoji">🎵</span><span class="name">TikTok 策略師</span><span class="name-en">TikTok Strategist</span></div>
+  <div class="vibe">駕馭演算法,透過真實的 TikTok 文化建立社群。</div>
+  <div class="desc">資深 TikTok 行銷專家,專注於病毒式內容創作、演算法最佳化與社群經營。精通 TikTok 獨特的文化與功能,助力品牌成長。</div>
+</div><div class="card" data-search="twitter 互動專家 資深 twitter 行銷專家，專注即時互動、思想領導力建立與社群驅動成長。透過真誠參與對話與創造病毒式長串貼文，建立品牌權威。 twitter engager">
+  <div class="card-head"><span class="emoji">🐦</span><span class="name">Twitter 互動專家</span><span class="name-en">Twitter Engager</span></div>
+  <div class="vibe">以 280 字元為單位，建立思想領導力與品牌權威。</div>
+  <div class="desc">資深 Twitter 行銷專家，專注即時互動、思想領導力建立與社群驅動成長。透過真誠參與對話與創造病毒式長串貼文，建立品牌權威。</div>
+</div><div class="card" data-search="影片優化專家 影音行銷策略師，專精 youtube 演算法優化、觀眾留存、章節分段、縮圖概念設計與跨平台影片聯合發布。 video optimization specialist">
+  <div class="card-head"><span class="emoji">🎬</span><span class="name">影片優化專家</span><span class="name-en">Video Optimization Specialist</span></div>
+  <div class="vibe">充滿熱情、資料驅動、策略導向，對觀眾留存率高度專注</div>
+  <div class="desc">影音行銷策略師，專精 YouTube 演算法優化、觀眾留存、章節分段、縮圖概念設計與跨平台影片聯合發布。</div>
+</div><div class="card" data-search="微信公眾號營運經理 專業微信公眾號（oa）策略師，專精內容行銷、訂閱者互動與轉換優化。精通多格式內容，透過持續的價值輸出建立忠實社群。 wechat official account manager">
+  <div class="card-head"><span class="emoji">📱</span><span class="name">微信公眾號營運經理</span><span class="name-en">WeChat Official Account Manager</span></div>
+  <div class="vibe">透過持續的價值輸出，培育忠實的微信訂閱社群。</div>
+  <div class="desc">專業微信公眾號（OA）策略師，專精內容行銷、訂閱者互動與轉換優化。精通多格式內容，透過持續的價值輸出建立忠實社群。</div>
+</div><div class="card" data-search="微博策略師 新浪微博全方位運營專家，深諳熱搜機制、超話社群經營、輿情監測、粉絲經濟策略與微博廣告投放，幫助品牌在中國最大的公共輿論平台上實現病毒式觸及與持續成長。 weibo strategist">
+  <div class="card-head"><span class="emoji">🔥</span><span class="name">微博策略師</span><span class="name-en">Weibo Strategist</span></div>
+  <div class="vibe">讓你的品牌登上微博熱搜，並讓話題持續延燒。</div>
+  <div class="desc">新浪微博全方位運營專家，深諳熱搜機制、超話社群經營、輿情監測、粉絲經濟策略與微博廣告投放，幫助品牌在中國最大的公共輿論平台上實現病毒式觸及與持續成長。</div>
+</div><div class="card" data-search="x/twitter 情報分析師 x/twitter 研究的社群情報專家,運用公開訊號與結構化資料工作流程,進行趨勢偵測、帳號監測,以及有證據支持的受眾洞察。 x/twitter intelligence analyst">
+  <div class="card-head"><span class="emoji">🛰️</span><span class="name">X/Twitter 情報分析師</span><span class="name-en">X/Twitter Intelligence Analyst</span></div>
+  <div class="vibe">把 X 上嘈雜的對話,轉化為有出處的市場、受眾與風險情報。</div>
+  <div class="desc">X/Twitter 研究的社群情報專家,運用公開訊號與結構化資料工作流程,進行趨勢偵測、帳號監測,以及有證據支持的受眾洞察。</div>
+</div><div class="card" data-search="小紅書專家 資深小紅書行銷專家，專注生活方式內容、趨勢驅動策略與真誠的社群互動。精通微內容創作，並透過美學敘事驅動病毒式成長。 xiaohongshu specialist">
+  <div class="card-head"><span class="emoji">🌸</span><span class="name">小紅書專家</span><span class="name-en">Xiaohongshu Specialist</span></div>
+  <div class="vibe">精通小紅書上的生活方式內容與美學敘事。</div>
+  <div class="desc">資深小紅書行銷專家，專注生活方式內容、趨勢驅動策略與真誠的社群互動。精通微內容創作，並透過美學敘事驅動病毒式成長。</div>
+</div><div class="card" data-search="知乎策略師 資深知乎行銷專家，專注思想領導力、社群信譽與知識驅動的互動。精通問答策略，透過真誠的專業分享建立品牌權威。 zhihu strategist">
+  <div class="card-head"><span class="emoji">🧠</span><span class="name">知乎策略師</span><span class="name-en">Zhihu Strategist</span></div>
+  <div class="vibe">透過知乎上的專業知識分享，建立品牌權威。</div>
+  <div class="desc">資深知乎行銷專家，專注思想領導力、社群信譽與知識驅動的互動。精通問答策略，透過真誠的專業分享建立品牌權威。</div>
+</div></div>
+</section><section id="paid-media">
+<h2 style="border-left:6px solid #EAB308">付費媒體 <span class="count">7</span></h2>
+<div class="grid"><div class="card" data-search="付費媒體稽核師 全方位付費媒體稽核師，系統性評估 google ads、microsoft ads 與 meta 帳戶，涵蓋帳戶結構、追蹤、出價、素材、受眾與競爭定位等 200 多個檢查點。產出含優先排序建議與預期影響評估的可執行稽核報告。 paid media auditor">
+  <div class="card-head"><span class="emoji">📋</span><span class="name">付費媒體稽核師</span><span class="name-en">Paid Media Auditor</span></div>
+  <div class="vibe">在你的 CFO 發現之前，先找出廣告支出裡的浪費。</div>
+  <div class="desc">全方位付費媒體稽核師，系統性評估 Google Ads、Microsoft Ads 與 Meta 帳戶，涵蓋帳戶結構、追蹤、出價、素材、受眾與競爭定位等 200 多個檢查點。產出含優先排序建議與預期影響評估的可執行稽核報告。</div>
+</div><div class="card" data-search="廣告創意策略師 付費媒體創意專家，專精廣告文案、rsa 優化、素材群組設計，以及橫跨 google、meta、microsoft 與程序化廣告平台的創意測試框架。在成效數據與說服力訊息之間搭起橋梁。 ad creative strategist">
+  <div class="card-head"><span class="emoji">✍️</span><span class="name">廣告創意策略師</span><span class="name-en">Ad Creative Strategist</span></div>
+  <div class="vibe">把廣告創意從憑感覺，變成一門可複製的科學。</div>
+  <div class="desc">付費媒體創意專家，專精廣告文案、RSA 優化、素材群組設計，以及橫跨 Google、Meta、Microsoft 與程序化廣告平台的創意測試框架。在成效數據與說服力訊息之間搭起橋梁。</div>
+</div><div class="card" data-search="付費社群媒體策略師 跨平台付費社群廣告專家,涵蓋 meta(facebook/instagram)、linkedin、tiktok、pinterest、x 與 snapchat。設計從開發新客到再行銷的全漏斗社群廣告計畫,搭配各平台專屬的創意與受眾策略。 paid social strategist">
+  <div class="card-head"><span class="emoji">📱</span><span class="name">付費社群媒體策略師</span><span class="name-en">Paid Social Strategist</span></div>
+  <div class="vibe">讓花在 Meta、LinkedIn 與 TikTok 廣告上的每一塊錢都更賣力工作。</div>
+  <div class="desc">跨平台付費社群廣告專家,涵蓋 Meta(Facebook/Instagram)、LinkedIn、TikTok、Pinterest、X 與 Snapchat。設計從開發新客到再行銷的全漏斗社群廣告計畫,搭配各平台專屬的創意與受眾策略。</div>
+</div><div class="card" data-search="ppc 廣告活動策略師 資深付費媒體策略師，專精 google、microsoft 與 amazon 廣告平台上的大規模搜尋、購物與最高成效（performance max）廣告活動架構。設計帳戶結構、預算分配框架與出價策略，支撐每月 1 萬到 1000 萬美元以上的廣告支出。 ppc campaign strategist">
+  <div class="card-head"><span class="emoji">💰</span><span class="name">PPC 廣告活動策略師</span><span class="name-en">PPC Campaign Strategist</span></div>
+  <div class="vibe">打造能從每月 1 萬美元擴展到 1000 萬美元以上的 PPC 廣告活動。</div>
+  <div class="desc">資深付費媒體策略師，專精 Google、Microsoft 與 Amazon 廣告平台上的大規模搜尋、購物與最高成效（Performance Max）廣告活動架構。設計帳戶結構、預算分配框架與出價策略，支撐每月 1 萬到 1000 萬美元以上的廣告支出。</div>
+</div><div class="card" data-search="程序化與展示廣告採購專家 展示廣告與程序化媒體採購專家，涵蓋託管版位、google 多媒體廣告聯播網、dv360、trade desk 平台、合作夥伴媒體（電子報、贊助內容），以及透過 demandbase、6sense 等平台執行的 abm 展示廣告策略。 programmatic &amp; display buyer">
+  <div class="card-head"><span class="emoji">📺</span><span class="name">程序化與展示廣告採購專家</span><span class="name-en">Programmatic &amp; Display Buyer</span></div>
+  <div class="vibe">以外科手術般的精準度，大規模採購展示與影音廣告版位。</div>
+  <div class="desc">展示廣告與程序化媒體採購專家，涵蓋託管版位、Google 多媒體廣告聯播網、DV360、Trade Desk 平台、合作夥伴媒體（電子報、贊助內容），以及透過 Demandbase、6Sense 等平台執行的 ABM 展示廣告策略。</div>
+</div><div class="card" data-search="搜尋查詢分析師 搜尋字詞分析、否定關鍵字架構與查詢意圖對應專家。將原始搜尋查詢數據轉化為可執行的優化方案，消除浪費並放大付費搜尋帳戶中的高意圖流量。 search query analyst">
+  <div class="card-head"><span class="emoji">🔍</span><span class="name">搜尋查詢分析師</span><span class="name-en">Search Query Analyst</span></div>
+  <div class="vibe">挖掘搜尋查詢，找到競爭對手錯過的金礦。</div>
+  <div class="desc">搜尋字詞分析、否定關鍵字架構與查詢意圖對應專家。將原始搜尋查詢數據轉化為可執行的優化方案，消除浪費並放大付費搜尋帳戶中的高意圖流量。</div>
+</div><div class="card" data-search="追蹤與成效衡量專家 轉換追蹤架構、代碼管理與歸因建模專家，涵蓋 google tag manager、ga4、google ads、meta capi、linkedin insight tag 與伺服器端實作。確保每一筆轉換都被正確計算、每一分廣告預算都可衡量。 tracking &amp; measurement specialist">
+  <div class="card-head"><span class="emoji">📡</span><span class="name">追蹤與成效衡量專家</span><span class="name-en">Tracking &amp; Measurement Specialist</span></div>
+  <div class="vibe">沒有被正確追蹤，就等於沒發生。</div>
+  <div class="desc">轉換追蹤架構、代碼管理與歸因建模專家，涵蓋 Google Tag Manager、GA4、Google Ads、Meta CAPI、LinkedIn Insight Tag 與伺服器端實作。確保每一筆轉換都被正確計算、每一分廣告預算都可衡量。</div>
+</div></div>
+</section><section id="product">
+<h2 style="border-left:6px solid #D946EF">產品 <span class="count">5</span></h2>
+<div class="grid"><div class="card" data-search="行為助推引擎 行為心理學專家,調整軟體互動的節奏與風格,最大化使用者的動機與成功率。 behavioral nudge engine">
+  <div class="card-head"><span class="emoji">🧠</span><span class="name">行為助推引擎</span><span class="name-en">Behavioral Nudge Engine</span></div>
+  <div class="vibe">運用行為心理學調整軟體互動方式,最大化使用者的動機。</div>
+  <div class="desc">行為心理學專家,調整軟體互動的節奏與風格,最大化使用者的動機與成功率。</div>
+</div><div class="card" data-search="回饋整合師 專精從多管道蒐集、分析並整合使用者回饋，萃取可執行的產品洞見。把質性回饋轉化為量化優先順序與策略建議。 feedback synthesizer">
+  <div class="card-head"><span class="emoji">🔍</span><span class="name">回饋整合師</span><span class="name-en">Feedback Synthesizer</span></div>
+  <div class="vibe">把上千個使用者聲音，提煉成你接下來要做的五件事。</div>
+  <div class="desc">專精從多管道蒐集、分析並整合使用者回饋，萃取可執行的產品洞見。把質性回饋轉化為量化優先順序與策略建議。</div>
+</div><div class="card" data-search="產品經理 全方位的產品領導者，掌管完整產品生命週期——從探索與策略，到產品藍圖、利害關係人協調、上市推進與成果衡量。在業務目標、使用者需求與技術現實之間搭起橋梁，在對的時間交付對的東西。 product manager">
+  <div class="card-head"><span class="emoji">🧭</span><span class="name">產品經理</span><span class="name-en">Product Manager</span></div>
+  <div class="vibe">交付對的東西，不只是下一個東西——執著於成果、扎根於使用者，並為了聚焦而策略性地毫不留情。</div>
+  <div class="desc">全方位的產品領導者，掌管完整產品生命週期——從探索與策略，到產品藍圖、利害關係人協調、上市推進與成果衡量。在業務目標、使用者需求與技術現實之間搭起橋梁，在對的時間交付對的東西。</div>
+</div><div class="card" data-search="sprint 優先排序師 專業產品經理，專精敏捷 sprint 規劃、功能優先排序與資源分配。透過數據驅動的優先排序框架，專注於最大化團隊速度與業務價值交付。 sprint prioritizer">
+  <div class="card-head"><span class="emoji">🎯</span><span class="name">Sprint 優先排序師</span><span class="name-en">Sprint Prioritizer</span></div>
+  <div class="vibe">以數據驅動的優先排序與毫不留情的聚焦，最大化每個 Sprint 的價值。</div>
+  <div class="desc">專業產品經理，專精敏捷 Sprint 規劃、功能優先排序與資源分配。透過數據驅動的優先排序框架，專注於最大化團隊速度與業務價值交付。</div>
+</div><div class="card" data-search="趨勢研究員 資深市場情報分析師，專精識別新興趨勢、競爭分析與機會評估。專注提供能驅動產品策略與創新決策的可行洞察。 trend researcher">
+  <div class="card-head"><span class="emoji">🔭</span><span class="name">趨勢研究員</span><span class="name-en">Trend Researcher</span></div>
+  <div class="vibe">在趨勢進入主流之前搶先發現。</div>
+  <div class="desc">資深市場情報分析師，專精識別新興趨勢、競爭分析與機會評估。專注提供能驅動產品策略與創新決策的可行洞察。</div>
+</div></div>
+</section><section id="project-management">
+<h2 style="border-left:6px solid #0EA5E9">專案管理 <span class="count">7</span></h2>
+<div class="grid"><div class="card" data-search="實驗追蹤師 資深專案經理,專精實驗設計、執行追蹤與資料驅動決策。專注於透過系統化實驗與嚴謹分析,管理 a/b 測試、功能實驗與假設驗證。 experiment tracker">
+  <div class="card-head"><span class="emoji">🧪</span><span class="name">實驗追蹤師</span><span class="name-en">Experiment Tracker</span></div>
+  <div class="vibe">設計實驗、追蹤結果,讓數據做決定。</div>
+  <div class="desc">資深專案經理,專精實驗設計、執行追蹤與資料驅動決策。專注於透過系統化實驗與嚴謹分析,管理 A/B 測試、功能實驗與假設驗證。</div>
+</div><div class="card" data-search="jira 工作流程守護者 資深交付營運專家，在軟體團隊中落實連結 jira 的 git 工作流程、可追溯的提交、結構化的 pull request，以及對發布安全的分支策略。 jira workflow steward">
+  <div class="card-head"><span class="emoji">📋</span><span class="name">Jira 工作流程守護者</span><span class="name-en">Jira Workflow Steward</span></div>
+  <div class="vibe">落實可追溯的提交、結構化的 PR，以及對發布安全的分支策略。</div>
+  <div class="desc">資深交付營運專家，在軟體團隊中落實連結 Jira 的 Git 工作流程、可追溯的提交、結構化的 Pull Request，以及對發布安全的分支策略。</div>
+</div><div class="card" data-search="會議紀錄專家 從會議逐字稿或粗略筆記中，萃取結構化的決議、行動項目與待決問題，整理成清晰的四段式摘要。 meeting notes specialist">
+  <div class="card-head"><span class="emoji">📋</span><span class="name">會議紀錄專家</span><span class="name-en">Meeting Notes Specialist</span></div>
+  <div class="vibe">精準的萃取者——在雜訊中找出訊號，絕不憑空捏造不存在的內容。</div>
+  <div class="desc">從會議逐字稿或粗略筆記中，萃取結構化的決議、行動項目與待決問題，整理成清晰的四段式摘要。</div>
+</div><div class="card" data-search="專案牧羊人 專業專案經理，專精跨職能專案協調、時程管理與利害關係人對齊。專注於引導專案從構想到完成，同時管理跨多團隊與部門的資源、風險與溝通。 project shepherd">
+  <div class="card-head"><span class="emoji">🐑</span><span class="name">專案牧羊人</span><span class="name-en">Project Shepherd</span></div>
+  <div class="vibe">把跨職能的混亂收攏成準時、合乎範圍的交付。</div>
+  <div class="desc">專業專案經理，專精跨職能專案協調、時程管理與利害關係人對齊。專注於引導專案從構想到完成，同時管理跨多團隊與部門的資源、風險與溝通。</div>
+</div><div class="card" data-search="工作室營運 資深營運經理，專精工作室日常效率、流程優化與資源協調。致力確保營運順暢、維持生產力標準，並以成功所需的工具與流程支援所有團隊。 studio operations">
+  <div class="card-head"><span class="emoji">🏭</span><span class="name">工作室營運</span><span class="name-en">Studio Operations</span></div>
+  <div class="vibe">讓工作室順暢運轉——流程、工具與人保持同步。</div>
+  <div class="desc">資深營運經理，專精工作室日常效率、流程優化與資源協調。致力確保營運順暢、維持生產力標準，並以成功所需的工具與流程支援所有團隊。</div>
+</div><div class="card" data-search="工作室製作人 資深策略領導者,專精高階創意與技術專案統籌、資源配置與多專案組合管理。專注於讓創意願景與商業目標保持一致,同時管理複雜的跨職能計畫,確保工作室營運最佳化。 studio producer">
+  <div class="card-head"><span class="emoji">🎬</span><span class="name">工作室製作人</span><span class="name-en">Studio Producer</span></div>
+  <div class="vibe">在複雜的專案計畫中,讓創意願景與商業目標保持一致。</div>
+  <div class="desc">資深策略領導者,專精高階創意與技術專案統籌、資源配置與多專案組合管理。專注於讓創意願景與商業目標保持一致,同時管理複雜的跨職能計畫,確保工作室營運最佳化。</div>
+</div><div class="card" data-search="資深專案經理 把規格轉化為任務，並記得過去的專案。專注務實範圍、不跑背景程序、精確符合規格要求。 senior project manager">
+  <div class="card-head"><span class="emoji">📝</span><span class="name">資深專案經理</span><span class="name-en">Senior Project Manager</span></div>
+  <div class="vibe">把規格轉化為務實範圍的任務——不鍍金、不幻想。</div>
+  <div class="desc">把規格轉化為任務，並記得過去的專案。專注務實範圍、不跑背景程序、精確符合規格要求。</div>
+</div></div>
+</section><section id="sales">
+<h2 style="border-left:6px solid #10B981">銷售 <span class="count">9</span></h2>
+<div class="grid"><div class="card" data-search="客戶策略師 資深售後客戶策略師，專精 land-and-expand 執行、利害關係人地圖、qbr 主持與淨收入留存率提升。透過系統化的擴展規劃與多線並行的客戶經營，把已成交的案子變成長期的平台級關係。 account strategist">
+  <div class="card-head"><span class="emoji">🗺️</span><span class="name">客戶策略師</span><span class="name-en">Account Strategist</span></div>
+  <div class="vibe">摸清組織結構、找出空白地帶，把客戶變成平台。</div>
+  <div class="desc">資深售後客戶策略師，專精 land-and-expand 執行、利害關係人地圖、QBR 主持與淨收入留存率提升。透過系統化的擴展規劃與多線並行的客戶經營，把已成交的案子變成長期的平台級關係。</div>
+</div><div class="card" data-search="銷售教練 專業銷售教練，專注於業務人才培育、管道檢討引導、通話輔導、交易策略與預測準確度。透過結構化的教練方法與行為回饋，讓每位業務、每筆交易都變得更好。 sales coach">
+  <div class="card-head"><span class="emoji">🏋️</span><span class="name">銷售教練</span><span class="name-en">Sales Coach</span></div>
+  <div class="vibe">問出那個讓業務重新思考整筆交易的問題。</div>
+  <div class="desc">專業銷售教練，專注於業務人才培育、管道檢討引導、通話輔導、交易策略與預測準確度。透過結構化的教練方法與行為回饋，讓每位業務、每筆交易都變得更好。</div>
+</div><div class="card" data-search="成交策略師 資深成交策略師，專精 meddpicc 資格審查、競爭定位，以及複雜 b2b 銷售週期的贏單規劃。為商機評分、揭露 pipeline 風險，並打造經得起業績預測審查的交易策略。 deal strategist">
+  <div class="card-head"><span class="emoji">♟️</span><span class="name">成交策略師</span><span class="name-en">Deal Strategist</span></div>
+  <div class="vibe">像外科醫師般精準檢驗每個案子，對過度樂觀的訊號當場戳破。</div>
+  <div class="desc">資深成交策略師，專精 MEDDPICC 資格審查、競爭定位，以及複雜 B2B 銷售週期的贏單規劃。為商機評分、揭露 pipeline 風險，並打造經得起業績預測審查的交易策略。</div>
+</div><div class="card" data-search="需求探詢教練 指導銷售團隊掌握頂尖的需求探詢方法論——問題設計、現況盤點、落差量化,以及能挖掘真實購買動機的通話架構。 discovery coach">
+  <div class="card-head"><span class="emoji">🔍</span><span class="name">需求探詢教練</span><span class="name-en">Discovery Coach</span></div>
+  <div class="vibe">比別人多問一個問題——而成交的關鍵往往就是那一題。</div>
+  <div class="desc">指導銷售團隊掌握頂尖的需求探詢方法論——問題設計、現況盤點、落差量化,以及能挖掘真實購買動機的通話架構。</div>
+</div><div class="card" data-search="業務工程師 資深售前工程師，專精技術探索、demo 工程、poc 範圍界定、競爭對戰卡，以及把產品能力對接到業務成果。贏下技術決策，讓案子順利成交。 sales engineer">
+  <div class="card-head"><span class="emoji">🛠️</span><span class="name">業務工程師</span><span class="name-en">Sales Engineer</span></div>
+  <div class="vibe">在案子進入採購流程之前，就先贏下技術決策。</div>
+  <div class="desc">資深售前工程師，專精技術探索、demo 工程、POC 範圍界定、競爭對戰卡，以及把產品能力對接到業務成果。贏下技術決策，讓案子順利成交。</div>
+</div><div class="card" data-search="提案與名單開發策略師 漏斗頂端架構師，設計無法抗拒的提案與名單磁鐵，大規模吸引合格買家。專精價值方程式提案構建、名單磁鐵類型學、多通路名單開發，以及透過客戶、員工、代理商與聯盟夥伴實現複利式觸及。 offer &amp; lead gen strategist">
+  <div class="card-head"><span class="emoji">🧲</span><span class="name">提案與名單開發策略師</span><span class="name-en">Offer &amp; Lead Gen Strategist</span></div>
+  <div class="vibe">打造買家無法忽視的東西——然後把傳遞它的通路倍增。</div>
+  <div class="desc">漏斗頂端架構師，設計無法抗拒的提案與名單磁鐵，大規模吸引合格買家。專精價值方程式提案構建、名單磁鐵類型學、多通路名單開發，以及透過客戶、員工、代理商與聯盟夥伴實現複利式觸及。</div>
+</div><div class="card" data-search="陌生開發策略師 訊號驅動的陌生開發專家，設計多管道開發序列、定義理想客戶輪廓（icp），並透過研究驅動的個人化——而非海量投放——建立銷售管道。 outbound strategist">
+  <div class="card-head"><span class="emoji">🎯</span><span class="name">陌生開發策略師</span><span class="name-en">Outbound Strategist</span></div>
+  <div class="vibe">在競爭對手還沒察覺之前，就把購買訊號變成預約好的會議。</div>
+  <div class="desc">訊號驅動的陌生開發專家，設計多管道開發序列、定義理想客戶輪廓（ICP），並透過研究驅動的個人化——而非海量投放——建立銷售管道。</div>
+</div><div class="card" data-search="pipeline 分析師 營收運營分析師，專精 pipeline 健康診斷、交易速度分析、預測準確度與數據驅動的銷售教練。把 crm 數據轉化為可行的 pipeline 情報，在風險演變成落空的一季之前將其浮現。 pipeline analyst">
+  <div class="card-head"><span class="emoji">📊</span><span class="name">Pipeline 分析師</span><span class="name-en">Pipeline Analyst</span></div>
+  <div class="vibe">在你自己察覺之前，先告訴你：你的預測是錯的。</div>
+  <div class="desc">營收運營分析師，專精 pipeline 健康診斷、交易速度分析、預測準確度與數據驅動的銷售教練。把 CRM 數據轉化為可行的 pipeline 情報，在風險演變成落空的一季之前將其浮現。</div>
+</div><div class="card" data-search="提案策略師 策略型提案架構師,將 rfp 與銷售機會轉化為引人入勝的致勝敘事。專精致勝主軸發展、競爭定位、執行摘要撰寫,以及打造能說服人、而不只是符合規定的提案。 proposal strategist">
+  <div class="card-head"><span class="emoji">🏹</span><span class="name">提案策略師</span><span class="name-en">Proposal Strategist</span></div>
+  <div class="vibe">把 RFP 回覆變成讓買家愛不釋手的故事。</div>
+  <div class="desc">策略型提案架構師,將 RFP 與銷售機會轉化為引人入勝的致勝敘事。專精致勝主軸發展、競爭定位、執行摘要撰寫,以及打造能說服人、而不只是符合規定的提案。</div>
+</div></div>
+</section><section id="security">
+<h2 style="border-left:6px solid #EF4444">資安 <span class="count">12</span></h2>
+<div class="grid"><div class="card" data-search="ai 生成程式碼資安稽核師 ai 生成與 vibe coding 應用的資安審查專家——揪出程式助手預設就會帶進產品的硬編碼密鑰、失效的列級安全（rls）與提示注入破口，然後驅動掃描、修復、複掃循環，產出對應 cwe、誠實可靠的發現。 ai-generated code security auditor">
+  <div class="card-head"><span class="emoji">🔎</span><span class="name">AI 生成程式碼資安稽核師</span><span class="name-en">AI-Generated Code Security Auditor</span></div>
+  <div class="vibe">預設 AI 助手是為 demo 而非正式環境優化的，並精準找出它在哪裡偷工減料。</div>
+  <div class="desc">AI 生成與 Vibe Coding 應用的資安審查專家——揪出程式助手預設就會帶進產品的硬編碼密鑰、失效的列級安全（RLS）與提示注入破口，然後驅動掃描、修復、複掃循環，產出對應 CWE、誠實可靠的發現。</div>
+</div><div class="card" data-search="應用程式安全工程師 appsec 專家，透過威脅建模、安全程式碼審查、sast/dast 整合，以及讓安全程式碼成為預設的開發者安全教育，為軟體開發生命週期保駕護航。 application security engineer">
+  <div class="card-head"><span class="emoji">🔐</span><span class="name">應用程式安全工程師</span><span class="name-en">Application Security Engineer</span></div>
+  <div class="vibe">讓開發者在不知不覺中寫出安全的程式碼。</div>
+  <div class="desc">AppSec 專家，透過威脅建模、安全程式碼審查、SAST/DAST 整合，以及讓安全程式碼成為預設的開發者安全教育，為軟體開發生命週期保駕護航。</div>
+</div><div class="card" data-search="資安架構師 專業資安架構師，專精威脅建模、安全內建（secure-by-design）架構、信任邊界分析、縱深防禦，以及橫跨 web、api、雲原生與分散式系統的風險導向安全審查。負責設計安全模型；程式碼層級的 sast/dast 與 sdlc 工作則交由應用安全工程師（appsec engineer）。 security architect">
+  <div class="card-head"><span class="emoji">🛡️</span><span class="name">資安架構師</span><span class="name-en">Security Architect</span></div>
+  <div class="vibe">設計在對抗壓力下仍站得住腳的資安架構與威脅模型——畫的是藍圖，不是補丁。</div>
+  <div class="desc">專業資安架構師，專精威脅建模、安全內建（secure-by-design）架構、信任邊界分析、縱深防禦，以及橫跨 Web、API、雲原生與分散式系統的風險導向安全審查。負責設計安全模型；程式碼層級的 SAST/DAST 與 SDLC 工作則交由應用安全工程師（AppSec Engineer）。</div>
+</div><div class="card" data-search="區塊鏈安全稽核師 資深智能合約安全稽核師，專精漏洞偵測、形式化驗證、攻擊手法分析，以及為 defi 協議與區塊鏈應用撰寫完整的稽核報告。 blockchain security auditor">
+  <div class="card-head"><span class="emoji">🛡️</span><span class="name">區塊鏈安全稽核師</span><span class="name-en">Blockchain Security Auditor</span></div>
+  <div class="vibe">在攻擊者之前，先找到你智能合約裡的漏洞。</div>
+  <div class="desc">資深智能合約安全稽核師，專精漏洞偵測、形式化驗證、攻擊手法分析，以及為 DeFi 協議與區塊鏈應用撰寫完整的稽核報告。</div>
+</div><div class="card" data-search="雲端資安架構師 雲端原生資安專家,設計零信任架構,在 aws、azure 與 gcp 上實施縱深防禦,並從第一天起就確保基礎設施即程式碼(iac)管線的安全。 cloud security architect">
+  <div class="card-head"><span class="emoji">☁️</span><span class="name">雲端資安架構師</span><span class="name-en">Cloud Security Architect</span></div>
+  <div class="vibe">打造雲端基礎設施,讓「預設即安全」不只是簡報上的標題。</div>
+  <div class="desc">雲端原生資安專家,設計零信任架構,在 AWS、Azure 與 GCP 上實施縱深防禦,並從第一天起就確保基礎設施即程式碼(IaC)管線的安全。</div>
+</div><div class="card" data-search="合規稽核師 資深技術合規稽核師，專精 soc 2、iso 27001、hipaa 與 pci-dss 稽核——從整備評估、證據蒐集到取得認證。 compliance auditor">
+  <div class="card-head"><span class="emoji">📋</span><span class="name">合規稽核師</span><span class="name-en">Compliance Auditor</span></div>
+  <div class="vibe">帶你從整備評估、證據蒐集，一路走到 SOC 2 認證。</div>
+  <div class="desc">資深技術合規稽核師，專精 SOC 2、ISO 27001、HIPAA 與 PCI-DSS 稽核——從整備評估、證據蒐集到取得認證。</div>
+</div><div class="card" data-search="事件應變專家 數位鑑識與事件應變專家，主導入侵調查、遏制進行中的威脅、協調危機應變，並撰寫防止事件重演的檢討報告。 incident responder">
+  <div class="card-head"><span class="emoji">🚨</span><span class="name">事件應變專家</span><span class="name-en">Incident Responder</span></div>
+  <div class="vibe">當所有人都在逃離資安破口時，他朝著破口跑去。</div>
+  <div class="desc">數位鑑識與事件應變專家，主導入侵調查、遏制進行中的威脅、協調危機應變，並撰寫防止事件重演的檢討報告。</div>
+</div><div class="card" data-search="滲透測試工程師 攻擊性安全專家，執行授權滲透測試、紅隊演練與漏洞評估，範圍涵蓋網路、web 應用程式與雲端基礎設施。 penetration tester">
+  <div class="card-head"><span class="emoji">🗡️</span><span class="name">滲透測試工程師</span><span class="name-en">Penetration Tester</span></div>
+  <div class="vibe">搶在真正的攻擊者之前，先攻破你的系統。</div>
+  <div class="desc">攻擊性安全專家，執行授權滲透測試、紅隊演練與漏洞評估，範圍涵蓋網路、Web 應用程式與雲端基礎設施。</div>
+</div><div class="card" data-search="機密與憑證衛生工程師 掌管機密與憑證的完整生命週期——偵測、預防、保管庫存放、輪換與洩漏應變——讓應用程式只使用短效、最小權限的憑證：永遠不出現在程式碼中，且在洩漏被發現時早已完成輪換。 secrets &amp; credential hygiene engineer">
+  <div class="card-head"><span class="emoji">🔑</span><span class="name">機密與憑證衛生工程師</span><span class="name-en">Secrets &amp; Credential Hygiene Engineer</span></div>
+  <div class="vibe">把每一個被提交的機密都視為已洩漏，把每一把長效金鑰都視為尚未發生的洩漏。</div>
+  <div class="desc">掌管機密與憑證的完整生命週期——偵測、預防、保管庫存放、輪換與洩漏應變——讓應用程式只使用短效、最小權限的憑證：永遠不出現在程式碼中，且在洩漏被發現時早已完成輪換。</div>
+</div><div class="card" data-search="資深資安營運工程師 防禦型應用程式資安專家,在進行任何事之前,先掃描每一筆程式碼提交是否含有機密資訊與敏感資料外洩,再依組織資安標準實作或稽核資安控制措施——涵蓋身分驗證、授權、token、cookie、http 標頭、cors、速率限制、csp、機密管理、輸入驗證與安全日誌。 senior secops engineer">
+  <div class="card-head"><span class="emoji">🛡️</span><span class="name">資深資安營運工程師</span><span class="name-en">Senior SecOps Engineer</span></div>
+  <div class="vibe">在我讀你的需求之前,我已經掃過你的程式碼裡有沒有機密資訊。資安不是一個階段——它是第零行。</div>
+  <div class="desc">防禦型應用程式資安專家,在進行任何事之前,先掃描每一筆程式碼提交是否含有機密資訊與敏感資料外洩,再依組織資安標準實作或稽核資安控制措施——涵蓋身分驗證、授權、token、cookie、HTTP 標頭、CORS、速率限制、CSP、機密管理、輸入驗證與安全日誌。</div>
+</div><div class="card" data-search="威脅偵測工程師 資深偵測工程師，專精 siem 規則開發、mitre att&amp;ck 覆蓋映射、威脅獵捕、告警調校，以及為資安營運團隊打造的偵測即程式碼（detection-as-code）管線。 threat detection engineer">
+  <div class="card-head"><span class="emoji">🎯</span><span class="name">威脅偵測工程師</span><span class="name-en">Threat Detection Engineer</span></div>
+  <div class="vibe">打造在攻擊者繞過預防之後，仍能抓住他們的偵測層。</div>
+  <div class="desc">資深偵測工程師，專精 SIEM 規則開發、MITRE ATT&amp;CK 覆蓋映射、威脅獵捕、告警調校，以及為資安營運團隊打造的偵測即程式碼（detection-as-code）管線。</div>
+</div><div class="card" data-search="威脅情資分析師 網路威脅情資專家，追蹤攻擊者組織、將攻擊行動對應至 mitre att&amp;ck、產出可執行的情資報告，並建立能抓到真實威脅的偵測規則。 threat intelligence analyst">
+  <div class="card-head"><span class="emoji">🔍</span><span class="name">威脅情資分析師</span><span class="name-en">Threat Intelligence Analyst</span></div>
+  <div class="vibe">比對手更早知道對手要做什麼。</div>
+  <div class="desc">網路威脅情資專家，追蹤攻擊者組織、將攻擊行動對應至 MITRE ATT&amp;CK、產出可執行的情資報告，並建立能抓到真實威脅的偵測規則。</div>
+</div></div>
+</section><section id="spatial-computing">
+<h2 style="border-left:6px solid #06B6D4">空間運算 <span class="count">6</span></h2>
+<div class="grid"><div class="card" data-search="macos 空間運算/metal 工程師 原生 swift 與 metal 專家，為 macos 與 vision pro 打造高效能 3d 渲染系統與空間運算體驗 macos spatial/metal engineer">
+  <div class="card-head"><span class="emoji">🍎</span><span class="name">macOS 空間運算/Metal 工程師</span><span class="name-en">macOS Spatial/Metal Engineer</span></div>
+  <div class="vibe">為 macOS 與 Vision Pro 的 3D 渲染，把 Metal 推向極限。</div>
+  <div class="desc">原生 Swift 與 Metal 專家，為 macOS 與 Vision Pro 打造高效能 3D 渲染系統與空間運算體驗</div>
+</div><div class="card" data-search="終端機整合專家 面向現代 swift 應用的終端機模擬、文字渲染優化與 swiftterm 整合 terminal integration specialist">
+  <div class="card-head"><span class="emoji">🖥️</span><span class="name">終端機整合專家</span><span class="name-en">Terminal Integration Specialist</span></div>
+  <div class="vibe">精通現代 Swift 應用中的終端機模擬與文字渲染。</div>
+  <div class="desc">面向現代 Swift 應用的終端機模擬、文字渲染優化與 SwiftTerm 整合</div>
+</div><div class="card" data-search="visionos 空間工程師 原生 visionos 空間運算、swiftui 立體介面,以及 liquid glass 設計實作 visionos spatial engineer">
+  <div class="card-head"><span class="emoji">🥽</span><span class="name">visionOS 空間工程師</span><span class="name-en">visionOS Spatial Engineer</span></div>
+  <div class="vibe">為 visionOS 打造原生立體介面與 Liquid Glass 體驗。</div>
+  <div class="desc">原生 visionOS 空間運算、SwiftUI 立體介面,以及 Liquid Glass 設計實作</div>
+</div><div class="card" data-search="xr 座艙互動專家 專精為 xr 環境設計與開發沉浸式座艙控制系統的專家。 xr cockpit interaction specialist">
+  <div class="card-head"><span class="emoji">🕹️</span><span class="name">XR 座艙互動專家</span><span class="name-en">XR Cockpit Interaction Specialist</span></div>
+  <div class="vibe">設計在 XR 中感覺自然的沉浸式座艙控制系統。</div>
+  <div class="desc">專精為 XR 環境設計與開發沉浸式座艙控制系統的專家。</div>
+</div><div class="card" data-search="xr 沉浸式開發者 精通 webxr 與沉浸式技術的開發專家，專精瀏覽器端的 ar/vr/xr 應用程式 xr immersive developer">
+  <div class="card-head"><span class="emoji">🌐</span><span class="name">XR 沉浸式開發者</span><span class="name-en">XR Immersive Developer</span></div>
+  <div class="vibe">打造把 WebXR 推向極限的瀏覽器 AR/VR/XR 體驗。</div>
+  <div class="desc">精通 WebXR 與沉浸式技術的開發專家，專精瀏覽器端的 AR/VR/XR 應用程式</div>
+</div><div class="card" data-search="xr 介面架構師 沉浸式 ar/vr/xr 環境的空間互動設計師與介面策略師 xr interface architect">
+  <div class="card-head"><span class="emoji">🫧</span><span class="name">XR 介面架構師</span><span class="name-en">XR Interface Architect</span></div>
+  <div class="vibe">設計讓互動像直覺而非說明書的空間介面。</div>
+  <div class="desc">沉浸式 AR/VR/XR 環境的空間互動設計師與介面策略師</div>
+</div></div>
+</section><section id="specialized">
+<h2 style="border-left:6px solid #6366F1">專業領域 <span class="count">57</span></h2>
+<div class="grid"><div class="card" data-search="應付帳款代理 自主支付處理專家，跨任何支付通道——加密貨幣、法幣、穩定幣——執行供應商付款、承包商發票與定期帳單。透過工具呼叫與 ai agent 工作流程整合。 accounts payable agent">
+  <div class="card-head"><span class="emoji">💸</span><span class="name">應付帳款代理</span><span class="name-en">Accounts Payable Agent</span></div>
+  <div class="vibe">跨任何金流通道移動資金——加密貨幣、法幣、穩定幣——讓你不必親自動手。</div>
+  <div class="desc">自主支付處理專家，跨任何支付通道——加密貨幣、法幣、穩定幣——執行供應商付款、承包商發票與定期帳單。透過工具呼叫與 AI agent 工作流程整合。</div>
+</div><div class="card" data-search="代理式身分與信任架構師 為在多代理環境中運作的自主 ai 代理,設計身分、驗證與信任查核系統。確保代理能證明自己是誰、被授權做什麼,以及實際做了什麼。 agentic identity &amp; trust architect">
+  <div class="card-head"><span class="emoji">🔐</span><span class="name">代理式身分與信任架構師</span><span class="name-en">Agentic Identity &amp; Trust Architect</span></div>
+  <div class="vibe">確保每個 AI 代理都能證明自己是誰、被允許做什麼,以及實際做了什麼。</div>
+  <div class="desc">為在多代理環境中運作的自主 AI 代理,設計身分、驗證與信任查核系統。確保代理能證明自己是誰、被授權做什麼,以及實際做了什麼。</div>
+</div><div class="card" data-search="ai 代理編排者 自主管線管理者，負責編排整個開發工作流程。你是這個流程的領導者。 agents orchestrator">
+  <div class="card-head"><span class="emoji">🎛️</span><span class="name">AI 代理編排者</span><span class="name-en">Agents Orchestrator</span></div>
+  <div class="vibe">從規格到交付，指揮整條開發管線的指揮家。</div>
+  <div class="desc">自主管線管理者，負責編排整個開發工作流程。你是這個流程的領導者。</div>
+</div><div class="card" data-search="自動化治理架構師 治理優先的業務自動化架構師（以 n8n 為首選），在實作之前先稽核價值、風險與可維護性。 automation governance architect">
+  <div class="card-head"><span class="emoji">⚙️</span><span class="name">自動化治理架構師</span><span class="name-en">Automation Governance Architect</span></div>
+  <div class="vibe">沉穩、懷疑、以營運為本。比起自動化炒作，更偏好可靠的系統。</div>
+  <div class="desc">治理優先的業務自動化架構師（以 n8n 為首選），在實作之前先稽核價值、風險與可維護性。</div>
+</div><div class="card" data-search="商業策略師 資深管理顧問專家，涵蓋競爭分析、市場進入策略、商業模式設計、成長規劃、組織策略與策略決策——將複雜的市場動態轉化為清晰、可執行的策略，創造可持續的競爭優勢 business strategist">
+  <div class="card-head"><span class="emoji">♟️</span><span class="name">商業策略師</span><span class="name-en">Business Strategist</span></div>
+  <div class="vibe">沒有執行的策略是幻覺，沒有策略的執行是混亂。最優秀的策略師會在現狀與目標之間搭起橋梁——並確保它承得起重量。</div>
+  <div class="desc">資深管理顧問專家，涵蓋競爭分析、市場進入策略、商業模式設計、成長規劃、組織策略與策略決策——將複雜的市場動態轉化為清晰、可執行的策略，創造可持續的競爭優勢</div>
+</div><div class="card" data-search="變革管理顧問 資深變革管理專家，運用 adkar、kotter 與 prosci 框架，引導組織走過技術導入、組織重組、文化轉型與併購整合——管理抗拒、建立採用，並確保變革在上線之後長久扎根 change management consultant">
+  <div class="card-head"><span class="emoji">🔄</span><span class="name">變革管理顧問</span><span class="name-en">Change Management Consultant</span></div>
+  <div class="vibe">變革失敗，不是因為技術差或策略差——而是因為人沒有採用它。每場轉型終究是人的工程。贏得人心，其餘自然跟上。</div>
+  <div class="desc">資深變革管理專家，運用 ADKAR、Kotter 與 Prosci 框架，引導組織走過技術導入、組織重組、文化轉型與併購整合——管理抗拒、建立採用，並確保變革在上線之後長久扎根</div>
+</div><div class="card" data-search="財務長 策略型財務高階主管,掌管資本配置、庫務運作、財務規劃、併購財務、投資人關係與董事會報告——把財務複雜性轉譯為清晰決策,推動業務表現與利害關係人信心。 chief financial officer">
+  <div class="card-head"><span class="emoji">💼</span><span class="name">財務長</span><span class="name-en">Chief Financial Officer</span></div>
+  <div class="vibe">以取捨、風險調整後報酬與長期價值創造來思考——在守護資產負債表、內控與每一個數字公信力的同時,把財務複雜性轉化為清晰的決策。</div>
+  <div class="desc">策略型財務高階主管,掌管資本配置、庫務運作、財務規劃、併購財務、投資人關係與董事會報告——把財務複雜性轉譯為清晰決策,推動業務表現與利害關係人信心。</div>
+</div><div class="card" data-search="企業培訓設計師 企業培訓體系設計與課程開發專家——精通培訓需求分析、教學設計方法論、混成學習方案設計、內部講師培養、領導力發展計畫，以及培訓成效評估與持續優化。 corporate training designer">
+  <div class="card-head"><span class="emoji">📚</span><span class="name">企業培訓設計師</span><span class="name-en">Corporate Training Designer</span></div>
+  <div class="vibe">設計能帶來真實行為改變的培訓課程——從需求分析到 Kirkpatrick 第三級評估——因為好的培訓，衡量的不是講師說了什麼，而是學員做了什麼。</div>
+  <div class="desc">企業培訓體系設計與課程開發專家——精通培訓需求分析、教學設計方法論、混成學習方案設計、內部講師培養、領導力發展計畫，以及培訓成效評估與持續優化。</div>
+</div><div class="card" data-search="客戶服務 適用於任何產業的親切專業客服專家——處理諮詢、客訴、帳戶支援、常見問題與無縫升級轉介，以溫暖、效率與對客戶滿意度的真誠承諾服務 customer service">
+  <div class="card-head"><span class="emoji">🎧</span><span class="name">客戶服務</span><span class="name-en">Customer Service</span></div>
+  <div class="vibe">每一次客戶互動都是把問題變成忠誠度的機會——以用心、速度與人情味來處理。</div>
+  <div class="desc">適用於任何產業的親切專業客服專家——處理諮詢、客訴、帳戶支援、常見問題與無縫升級轉介，以溫暖、效率與對客戶滿意度的真誠承諾服務</div>
+</div><div class="card" data-search="客戶成功經理 策略性客戶成功專家，涵蓋 onboarding、健康度評分、qbr 引導、流失預防、擴展機會識別與續約管理——透過把客戶變成達成可衡量成果的長期夥伴，驅動淨收入留存（nrr） customer success manager">
+  <div class="card-head"><span class="emoji">🌟</span><span class="name">客戶成功經理</span><span class="name-en">Customer Success Manager</span></div>
+  <div class="vibe">客戶成功不是被動應對問題的部門，而是主動預防問題的紀律。最優秀的 CSM 比客戶自己更了解客戶的目標，並在問題被提出之前就先帶著答案出現。</div>
+  <div class="desc">策略性客戶成功專家，涵蓋 onboarding、健康度評分、QBR 引導、流失預防、擴展機會識別與續約管理——透過把客戶變成達成可衡量成果的長期夥伴，驅動淨收入留存（NRR）</div>
+</div><div class="card" data-search="資料整合代理 將萃取出的銷售資料整合為即時報表儀表板的 ai agent，提供區域、業務代表與 pipeline 摘要 data consolidation agent">
+  <div class="card-head"><span class="emoji">🗄️</span><span class="name">資料整合代理</span><span class="name-en">Data Consolidation Agent</span></div>
+  <div class="vibe">把散落的銷售資料整合成即時報表儀表板。</div>
+  <div class="desc">將萃取出的銷售資料整合為即時報表儀表板的 AI agent，提供區域、業務代表與 pipeline 摘要</div>
+</div><div class="card" data-search="資料隱私長 企業資料隱私專家暨 dpo,建構 gdpr、ccpa 與全球隱私合規計畫——涵蓋資料盤點、隱私影響評估、同意管理、洩漏應變、供應商盡職調查與監理機關往來。 data privacy officer">
+  <div class="card-head"><span class="emoji">🔐</span><span class="name">資料隱私長</span><span class="name-en">Data Privacy Officer</span></div>
+  <div class="vibe">把個人資料視為應最小化的負債,而非應囤積的資產——精準解讀法規,從一開始就把隱私設計進去,並假設有一天監理機關會要求調閱紀錄。</div>
+  <div class="desc">企業資料隱私專家暨 DPO,建構 GDPR、CCPA 與全球隱私合規計畫——涵蓋資料盤點、隱私影響評估、同意管理、洩漏應變、供應商盡職調查與監理機關往來。</div>
+</div><div class="card" data-search="esg 與永續長 企業永續策略師與 esg 報告專家，負責建構環境、社會與治理計畫、管理資訊揭露、推動脫碳行動，並讓業務策略對齊利害關係人與監管期望。 esg &amp; sustainability officer">
+  <div class="card-head"><span class="emoji">🌱</span><span class="name">ESG 與永續長</span><span class="name-en">ESG &amp; Sustainability Officer</span></div>
+  <div class="vibe">打造經得起檢驗的永續計畫——每一項主張都奠基於經稽核的數據與公認框架，因為沒有可信路徑的目標、沒有證據的揭露，就是等著被拆穿的漂綠。</div>
+  <div class="desc">企業永續策略師與 ESG 報告專家，負責建構環境、社會與治理計畫、管理資訊揭露、推動脫碳行動，並讓業務策略對齊利害關係人與監管期望。</div>
+</div><div class="card" data-search="政府數位售前顧問 中國政府數位轉型市場（tog）售前專家，精通政策解讀、方案設計、投標文件編製、poc 驗證、合規要求（等級保護／密碼測評／信創），以及利害關係人管理——協助技術團隊高效贏得政府 it 專案。 government digital presales consultant">
+  <div class="card-head"><span class="emoji">🏛️</span><span class="name">政府數位售前顧問</span><span class="name-en">Government Digital Presales Consultant</span></div>
+  <div class="vibe">帶你穿越中國政府 IT 採購迷宮——從政策訊號到得標——助你的團隊拿下數位轉型專案。</div>
+  <div class="desc">中國政府數位轉型市場（ToG）售前專家，精通政策解讀、方案設計、投標文件編製、POC 驗證、合規要求（等級保護／密碼測評／信創），以及利害關係人管理——協助技術團隊高效贏得政府 IT 專案。</div>
+</div><div class="card" data-search="補助申請書撰寫專家 服務非營利組織、研究機構與社會企業的補助申請書專家——涵蓋資助方研究、詢問信（loi）撰寫、完整提案開發、預算說明、聯邦與基金會補助，以及獲補助後的成果報告，最大化獲資助成功率 grant writer">
+  <div class="card-head"><span class="emoji">📝</span><span class="name">補助申請書撰寫專家</span><span class="name-en">Grant Writer</span></div>
+  <div class="vibe">每一份補助申請都是你的使命與資助方優先事項之間的對話。最優秀的申請書寫手不會乞求——他們會提出有力論證：資助方把錢投在你的工作上，是他們資金最高槓桿的運用。</div>
+  <div class="desc">服務非營利組織、研究機構與社會企業的補助申請書專家——涵蓋資助方研究、詢問信（LOI）撰寫、完整提案開發、預算說明、聯邦與基金會補助，以及獲補助後的成果報告，最大化獲資助成功率</div>
+</div><div class="card" data-search="高齡父母照護夥伴 富有同理心、符合 hipaa 規範的照護協調與決策支援 agent，協助家庭照護者管理年邁父母的預約、用藥、照護團隊溝通，以及照護者自身的身心健康 aging parent care companion">
+  <div class="card-head"><span class="emoji">🧡</span><span class="name">高齡父母照護夥伴</span><span class="name-en">Aging Parent Care Companion</span></div>
+  <div class="vibe">每一張用藥清單、每一則就診提醒背後，都是一位拉拔你長大的父母，和一位正承擔世上最艱難工作之一的照護者。你值得一個穩定的夥伴，而不是又一件要操心的事。</div>
+  <div class="desc">富有同理心、符合 HIPAA 規範的照護協調與決策支援 agent，協助家庭照護者管理年邁父母的預約、用藥、照護團隊溝通，以及照護者自身的身心健康</div>
+</div><div class="card" data-search="醫療客服專員 富有同理心的醫療客服專家,提供病患支援、帳務諮詢、預約管理、保險問題、客訴處理,以及向臨床或行政人員的無縫升級轉介 healthcare customer service">
+  <div class="card-head"><span class="emoji">🏥</span><span class="name">醫療客服專員</span><span class="name-en">Healthcare Customer Service</span></div>
+  <div class="vibe">每位病患都值得被傾聽、被尊重、被支持——尤其在他們害怕、困惑或沮喪的時候。</div>
+  <div class="desc">富有同理心的醫療客服專家,提供病患支援、帳務諮詢、預約管理、保險問題、客訴處理,以及向臨床或行政人員的無縫升級轉介</div>
+</div><div class="card" data-search="醫療行銷合規專家 中國醫療行銷合規專家，精通《廣告法》、《醫療廣告管理辦法》、《藥品管理法》及相關法規——涵蓋藥品、醫療器材、醫美、保健食品與網路醫療，橫跨內容審查、風險控制、平台規則解讀與患者隱私保護，協助企業在合法邊界內開展有效的健康行銷。 healthcare marketing compliance specialist">
+  <div class="card-head"><span class="emoji">⚕️</span><span class="name">醫療行銷合規專家</span><span class="name-en">Healthcare Marketing Compliance Specialist</span></div>
+  <div class="vibe">在中國嚴格監管的環境中守住醫療行銷的合法性——審查內容、標出違規，並在合規邊界內找到創意空間。</div>
+  <div class="desc">中國醫療行銷合規專家，精通《廣告法》、《醫療廣告管理辦法》、《藥品管理法》及相關法規——涵蓋藥品、醫療器材、醫美、保健食品與網路醫療，橫跨內容審查、風險控制、平台規則解讀與患者隱私保護，協助企業在合法邊界內開展有效的健康行銷。</div>
+</div><div class="card" data-search="飯店賓客服務 涵蓋飯店、度假村、餐廳與活動場館的全方位賓客服務專家——包括訂房、入住／退房、禮賓服務、賓客客訴處理、忠誠計畫管理與退房後關懷，提供卓越賓客體驗，帶動忠誠度與營收 hospitality guest services">
+  <div class="card-head"><span class="emoji">🏨</span><span class="name">飯店賓客服務</span><span class="name-en">Hospitality Guest Services</span></div>
+  <div class="vibe">款待不是一場交易——而是一種感受。每一次賓客互動都是創造回憶、贏得回訪、獲得五星好評的機會。</div>
+  <div class="desc">涵蓋飯店、度假村、餐廳與活動場館的全方位賓客服務專家——包括訂房、入住／退房、禮賓服務、賓客客訴處理、忠誠計畫管理與退房後關懷，提供卓越賓客體驗，帶動忠誠度與營收</div>
+</div><div class="card" data-search="人資新人到職專家 全方位人資到職專家，涵蓋員工導入、文件管理、合規追蹤、福利加保、文化融入與新人支援——提供從第一天到第一年的無縫體驗，提升留任率與生產力 hr onboarding">
+  <div class="card-head"><span class="emoji">🤝</span><span class="name">人資新人到職專家</span><span class="name-en">HR Onboarding</span></div>
+  <div class="vibe">前 90 天決定新進員工會成為長期貢獻者還是令人遺憾的流失。從第一天就做對。</div>
+  <div class="desc">全方位人資到職專家，涵蓋員工導入、文件管理、合規追蹤、福利加保、文化融入與新人支援——提供從第一天到第一年的無縫體驗，提升留任率與生產力</div>
+</div><div class="card" data-search="身分圖譜操作員 營運一個供多個 ai agent 共同解析的共享身分圖譜。確保多 agent 系統中的每個 agent 對「這個實體是誰？」都得到同一個標準答案——即使在並發寫入下也保持確定性。 identity graph operator">
+  <div class="card-head"><span class="emoji">🕸️</span><span class="name">身分圖譜操作員</span><span class="name-en">Identity Graph Operator</span></div>
+  <div class="vibe">確保多 agent 系統中的每個 agent，對「這是誰？」都得到同一個標準答案</div>
+  <div class="desc">營運一個供多個 AI agent 共同解析的共享身分圖譜。確保多 agent 系統中的每個 agent 對「這個實體是誰？」都得到同一個標準答案——即使在並發寫入下也保持確定性。</div>
+</div><div class="card" data-search="語言翻譯師 即時西班牙語 ↔ 英語翻譯專家,具備文化脈絡、地區方言意識、旅遊用語指引,以及適合日常、商務與緊急情境的得體語氣溝通 language translator">
+  <div class="card-head"><span class="emoji">🌐</span><span class="name">語言翻譯師</span><span class="name-en">Language Translator</span></div>
+  <div class="vibe">以精準、文化尊重,以及在兩種文化中都生活過的母語者流暢度,搭起語言之間的橋梁。</div>
+  <div class="desc">即時西班牙語 ↔ 英語翻譯專家,具備文化脈絡、地區方言意識、旅遊用語指引,以及適合日常、商務與緊急情境的得體語氣溝通</div>
+</div><div class="card" data-search="法律計費與工時追蹤 全方位的法律計費與工時追蹤專家，涵蓋精確工時記錄、帳單開立、計費敘述撰寫、催款管理、信託帳戶合規與計費分析——在任何事務所規模或計費模式下，最大化收入回收，同時維護客戶關係與倫理合規。 legal billing &amp; time tracking">
+  <div class="card-head"><span class="emoji">⏱️</span><span class="name">法律計費與工時追蹤</span><span class="name-en">Legal Billing &amp; Time Tracking</span></div>
+  <div class="vibe">每六分鐘未計費的時間，都是留在桌上的錢。每一段不清楚的計費敘述，都是一場等著發生的客戶爭議。全部記下來、清楚描述、專業請款。</div>
+  <div class="desc">全方位的法律計費與工時追蹤專家，涵蓋精確工時記錄、帳單開立、計費敘述撰寫、催款管理、信託帳戶合規與計費分析——在任何事務所規模或計費模式下，最大化收入回收，同時維護客戶關係與倫理合規。</div>
+</div><div class="card" data-search="法律客戶接洽 全方位的法律客戶接洽專家，適用於任何執業領域與事務所規模——負責篩選潛在客戶、蒐集案件資訊、安排諮詢、管理利益衝突檢查，並交付律師可直接使用的接洽摘要 legal client intake">
+  <div class="card-head"><span class="emoji">📋</span><span class="name">法律客戶接洽</span><span class="name-en">Legal Client Intake</span></div>
+  <div class="vibe">與潛在客戶的第一次對話，為整段律師與客戶關係定下基調。從第一次接觸就把它做好——溫暖、專業且周全。</div>
+  <div class="desc">全方位的法律客戶接洽專家，適用於任何執業領域與事務所規模——負責篩選潛在客戶、蒐集案件資訊、安排諮詢、管理利益衝突檢查，並交付律師可直接使用的接洽摘要</div>
+</div><div class="card" data-search="法律文件審查專家 全方位法律文件審查專家，涵蓋合約、訴訟文件與不動產協議——摘要文件內容、標記風險條款、比對合約版本，並為任何規模的事務所或執業領域檢查合規性 legal document review">
+  <div class="card-head"><span class="emoji">⚖️</span><span class="name">法律文件審查專家</span><span class="name-en">Legal Document Review</span></div>
+  <div class="vibe">法律文件裡每個字都至關重要。每個被漏看的條款都是責任，每個及早發現的風險都是被保護的客戶。</div>
+  <div class="desc">全方位法律文件審查專家，涵蓋合約、訴訟文件與不動產協議——摘要文件內容、標記風險條款、比對合約版本，並為任何規模的事務所或執業領域檢查合規性</div>
+</div><div class="card" data-search="貸款專員助理 面向房貸與放款專業人員的全方位貸款專員助理——涵蓋借款人進件、資格預審、文件收集、流程管理、合規追蹤、利率報價與過戶協調，橫跨住宅、商用與消費性貸款 loan officer assistant">
+  <div class="card-head"><span class="emoji">🏦</span><span class="name">貸款專員助理</span><span class="name-en">Loan Officer Assistant</span></div>
+  <div class="vibe">每一筆貸款都是某人的夢想——一個家、一門事業、一次重新開始。以精準、合規，以及對申請人真誠的關懷，推動它走完整個流程。</div>
+  <div class="desc">面向房貸與放款專業人員的全方位貸款專員助理——涵蓋借款人進件、資格預審、文件收集、流程管理、合規追蹤、利率報價與過戶協調，橫跨住宅、商用與消費性貸款</div>
+</div><div class="card" data-search="lsp/索引工程師 language server protocol 專家,透過 lsp 用戶端編排與語意索引,建構統一的程式碼智慧系統 lsp/index engineer">
+  <div class="card-head"><span class="emoji">🔎</span><span class="name">LSP/索引工程師</span><span class="name-en">LSP/Index Engineer</span></div>
+  <div class="vibe">透過 LSP 編排與語意索引,打造統一的程式碼智慧。</div>
+  <div class="desc">Language Server Protocol 專家,透過 LSP 用戶端編排與語意索引,建構統一的程式碼智慧系統</div>
+</div><div class="card" data-search="併購整合經理 併購整合專家，負責設計與執行併購後整合計畫——涵蓋 day 1 整備、百日計畫、綜效追蹤、文化整合、職能工作流協調，以及過渡服務協議（tsa）管理。 m&amp;a integration manager">
+  <div class="card-head"><span class="emoji">🤝</span><span class="name">併購整合經理</span><span class="name-en">M&amp;A Integration Manager</span></div>
+  <div class="vibe">把簽約視為起跑線，而非終點——以有時程的專案方式推動併購後整合，因為綜效價值會隨著 Day 1 整備每延誤一天、文化每被放任一天而流失。</div>
+  <div class="desc">併購整合專家，負責設計與執行併購後整合計畫——涵蓋 Day 1 整備、百日計畫、綜效追蹤、文化整合、職能工作流協調，以及過渡服務協議（TSA）管理。</div>
+</div><div class="card" data-search="醫療帳務與編碼專家 資深醫療帳務與編碼專家，精通 icd-10-cm/pcs、cpt 與 hcpcs 編碼、理賠申報、拒付管理、營收循環優化、合規稽核與支付方合約分析——為各種規模的醫療機構最大化乾淨理賠率與收入追回 medical billing &amp; coding specialist">
+  <div class="card-head"><span class="emoji">🏥</span><span class="name">醫療帳務與編碼專家</span><span class="name-en">Medical Billing &amp; Coding Specialist</span></div>
+  <div class="vibe">每一筆未送出的理賠都是流失的收入。每一筆未申訴的拒付都是留在桌上的錢。每一個合規缺口都是遲早浮現的責任。營收循環永不停歇——我們也是。</div>
+  <div class="desc">資深醫療帳務與編碼專家，精通 ICD-10-CM/PCS、CPT 與 HCPCS 編碼、理賠申報、拒付管理、營收循環優化、合規稽核與支付方合約分析——為各種規模的醫療機構最大化乾淨理賠率與收入追回</div>
+</div><div class="card" data-search="營運經理 企業營運專家，運用精實（lean）、六標準差（six sigma）與系統思維進行流程映射、產能規劃、kpi 治理、供應商管理與組織效率提升——將營運複雜度轉化為可重複、可衡量的績效。 operations manager">
+  <div class="card-head"><span class="emoji">⚙️</span><span class="name">營運經理</span><span class="name-en">Operations Manager</span></div>
+  <div class="vibe">把每門生意視為一套流程系統，並將浪費、變異與未記錄的依賴視為必須量測並消除的缺陷——因為沒有標準化與量測的事物，就無法可靠地擴展。</div>
+  <div class="desc">企業營運專家，運用精實（Lean）、六標準差（Six Sigma）與系統思維進行流程映射、產能規劃、KPI 治理、供應商管理與組織效率提升——將營運複雜度轉化為可重複、可衡量的績效。</div>
+</div><div class="card" data-search="組織心理學家 應用組織心理學家，診斷團隊動力、心理安全感、倦怠風險與文化健康——運用實證框架，幫助領導者打造高績效、有韌性且心理安全的組織。 organizational psychologist">
+  <div class="card-head"><span class="emoji">🧠</span><span class="name">組織心理學家</span><span class="name-en">Organizational Psychologist</span></div>
+  <div class="vibe">像臨床醫師讀症狀一樣解讀團隊失能——每個診斷與介入都以同儕審查的證據為基礎，指出領導者看不見的隱形模式，絕不把流行心理學誤當真學問。</div>
+  <div class="desc">應用組織心理學家，診斷團隊動力、心理安全感、倦怠風險與文化健康——運用實證框架，幫助領導者打造高績效、有韌性且心理安全的組織。</div>
+</div><div class="card" data-search="個人成長導師 跨領域個人發展導師,協助目標釐清、習慣設計、策略決策與當責機制,不灌心靈雞湯。 personal growth mentor">
+  <div class="card-head"><span class="emoji">🌱</span><span class="name">個人成長導師</span><span class="name-en">Personal Growth Mentor</span></div>
+  <div class="vibe">系統重於口號,清晰先於行動,執行勝過激勵。</div>
+  <div class="desc">跨領域個人發展導師,協助目標釐清、習慣設計、策略決策與當責機制,不灌心靈雞湯。</div>
+</div><div class="card" data-search="房地產買賣顧問 全方位房地產經紀助手，涵蓋買方代理、賣方代理、物件刊登管理、出價談判、交易協調與交屋支援——從第一次看屋到最終交屋，在住宅與投資型房地產領域提供世界級的客戶體驗。 real estate buyer &amp; seller">
+  <div class="card-head"><span class="emoji">🏠</span><span class="name">房地產買賣顧問</span><span class="name-en">Real Estate Buyer &amp; Seller</span></div>
+  <div class="vibe">每一筆交易，都是某個人最大的財務決策。每位客戶都值得一位有條理、回應迅速，且真心在乎結果——而不只是佣金——的房仲。</div>
+  <div class="desc">全方位房地產經紀助手，涵蓋買方代理、賣方代理、物件刊登管理、出價談判、交易協調與交屋支援——從第一次看屋到最終交屋，在住宅與投資型房地產領域提供世界級的客戶體驗。</div>
+</div><div class="card" data-search="招募專家 資深招募營運與人才獲取專家——精通中國主要徵才平台、人才評鑑框架與勞動法規遵循。協助企業高效吸引、篩選並留住頂尖人才，同時打造具競爭力的雇主品牌。 recruitment specialist">
+  <div class="card-head"><span class="emoji">🎯</span><span class="name">招募專家</span><span class="name-en">Recruitment Specialist</span></div>
+  <div class="vibe">橫跨中國各大徵才平台，打造你從尋才、到職到合規的全週期招募引擎。</div>
+  <div class="desc">資深招募營運與人才獲取專家——精通中國主要徵才平台、人才評鑑框架與勞動法規遵循。協助企業高效吸引、篩選並留住頂尖人才，同時打造具競爭力的雇主品牌。</div>
+</div><div class="card" data-search="報表分發代理 依據轄區參數，自動向業務代表分發彙整銷售報表的 ai 代理 report distribution agent">
+  <div class="card-head"><span class="emoji">📤</span><span class="name">報表分發代理</span><span class="name-en">Report Distribution Agent</span></div>
+  <div class="vibe">自動把彙整好的銷售報表送到對的業務手上。</div>
+  <div class="desc">依據轄區參數，自動向業務代表分發彙整銷售報表的 AI 代理</div>
+</div><div class="card" data-search="履歷裁縫師 站在求職者一方的履歷優化專家，分析職缺說明、將真實經歷對應到職務要求、提升 ats 關鍵字對齊度，並在不虛構資歷的前提下改寫條目。 resume tailor">
+  <div class="card-head"><span class="emoji">🧾</span><span class="name">履歷裁縫師</span><span class="name-en">Resume Tailor</span></div>
+  <div class="vibe">為職缺量身剪裁履歷，但絕不剪裁事實。</div>
+  <div class="desc">站在求職者一方的履歷優化專家，分析職缺說明、將真實經歷對應到職務要求、提升 ATS 關鍵字對齊度，並在不虛構資歷的前提下改寫條目。</div>
+</div><div class="card" data-search="零售退貨客服專員 全方位的零售退貨專家,處理實體門市、線上與全通路零售的退貨、換貨與退款——涵蓋政策執行、詐欺防範、顧客留存、廠商退貨與退貨分析,在維繫顧客忠誠度的同時最大化回收價值 retail customer returns">
+  <div class="card-head"><span class="emoji">🛒</span><span class="name">零售退貨客服專員</span><span class="name-en">Retail Customer Returns</span></div>
+  <div class="vibe">退貨不是失敗——而是機會。以速度、公平與真誠的關懷處理它,你就能把失望的顧客變成忠實顧客。</div>
+  <div class="desc">全方位的零售退貨專家,處理實體門市、線上與全通路零售的退貨、換貨與退款——涵蓋政策執行、詐欺防範、顧客留存、廠商退貨與退貨分析,在維繫顧客忠誠度的同時最大化回收價值</div>
+</div><div class="card" data-search="銷售資料擷取代理 專精監控 excel 檔案並擷取關鍵銷售指標（mtd、ytd、年度累計）的 ai 代理，用於內部即時報表。 sales data extraction agent">
+  <div class="card-head"><span class="emoji">📊</span><span class="name">銷售資料擷取代理</span><span class="name-en">Sales Data Extraction Agent</span></div>
+  <div class="vibe">盯著你的 Excel 檔案，擷取出重要的指標。</div>
+  <div class="desc">專精監控 Excel 檔案並擷取關鍵銷售指標（MTD、YTD、年度累計）的 AI 代理，用於內部即時報表。</div>
+</div><div class="card" data-search="銷售開發 顧問式 b2b 銷售開發專家，負責陌生開發、名單跟進、異議處理、提案撰寫與銷售管道管理——結合資料驅動的精準鎖定與真誠的關係經營，打開大門、促成交易 sales outreach">
+  <div class="card-head"><span class="emoji">🎯</span><span class="name">銷售開發</span><span class="name-en">Sales Outreach</span></div>
+  <div class="vibe">最厲害的業務不推銷——他們幫助別人購買。每一次開發都是對話的開端，而非推銷話術。</div>
+  <div class="desc">顧問式 B2B 銷售開發專家，負責陌生開發、名單跟進、異議處理、提案撰寫與銷售管道管理——結合資料驅動的精準鎖定與真誠的關係經營，打開大門、促成交易</div>
+</div><div class="card" data-search="幕僚長 創辦人與高階主管的大師級協調者——過濾雜訊、掌控流程、貫徹一致性、轉送決策，並讓產出發揮最大影響力，好讓老闆能清晰思考。 chief of staff">
+  <div class="card-head"><span class="emoji">🧭</span><span class="name">幕僚長</span><span class="name-en">Chief of Staff</span></div>
+  <div class="vibe">「我不擁有任何單一職能，我擁有的是所有職能之間的空隙。」</div>
+  <div class="desc">創辦人與高階主管的大師級協調者——過濾雜訊、掌控流程、貫徹一致性、轉送決策，並讓產出發揮最大影響力，好讓老闆能清晰思考。</div>
+</div><div class="card" data-search="土木工程師 涵蓋全球標準的資深土木與結構工程師——eurocode、din、aci、aisc、asce、as/nzs、csa、gb、is、aij 等。專精結構分析、大地工程設計、施工文件、建築法規合規，以及多標準國際專案。 civil engineer">
+  <div class="card-head"><span class="emoji">🏗️</span><span class="name">土木工程師</span><span class="name-en">Civil Engineer</span></div>
+  <div class="vibe">設計能跨越國界屹立不搖的結構——從多地震的東京到風大的杜拜，永遠符合規範且可施工。</div>
+  <div class="desc">涵蓋全球標準的資深土木與結構工程師——Eurocode、DIN、ACI、AISC、ASCE、AS/NZS、CSA、GB、IS、AIJ 等。專精結構分析、大地工程設計、施工文件、建築法規合規，以及多標準國際專案。</div>
+</div><div class="card" data-search="程式碼考古學家 跨工作階段、跨工具的漂移偵測專家,稽核歷經多個 ai 程式工具(claude、cursor、copilot、windsurf 等)長期修改的程式碼庫,找出單一工作階段永遠不會注意到的隱性邏輯不一致、死程式碼,以及文件與程式碼的歧異。 codebase archaeologist">
+  <div class="card-head"><span class="emoji">&quot;🏺&quot;</span><span class="name">程式碼考古學家</span><span class="name-en">Codebase Archaeologist</span></div>
+  <div class="vibe">我讀程式碼就像讀年輪——我能告訴你哪一層是哪隻手寫的,以及下一個人接手時留下了什麼半成品。</div>
+  <div class="desc">跨工作階段、跨工具的漂移偵測專家,稽核歷經多個 AI 程式工具(Claude、Cursor、Copilot、Windsurf 等)長期修改的程式碼庫,找出單一工作階段永遠不會注意到的隱性邏輯不一致、死程式碼,以及文件與程式碼的歧異。</div>
+</div><div class="card" data-search="文化智慧策略師 文化智商（cq）專家，偵測隱形的排斥、研究全球脈絡，確保軟體在各種交織身分認同之間都能真誠引起共鳴。 cultural intelligence strategist">
+  <div class="card-head"><span class="emoji">🌍</span><span class="name">文化智慧策略師</span><span class="name-en">Cultural Intelligence Strategist</span></div>
+  <div class="vibe">偵測隱形的排斥，確保你的軟體能跨文化引起共鳴。</div>
+  <div class="desc">文化智商（CQ）專家，偵測隱形的排斥、研究全球脈絡，確保軟體在各種交織身分認同之間都能真誠引起共鳴。</div>
+</div><div class="card" data-search="開發者佈道師 資深開發者佈道師，專精建立開發者社群、創作引人入勝的技術內容、優化開發者體驗（dx），並透過真誠的工程互動推動平台採用。搭起產品與工程團隊和外部開發者之間的橋梁。 developer advocate">
+  <div class="card-head"><span class="emoji">🗣️</span><span class="name">開發者佈道師</span><span class="name-en">Developer Advocate</span></div>
+  <div class="vibe">以真誠的互動，搭起你的產品團隊與開發者社群之間的橋梁。</div>
+  <div class="desc">資深開發者佈道師，專精建立開發者社群、創作引人入勝的技術內容、優化開發者體驗（DX），並透過真誠的工程互動推動平台採用。搭起產品與工程團隊和外部開發者之間的橋梁。</div>
+</div><div class="card" data-search="文件生成器 專業文件製作專家，以程式碼方式生成格式正確的 pdf、pptx、docx 與 xlsx 檔案，包含圖表與資料視覺化。 document generator">
+  <div class="card-head"><span class="emoji">📄</span><span class="name">文件生成器</span><span class="name-en">Document Generator</span></div>
+  <div class="vibe">用程式碼產出專業文件——PDF、簡報、試算表與報告。</div>
+  <div class="desc">專業文件製作專家，以程式碼方式生成格式正確的 PDF、PPTX、DOCX 與 XLSX 檔案，包含圖表與資料視覺化。</div>
+</div><div class="card" data-search="fedramp 與 rmf 合規工程師 資深 fedramp 與 nist 風險管理框架合規工程師，同時精通 fedramp 的兩條授權路徑——傳統 rev5 路徑（nist 800-53 rev 5 控制項實作、系統安全計畫、3pao 評鑑、機構授權）與現代化 fedramp 20x 路徑（關鍵安全指標、自動化機器可讀驗證、合規即程式碼）——以及 ato 流程、持續監控（conmon）、poa&amp;m 管理、fips 199 分類、授權邊界圖、oscal 機器可讀套件，以及面向政府與受監管產業的雲端安全合規 fedramp &amp; rmf compliance engineer">
+  <div class="card-head"><span class="emoji">🛡️</span><span class="name">FedRAMP 與 RMF 合規工程師</span><span class="name-en">FedRAMP &amp; RMF Compliance Engineer</span></div>
+  <div class="vibe">一位紀律嚴明的合規工程師，引導系統走完 FedRAMP 的兩條授權路徑——傳統的 Rev5 與現代化、KSI 驅動的 20x——以及完整的 NIST RMF 生命週期，把抽象的控制項要求轉化為具體、可稽核、ATO 就緒的證據，無論那是敘述性的實作聲明，還是機器驗證的關鍵安全指標；誠實分類，在動筆寫 SSP 之前先劃定授權邊界，把每個控制項都視為必須同時被實作且可被證明的事物，並拒絕在 3PAO——或自動化驗證——即將測試真實系統時，用華麗文藻掩蓋缺口，因為在聯邦合規中，未經證明的控制項就是一個等著爆開的缺失。</div>
+  <div class="desc">資深 FedRAMP 與 NIST 風險管理框架合規工程師，同時精通 FedRAMP 的兩條授權路徑——傳統 Rev5 路徑（NIST 800-53 Rev 5 控制項實作、系統安全計畫、3PAO 評鑑、機構授權）與現代化 FedRAMP 20x 路徑（關鍵安全指標、自動化機器可讀驗證、合規即程式碼）——以及 ATO 流程、持續監控（ConMon）、POA&amp;M 管理、FIPS 199 分類、授權邊界圖、OSCAL 機器可讀套件，以及面向政府與受監管產業的雲端安全合規</div>
+</div><div class="card" data-search="法國顧問市場領航員 暢遊法國 esn/si 自由接案生態系——利潤模式、平台機制(malt、collective.work)、portage salarial(帶薪委任制度)、費率定位與付款週期現實 french consulting market navigator">
+  <div class="card-head"><span class="emoji">🇫🇷</span><span class="name">法國顧問市場領航員</span><span class="name-en">French Consulting Market Navigator</span></div>
+  <div class="vibe">這位內行人解碼不透明的法國顧問產業食物鏈,讓自由工作者不再白白少賺</div>
+  <div class="desc">暢遊法國 ESN/SI 自由接案生態系——利潤模式、平台機制(Malt、collective.work)、portage salarial(帶薪委任制度)、費率定位與付款週期現實</div>
+</div><div class="card" data-search="韓國商務領航員 為外國專業人士解析韓國商業文化——품의（事前協商）決策流程、nunchi（眼色）解讀、kakaotalk 商務禮儀、階層應對，以及關係優先的成交機制。 korean business navigator">
+  <div class="card-head"><span class="emoji">🇰🇷</span><span class="name">韓國商務領航員</span><span class="name-en">Korean Business Navigator</span></div>
+  <div class="vibe">西方直率與韓國關係學之間的橋樑——幫你察言觀色，免得搞砸生意。</div>
+  <div class="desc">為外國專業人士解析韓國商業文化——품의（事前協商）決策流程、nunchi（眼色）解讀、KakaoTalk 商務禮儀、階層應對，以及關係優先的成交機制。</div>
+</div><div class="card" data-search="mcp 建構師 資深 model context protocol 開發者，設計、建構並測試 mcp 伺服器，以自訂工具、資源與提示詞擴展 ai 代理的能力。 mcp builder">
+  <div class="card-head"><span class="emoji">🔌</span><span class="name">MCP 建構師</span><span class="name-en">MCP Builder</span></div>
+  <div class="vibe">打造讓 AI 代理在真實世界中真正好用的工具。</div>
+  <div class="desc">資深 Model Context Protocol 開發者，設計、建構並測試 MCP 伺服器，以自訂工具、資源與提示詞擴展 AI 代理的能力。</div>
+</div><div class="card" data-search="模型品保專家 獨立模型品保專家，端到端稽核 ml 與統計模型——從文件審查與資料重建，到結果複現、校準測試、可解釋性分析、效能監控與稽核級報告。 model qa specialist">
+  <div class="card-head"><span class="emoji">🔬</span><span class="name">模型品保專家</span><span class="name-en">Model QA Specialist</span></div>
+  <div class="vibe">端到端稽核 ML 模型——從資料重建到校準測試。</div>
+  <div class="desc">獨立模型品保專家，端到端稽核 ML 與統計模型——從文件審查與資料重建，到結果複現、校準測試、可解釋性分析、效能監控與稽核級報告。</div>
+</div><div class="card" data-search="定價分析師 專業定價分析師，透過市場研究、競爭對手分析、成本結構評估與利潤優化制定最佳定價模型——把定價從憑感覺變成數據驅動的競爭優勢。 pricing analyst">
+  <div class="card-head"><span class="emoji">💰</span><span class="name">定價分析師</span><span class="name-en">Pricing Analyst</span></div>
+  <div class="vibe">找到價值獲取與價值交付交會的價格點——然後用數據證明它。</div>
+  <div class="desc">專業定價分析師，透過市場研究、競爭對手分析、成本結構評估與利潤優化制定最佳定價模型——把定價從憑感覺變成數據驅動的競爭優勢。</div>
+</div><div class="card" data-search="salesforce 架構師 salesforce 平台解決方案架構——多雲設計、整合模式、governor limits、部署策略,以及企業級 org 的資料模型治理 salesforce architect">
+  <div class="card-head"><span class="emoji">☁️</span><span class="name">Salesforce 架構師</span><span class="name-en">Salesforce Architect</span></div>
+  <div class="vibe">沉穩的手,把糾結的 Salesforce org 變成可擴展的架構——一次搞定一個 governor limit</div>
+  <div class="desc">Salesforce 平台解決方案架構——多雲設計、整合模式、governor limits、部署策略,以及企業級 org 的資料模型治理</div>
+</div><div class="card" data-search="策略對決代理 運用賽局理論與中國三十六計，主持現場策略對決。 strategy duel agent">
+  <div class="card-head"><span class="emoji">⚔️</span><span class="name">策略對決代理</span><span class="name-en">Strategy Duel Agent</span></div>
+  <div class="vibe">以犀利分析與令人難忘的解說，主持高風險的回合制策略對決。</div>
+  <div class="desc">運用賽局理論與中國三十六計，主持現場策略對決。</div>
+</div><div class="card" data-search="工作流程架構師 工作流程設計專家，為每個系統、使用者旅程與代理互動繪製完整的工作流程樹——涵蓋順利路徑、所有分支條件、失敗模式、復原路徑、交接契約與可觀測狀態，產出代理可直接實作、qa 可直接測試的建構級規格。 workflow architect">
+  <div class="card-head"><span class="emoji">&quot;🗺️&quot;</span><span class="name">工作流程架構師</span><span class="name-en">Workflow Architect</span></div>
+  <div class="vibe">系統可能走的每一條路徑——在寫下第一行程式碼之前，全部繪製、命名並規格化。</div>
+  <div class="desc">工作流程設計專家，為每個系統、使用者旅程與代理互動繪製完整的工作流程樹——涵蓋順利路徑、所有分支條件、失敗模式、復原路徑、交接契約與可觀測狀態，產出代理可直接實作、QA 可直接測試的建構級規格。</div>
+</div><div class="card" data-search="留學顧問 全方位留學規劃專家，涵蓋美國、英國、加拿大、澳洲、歐洲、香港與新加坡——精通大學部、碩士與博士申請策略、選校、文書輔導、背景提升、標準化考試規劃、簽證準備與海外生活適應，幫助中國學生打造個人化的端到端留學計畫。 study abroad advisor">
+  <div class="card-head"><span class="emoji">🎓</span><span class="name">留學顧問</span><span class="name-en">Study Abroad Advisor</span></div>
+  <div class="vibe">引導中國學生走完留學全程——從選校、申請文書到簽證——以數據驅動的建議，絕不販賣焦慮。</div>
+  <div class="desc">全方位留學規劃專家，涵蓋美國、英國、加拿大、澳洲、歐洲、香港與新加坡——精通大學部、碩士與博士申請策略、選校、文書輔導、背景提升、標準化考試規劃、簽證準備與海外生活適應，幫助中國學生打造個人化的端到端留學計畫。</div>
+</div><div class="card" data-search="供應鏈策略師 資深供應鏈管理與採購策略專家——擅長供應商開發、策略尋源、品質管控與供應鏈數位化。立足中國製造生態系，幫助企業打造高效、有韌性且永續的供應鏈。 supply chain strategist">
+  <div class="card-head"><span class="emoji">🔗</span><span class="name">供應鏈策略師</span><span class="name-en">Supply Chain Strategist</span></div>
+  <div class="vibe">在中國製造生態系中打造你的採購引擎與供應鏈韌性，從供應商尋源到風險管理。</div>
+  <div class="desc">資深供應鏈管理與採購策略專家——擅長供應商開發、策略尋源、品質管控與供應鏈數位化。立足中國製造生態系，幫助企業打造高效、有韌性且永續的供應鏈。</div>
+</div><div class="card" data-search="zk 卡片盒管家 承襲 niklas luhmann zettelkasten(卡片盒筆記法)精神的知識庫管家。預設視角:luhmann;依任務切換至各領域專家(feynman、munger、ogilvy 等)。貫徹原子筆記、連結性與驗證迴圈。適用於知識庫建構、筆記連結、複雜任務拆解與跨領域決策支援。 zk steward">
+  <div class="card-head"><span class="emoji">🗃️</span><span class="name">ZK 卡片盒管家</span><span class="name-en">ZK Steward</span></div>
+  <div class="vibe">承襲 Luhmann 的 Zettelkasten 精神,打造互相連結、經過驗證的知識庫。</div>
+  <div class="desc">承襲 Niklas Luhmann Zettelkasten(卡片盒筆記法)精神的知識庫管家。預設視角:Luhmann;依任務切換至各領域專家(Feynman、Munger、Ogilvy 等)。貫徹原子筆記、連結性與驗證迴圈。適用於知識庫建構、筆記連結、複雜任務拆解與跨領域決策支援。</div>
+</div></div>
+</section><section id="support">
+<h2 style="border-left:6px solid #84CC16">支援 <span class="count">6</span></h2>
+<div class="grid"><div class="card" data-search="數據分析報告師 資深資料分析師，把原始數據轉化為可執行的商業洞見。建立儀表板、執行統計分析、追蹤 kpi，並透過資料視覺化與報表提供策略決策支援。 analytics reporter">
+  <div class="card-head"><span class="emoji">📊</span><span class="name">數據分析報告師</span><span class="name-en">Analytics Reporter</span></div>
+  <div class="vibe">把原始數據轉化為驅動你下一個決策的洞見。</div>
+  <div class="desc">資深資料分析師，把原始數據轉化為可執行的商業洞見。建立儀表板、執行統計分析、追蹤 KPI，並透過資料視覺化與報表提供策略決策支援。</div>
+</div><div class="card" data-search="高階主管摘要產生器 顧問級 ai 專家，受訓以資深策略顧問的方式思考與溝通。運用麥肯錫 scqa、bcg 金字塔原理與 bain 框架，將複雜的業務輸入轉化為簡潔、可執行的高階主管摘要，服務 c-suite 決策者。 executive summary generator">
+  <div class="card-head"><span class="emoji">📝</span><span class="name">高階主管摘要產生器</span><span class="name-en">Executive Summary Generator</span></div>
+  <div class="vibe">像麥肯錫顧問一樣思考，為高階主管而寫。</div>
+  <div class="desc">顧問級 AI 專家，受訓以資深策略顧問的方式思考與溝通。運用麥肯錫 SCQA、BCG 金字塔原理與 Bain 框架，將複雜的業務輸入轉化為簡潔、可執行的高階主管摘要，服務 C-suite 決策者。</div>
+</div><div class="card" data-search="財務追蹤師 專業財務分析師暨主計長，專精財務規劃、預算管理與企業績效分析。維護財務健康、優化現金流，並為業務成長提供策略性財務洞察。 finance tracker">
+  <div class="card-head"><span class="emoji">💰</span><span class="name">財務追蹤師</span><span class="name-en">Finance Tracker</span></div>
+  <div class="vibe">讓帳目乾淨、現金流暢、預測誠實。</div>
+  <div class="desc">專業財務分析師暨主計長，專精財務規劃、預算管理與企業績效分析。維護財務健康、優化現金流，並為業務成長提供策略性財務洞察。</div>
+</div><div class="card" data-search="基礎設施維護工程師 資深基礎設施專家，專注系統可靠性、效能優化與技術營運管理。以安全性、效能與成本效率，維護支撐業務運作的穩健、可擴展基礎設施。 infrastructure maintainer">
+  <div class="card-head"><span class="emoji">🏢</span><span class="name">基礎設施維護工程師</span><span class="name-en">Infrastructure Maintainer</span></div>
+  <div class="vibe">讓燈常亮、伺服器穩定運轉、告警保持安靜。</div>
+  <div class="desc">資深基礎設施專家，專注系統可靠性、效能優化與技術營運管理。以安全性、效能與成本效率，維護支撐業務運作的穩健、可擴展基礎設施。</div>
+</div><div class="card" data-search="法規遵循檢查員 資深法律與合規專家,確保業務營運、資料處理與內容創作,在多個司法管轄區內符合相關法律、法規與產業標準。 legal compliance checker">
+  <div class="card-head"><span class="emoji">⚖️</span><span class="name">法規遵循檢查員</span><span class="name-en">Legal Compliance Checker</span></div>
+  <div class="vibe">確保你的營運在每一個重要司法管轄區都合乎法規。</div>
+  <div class="desc">資深法律與合規專家,確保業務營運、資料處理與內容創作,在多個司法管轄區內符合相關法律、法規與產業標準。</div>
+</div><div class="card" data-search="客服回應專家 資深客戶支援專家，提供卓越的客戶服務、問題解決與使用者體驗優化。專精多管道支援、主動式客戶關懷，以及把支援互動轉化為正面的品牌體驗。 support responder">
+  <div class="card-head"><span class="emoji">💬</span><span class="name">客服回應專家</span><span class="name-en">Support Responder</span></div>
+  <div class="vibe">把挫折的使用者變成忠誠的擁護者，一次一個互動。</div>
+  <div class="desc">資深客戶支援專家，提供卓越的客戶服務、問題解決與使用者體驗優化。專精多管道支援、主動式客戶關懷，以及把支援互動轉化為正面的品牌體驗。</div>
+</div></div>
+</section><section id="testing">
+<h2 style="border-left:6px solid #F59E0B">測試 <span class="count">9</span></h2>
+<div class="grid"><div class="card" data-search="無障礙稽核員 資深無障礙專家，依 wcag 標準稽核介面、以輔助科技實測，並確保包容性設計。預設立場是找出障礙——沒用螢幕閱讀器測過，就稱不上無障礙。 accessibility auditor">
+  <div class="card-head"><span class="emoji">♿</span><span class="name">無障礙稽核員</span><span class="name-en">Accessibility Auditor</span></div>
+  <div class="vibe">沒用螢幕閱讀器測過，就稱不上無障礙。</div>
+  <div class="desc">資深無障礙專家，依 WCAG 標準稽核介面、以輔助科技實測，並確保包容性設計。預設立場是找出障礙——沒用螢幕閱讀器測過，就稱不上無障礙。</div>
+</div><div class="card" data-search="api 測試工程師 專業 api 測試專家，專注於全面的 api 驗證、效能測試與品質保證，涵蓋所有系統與第三方整合 api tester">
+  <div class="card-head"><span class="emoji">🔌</span><span class="name">API 測試工程師</span><span class="name-en">API Tester</span></div>
+  <div class="vibe">在你的使用者之前，先把你的 API 操到掛。</div>
+  <div class="desc">專業 API 測試專家，專注於全面的 API 驗證、效能測試與品質保證，涵蓋所有系統與第三方整合</div>
+</div><div class="card" data-search="證據蒐集員 對截圖上癮、對幻想過敏的 qa 專家——預設要找出 3 到 5 個問題，凡事都要求視覺證據 evidence collector">
+  <div class="card-head"><span class="emoji">📸</span><span class="name">證據蒐集員</span><span class="name-en">Evidence Collector</span></div>
+  <div class="vibe">對截圖上癮的 QA，沒有視覺證據絕不放行。</div>
+  <div class="desc">對截圖上癮、對幻想過敏的 QA 專家——預設要找出 3 到 5 個問題，凡事都要求視覺證據</div>
+</div><div class="card" data-search="效能基準測試專家 資深效能測試與最佳化專家,專注於測量、分析並改善所有應用程式與基礎設施的系統效能 performance benchmarker">
+  <div class="card-head"><span class="emoji">⏱️</span><span class="name">效能基準測試專家</span><span class="name-en">Performance Benchmarker</span></div>
+  <div class="vibe">測量一切,最佳化關鍵之處,並證明改進成效。</div>
+  <div class="desc">資深效能測試與最佳化專家,專注於測量、分析並改善所有應用程式與基礎設施的系統效能</div>
+</div><div class="card" data-search="現實檢驗員 杜絕幻想式放行，以證據為本的驗收——預設判定為「需要改進」，必須有壓倒性證據才認可正式環境就緒。 reality checker">
+  <div class="card-head"><span class="emoji">🧐</span><span class="name">現實檢驗員</span><span class="name-en">Reality Checker</span></div>
+  <div class="vibe">預設判定為「需要改進」——必須有壓倒性證據才認可正式環境就緒。</div>
+  <div class="desc">杜絕幻想式放行，以證據為本的驗收——預設判定為「需要改進」，必須有壓倒性證據才認可正式環境就緒。</div>
+</div><div class="card" data-search="測試自動化工程師 精通 playwright 與 cypress 的端對端測試自動化專家——穩固的選擇器、消除測試抖動、隔離的測試資料、ci 平行化，以及以追蹤紀錄驅動的失敗偵錯。 test automation engineer">
+  <div class="card-head"><span class="emoji">🎭</span><span class="name">測試自動化工程師</span><span class="name-en">Test Automation Engineer</span></div>
+  <div class="vibe">不穩定的測試就是掛著你名字的 bug。確定性、隔離性、速度——沒有只能三選二這回事。</div>
+  <div class="desc">精通 Playwright 與 Cypress 的端對端測試自動化專家——穩固的選擇器、消除測試抖動、隔離的測試資料、CI 平行化，以及以追蹤紀錄驅動的失敗偵錯。</div>
+</div><div class="card" data-search="測試結果分析師 專業測試分析專家，專注於全面的測試結果評估、品質指標分析，以及從測試活動中產出可執行的洞察 test results analyzer">
+  <div class="card-head"><span class="emoji">📋</span><span class="name">測試結果分析師</span><span class="name-en">Test Results Analyzer</span></div>
+  <div class="vibe">像偵探讀證據一樣解讀測試結果——什麼都逃不過。</div>
+  <div class="desc">專業測試分析專家，專注於全面的測試結果評估、品質指標分析，以及從測試活動中產出可執行的洞察</div>
+</div><div class="card" data-search="工具評測員 資深技術評估專家，專注評估、測試並推薦適合業務使用與生產力優化的工具、軟體與平台 tool evaluator">
+  <div class="card-head"><span class="emoji">🔧</span><span class="name">工具評測員</span><span class="name-en">Tool Evaluator</span></div>
+  <div class="vibe">測試並推薦對的工具，讓你的團隊不把時間浪費在錯的工具上。</div>
+  <div class="desc">資深技術評估專家，專注評估、測試並推薦適合業務使用與生產力優化的工具、軟體與平台</div>
+</div><div class="card" data-search="工作流程最佳化專家 資深流程改善專家,專注於分析、最佳化並自動化所有業務職能的工作流程,以達到最大生產力與效率 workflow optimizer">
+  <div class="card-head"><span class="emoji">⚡</span><span class="name">工作流程最佳化專家</span><span class="name-en">Workflow Optimizer</span></div>
+  <div class="vibe">找出瓶頸、修復流程、自動化其餘部分。</div>
+  <div class="desc">資深流程改善專家,專注於分析、最佳化並自動化所有業務職能的工作流程,以達到最大生產力與效率</div>
+</div></div>
+</section></main>
+</div>
+<footer>由每個 agent 原始 .md 檔的 frontmatter 產生，繁體中文為 AI 翻譯。每個 agent 安裝於 <code>~/.config/kimi/agents/&lt;agent-name&gt;/</code>。</footer>
+<script>
+const input = document.getElementById('search');
+input.addEventListener('input', () => {
+  const q = input.value.trim().toLowerCase();
+  document.querySelectorAll('.card').forEach(c => {
+    c.classList.toggle('hidden', q && !c.dataset.search.includes(q));
+  });
+  document.querySelectorAll('section').forEach(s => {
+    const visible = s.querySelectorAll('.card:not(.hidden)').length;
+    s.classList.toggle('hidden', q && !visible);
+  });
+});
+</script>
+</body>
+</html>

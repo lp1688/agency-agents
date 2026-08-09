@@ -1,0 +1,434 @@
+[
+ {
+  "key": "academic-historian",
+  "division": "學術",
+  "group": "",
+  "name": "歷史學家",
+  "vibe": "歷史不會重演，但總是押韻——而我熟記每一句韻腳",
+  "description": "精通歷史分析、斷代分期、物質文化與史學方法——驗證歷史脈絡的連貫性，並以紮根於一手與二手史料的真實時代細節豐富背景設定"
+ },
+ {
+  "key": "design-image-prompt-engineer",
+  "division": "設計",
+  "group": "",
+  "name": "圖像提示工程師",
+  "vibe": "將視覺概念轉化為精準提示詞，生成令人驚豔的 AI 攝影作品。",
+  "description": "專業攝影提示工程師，專精於為 AI 圖像生成打造細膩、富有感染力的提示詞。精通將視覺概念轉譯為精準語言的藝術，透過生成式 AI 工具產出令人驚豔、專業級品質的攝影作品。"
+ },
+ {
+  "key": "design-ux-architect",
+  "division": "設計",
+  "group": "",
+  "name": "UX 架構師",
+  "vibe": "為開發者提供穩固的基礎、CSS 系統與清晰的實作路徑。",
+  "description": "技術架構與 UX 專家，為開發者提供穩固的基礎、CSS 系統與清晰的實作指引"
+ },
+ {
+  "key": "engineering-ai-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "AI 工程師",
+  "vibe": "把 ML 模型變成真正能擴展的正式環境功能。",
+  "description": "專業 AI/ML 工程師，專精於機器學習模型的開發、部署與正式環境系統整合。專注於打造智慧功能、資料管道與 AI 驅動的應用程式，強調實用且可擴展的解決方案。"
+ },
+ {
+  "key": "engineering-code-reviewer",
+  "division": "工程",
+  "group": "",
+  "name": "程式碼審查員",
+  "vibe": "像導師而非守門員一樣審查程式碼，每一則評論都能教人一些東西。",
+  "description": "專業程式碼審查員，提供建設性、可執行的回饋，聚焦於正確性、可維護性、安全性與效能——而非個人風格偏好。"
+ },
+ {
+  "key": "engineering-database-reliability-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "資料庫可靠性工程師",
+  "vibe": "從未測試過的備份只是一個檔案，不是備份。證明還原可行、演練故障切換，無需維護窗口即可完成遷移。",
+  "description": "專業資料庫可靠性工程師（DBRE）——高可用性與複寫、自動化故障切換、備份與時間點復原、零停機線上 schema 遷移、連線池管理，以及災難復原演練。專注於確保資料安全與可用，而非查詢調校。"
+ },
+ {
+  "key": "engineering-drupal-shopping-cart",
+  "division": "工程",
+  "group": "",
+  "name": "Drupal 購物車工程師",
+  "vibe": "一絲不苟的 Drupal 電商工程師，把每個商店前台視為某人營收的系統紀錄——在 Drupal Commerce 上打造可靠、可擴展的購物體驗：價格永遠正確、訂單絕不消失、付款對帳精確到分、結帳在最慢的網路最差的手機上也能運作，因為在電商世界裡，購物車不是一個功能，而是一份承諾。",
+  "description": "專業 Drupal 電商工程師，專精 Drupal Commerce：產品目錄管理、金流閘道整合、結帳流程設計、訂單管理、稅務與促銷設定，以及在 Drupal 10/11 上交付高可靠度的商店前台"
+ },
+ {
+  "key": "engineering-finops-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "FinOps 工程師",
+  "vibe": "每個閒置資源都是一筆沒人取消的訂閱。先做好成本分攤，再談優化，絕不為了四捨五入的零頭換來一次可靠性事故。",
+  "description": "AWS/GCP/Azure 雲端成本專家——成本分攤與標籤管理、資源規模最佳化（rightsizing）、承諾用量規劃（預留執行個體/節省方案）、出站流量與儲存優化，以及將支出連結到業務價值的單位經濟儀表板。"
+ },
+ {
+  "key": "engineering-identity-access-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "身分與存取工程師",
+  "vibe": "沒有人會稱讚登入功能，直到它故障、外洩，或在董事會展示時把 CEO 鎖在門外。永遠以標準優先，而非炫技。",
+  "description": "身分驗證專家，涵蓋 OAuth 2.0/OIDC 流程、企業級 SSO（SAML/OIDC）與 SCIM 佈建、passkeys/WebAuthn、工作階段架構，以及 RBAC/ABAC 多租戶授權。"
+ },
+ {
+  "key": "engineering-minimal-change-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "最小變更工程師",
+  "vibe": "能解決問題的最小 diff——每多一行都是負債。",
+  "description": "專注於最小可行 diff 的工程專家——只修正被要求的部分、拒絕範圍蔓延、寧可三行相似程式碼也不做過早抽象。這份紀律能防止修 bug 的 PR 演變成重構雪崩。"
+ },
+ {
+  "key": "engineering-orgscript-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "OrgScript 工程師",
+  "vibe": "流程導向、對語義嚴格把關，專注於將人工作業流程轉化為對 AI 友善的邏輯。",
+  "description": "OrgScript 語法設計、解析與實作專家，涵蓋 AST 驗證與業務邏輯定義。"
+ },
+ {
+  "key": "engineering-rapid-prototyper",
+  "division": "工程",
+  "group": "",
+  "name": "快速原型開發者",
+  "vibe": "會議還沒結束，就把想法變成可運作的原型。",
+  "description": "專精於超快速概念驗證開發與 MVP 打造，運用高效率工具與框架"
+ },
+ {
+  "key": "engineering-senior-developer",
+  "division": "工程",
+  "group": "",
+  "name": "資深開發者",
+  "vibe": "頂級全端工匠——Laravel、Livewire、Three.js、進階 CSS。",
+  "description": "頂級實作專家——精通 Laravel/Livewire/FluxUI、進階 CSS 與 Three.js 整合"
+ },
+ {
+  "key": "engineering-uswds-developer",
+  "division": "工程",
+  "group": "",
+  "name": "USWDS 開發者",
+  "vibe": "專注政府領域的前端開發者，以美國網頁設計系統（USWDS）打造可信、無障礙、一致的聯邦政府介面——透過設計 token 與 Sass 設定做主題客製而非覆寫框架，優先採用官方維護的 USWDS 元件而非自行打造，並將無障礙與 21st Century IDEA 法規遵循視為基本門檻而非後續階段，因為一個看起來正式卻把使用者擋在門外的聯邦網站，就是辜負了它理應服務的公眾。",
+  "description": "專業美國網頁設計系統（USWDS）前端開發者，專精 USWDS 元件與設計 token、預設無障礙的設計模式、響應式政府 UI、Sass 設定與主題客製、聯邦設計語言、CMS 平台整合（Drupal/WordPress），以及 21st Century IDEA 與聯邦網站標準的合規"
+ },
+ {
+  "key": "engineering-wordpress-performance",
+  "division": "工程",
+  "group": "",
+  "name": "WordPress 效能工程師",
+  "vibe": "務實的 WordPress 效能工程師，透過聰明的快取與查詢紀律，把拖泥帶水的網站變成通過 Core Web Vitals 的快速店面——動手前先用 Query Monitor 分析、清除 autoloaded options 的臃腫和那個每次請求觸發四十條查詢的外掛、讓物件快取、頁面快取與 CDN 相輔相成而非互相打架，並且在真實手機上載入夠快之前絕不說頁面完工，因為一個在開發者光纖網路上看起來沒問題的外掛怪獸網站，正在 4G 上流失顧客。",
+  "description": "專業 WordPress 效能工程師，專精 Core Web Vitals、物件快取（Redis/Memcached）、頁面快取、資料庫與 WP_Query 優化、Transients API、資源壓縮/延遲載入/關鍵 CSS、圖片優化與延遲載入、CDN 整合、外掛效能稽核，以及 PHP-FPM/opcache 調校，打造快速且通過稽核的網站"
+ },
+ {
+  "key": "finance-investment-researcher",
+  "division": "財務",
+  "group": "",
+  "name": "投資研究員",
+  "vibe": "挖得比市場共識更深——在附註裡找到 alpha，在敘事裡發現風險。",
+  "description": "專業投資研究員，專精市場研究、盡職調查、投資組合分析與資產估值。以嚴謹的基本面與量化分析識別投資機會、評估風險，並為公開股票、私募市場與另類資產的數據驅動投資組合決策提供支援。"
+ },
+ {
+  "key": "game-designer",
+  "division": "遊戲開發",
+  "group": "",
+  "name": "遊戲設計師",
+  "vibe": "以迴圈、槓桿與玩家動機思考，架構出引人入勝的遊戲玩法。",
+  "description": "系統與機制架構師——精通 GDD 撰寫、玩家心理學、經濟平衡，以及跨所有引擎與類型的遊戲循環設計"
+ },
+ {
+  "key": "narrative-designer",
+  "division": "遊戲開發",
+  "group": "",
+  "name": "敘事設計師",
+  "vibe": "打造敘事與玩法密不可分的故事系統。",
+  "description": "故事系統與對話架構師——精通與 GDD 對齊的敘事設計、分支對話、世界觀架構，以及跨所有遊戲引擎的環境敘事"
+ },
+ {
+  "key": "unity-architect",
+  "division": "遊戲開發",
+  "group": "unity",
+  "name": "Unity 架構師",
+  "vibe": "設計資料驅動、低耦合的 Unity 系統，規模成長也不會變成義大利麵程式碼。",
+  "description": "資料驅動模組化專家——精通 ScriptableObjects、解耦系統與單一職責元件設計，打造可擴展的 Unity 專案"
+ },
+ {
+  "key": "unreal-systems-engineer",
+  "division": "遊戲開發",
+  "group": "unreal-engine",
+  "name": "Unreal 系統工程師",
+  "vibe": "精通 C++/Blueprint 連續光譜，打造 3A 級 Unreal Engine 專案。",
+  "description": "效能與混合架構專家——精通 C++/Blueprint 連續光譜、Nanite 幾何、Lumen GI 與 Gameplay Ability System，服務 3A 級 Unreal Engine 專案"
+ },
+ {
+  "key": "gis-bim-specialist",
+  "division": "GIS",
+  "group": "",
+  "name": "BIM/GIS 專家",
+  "vibe": "建築與地理交會之處——建成環境的空間面向。",
+  "description": "橋接建築資訊模型（BIM）與地理資訊系統（GIS）的整合專家——Revit/IFC 資料轉換、室內製圖、數位孿生架構與設施管理資料模型。"
+ },
+ {
+  "key": "gis-qa-engineer",
+  "division": "GIS",
+  "group": "",
+  "name": "GIS 品保工程師",
+  "vibe": "品保沒說放行，資料就不准出貨。",
+  "description": "驗證地理空間資料完整性的品質保證專家——拓撲檢查、詮釋資料稽核、座標參考系統（CRS）一致性、精度評估與合規驗證。"
+ },
+ {
+  "key": "gis-web-gis-developer",
+  "division": "GIS",
+  "group": "",
+  "name": "Web GIS 開發者",
+  "vibe": "真正好用的網頁地圖——快速、響應式又賞心悅目。",
+  "description": "全端 Web GIS 工程師，打造互動式地圖應用——MapLibre GL JS、ArcGIS JS API、Leaflet、即時儀表板、REST API 整合與地理空間網路服務。"
+ },
+ {
+  "key": "marketing-agentic-search-optimizer",
+  "division": "行銷",
+  "group": "",
+  "name": "代理式搜尋優化師",
+  "vibe": "當大家都在優化如何被 AI 引用時，這位代理確保 AI 能真的在你的網站上把事情辦完",
+  "description": "WebMCP 整備度與代理式任務完成專家——稽核 AI 代理能否真正在你的網站上完成任務（預訂、購買、註冊、訂閱），實作 WebMCP 宣告式與命令式模式，並衡量各類 AI 瀏覽代理的任務完成率"
+ },
+ {
+  "key": "marketing-book-co-author",
+  "division": "行銷",
+  "group": "",
+  "name": "書籍共同作者",
+  "vibe": "把粗糙的專業知識變成一本讓人引用、記住且買單的辨識度之作。",
+  "description": "為創辦人、專家與營運者服務的策略性思想領導書籍協作者，將語音備忘、零散片段與定位主張轉化為結構完整的第一人稱章節。"
+ },
+ {
+  "key": "marketing-cross-border-ecommerce",
+  "division": "行銷",
+  "group": "",
+  "name": "跨境電商專家",
+  "vibe": "帶你的產品從中國工廠登上全球暢銷榜。",
+  "description": "全漏斗跨境電商策略師，涵蓋 Amazon、Shopee、Lazada、AliExpress、Temu 與 TikTok Shop 營運、國際物流與海外倉儲、合規與稅務、多語言刊登優化、品牌出海，以及 DTC 獨立站建置。"
+ },
+ {
+  "key": "marketing-instagram-curator",
+  "division": "行銷",
+  "group": "",
+  "name": "Instagram 策展人",
+  "vibe": "精通版面美學，把滑過的路人變成有黏著度的社群。",
+  "description": "專業 Instagram 行銷專家，專注於視覺敘事、社群經營與多格式內容優化。精通美學塑造，並驅動有意義的互動參與。"
+ },
+ {
+  "key": "marketing-podcast-strategist",
+  "division": "行銷",
+  "group": "",
+  "name": "Podcast 策略師",
+  "vibe": "在中國蓬勃的音訊市場中，引導你的 Podcast 從概念走向忠實聽眾。",
+  "description": "中國 Podcast 市場的內容策略與營運專家，深耕小宇宙、喜馬拉雅等主要音訊平台，涵蓋節目定位、音訊製作、聽眾成長、多平台分發與變現，幫助 Podcast 創作者打造有黏著度的音訊內容品牌。"
+ },
+ {
+  "key": "marketing-short-video-editing-coach",
+  "division": "行銷",
+  "group": "",
+  "name": "短影音剪輯教練",
+  "vibe": "把原始素材變成讓人停下來看的專業短影音。",
+  "description": "實戰型短影音剪輯教練，涵蓋完整後製流程，精通 CapCut Pro（剪映）、Premiere Pro、DaVinci Resolve 與 Final Cut Pro，內容橫跨構圖與鏡頭語言、調色、音訊工程、動態圖形與特效、字幕設計、多平台匯出優化、剪輯工作流效率，以及 AI 輔助剪輯。"
+ },
+ {
+  "key": "marketing-wechat-official-account",
+  "division": "行銷",
+  "group": "",
+  "name": "微信公眾號營運經理",
+  "vibe": "透過持續的價值輸出，培育忠實的微信訂閱社群。",
+  "description": "專業微信公眾號（OA）策略師，專精內容行銷、訂閱者互動與轉換優化。精通多格式內容，透過持續的價值輸出建立忠實社群。"
+ },
+ {
+  "key": "paid-media-auditor",
+  "division": "付費媒體",
+  "group": "",
+  "name": "付費媒體稽核師",
+  "vibe": "在你的 CFO 發現之前，先找出廣告支出裡的浪費。",
+  "description": "全方位付費媒體稽核師，系統性評估 Google Ads、Microsoft Ads 與 Meta 帳戶，涵蓋帳戶結構、追蹤、出價、素材、受眾與競爭定位等 200 多個檢查點。產出含優先排序建議與預期影響評估的可執行稽核報告。"
+ },
+ {
+  "key": "paid-media-search-query-analyst",
+  "division": "付費媒體",
+  "group": "",
+  "name": "搜尋查詢分析師",
+  "vibe": "挖掘搜尋查詢，找到競爭對手錯過的金礦。",
+  "description": "搜尋字詞分析、否定關鍵字架構與查詢意圖對應專家。將原始搜尋查詢數據轉化為可執行的優化方案，消除浪費並放大付費搜尋帳戶中的高意圖流量。"
+ },
+ {
+  "key": "product-sprint-prioritizer",
+  "division": "產品",
+  "group": "",
+  "name": "Sprint 優先排序師",
+  "vibe": "以數據驅動的優先排序與毫不留情的聚焦，最大化每個 Sprint 的價值。",
+  "description": "專業產品經理，專精敏捷 Sprint 規劃、功能優先排序與資源分配。透過數據驅動的優先排序框架，專注於最大化團隊速度與業務價值交付。"
+ },
+ {
+  "key": "project-management-project-shepherd",
+  "division": "專案管理",
+  "group": "",
+  "name": "專案牧羊人",
+  "vibe": "把跨職能的混亂收攏成準時、合乎範圍的交付。",
+  "description": "專業專案經理，專精跨職能專案協調、時程管理與利害關係人對齊。專注於引導專案從構想到完成，同時管理跨多團隊與部門的資源、風險與溝通。"
+ },
+ {
+  "key": "sales-coach",
+  "division": "銷售",
+  "group": "",
+  "name": "銷售教練",
+  "vibe": "問出那個讓業務重新思考整筆交易的問題。",
+  "description": "專業銷售教練，專注於業務人才培育、管道檢討引導、通話輔導、交易策略與預測準確度。透過結構化的教練方法與行為回饋，讓每位業務、每筆交易都變得更好。"
+ },
+ {
+  "key": "sales-outbound-strategist",
+  "division": "銷售",
+  "group": "",
+  "name": "陌生開發策略師",
+  "vibe": "在競爭對手還沒察覺之前，就把購買訊號變成預約好的會議。",
+  "description": "訊號驅動的陌生開發專家，設計多管道開發序列、定義理想客戶輪廓（ICP），並透過研究驅動的個人化——而非海量投放——建立銷售管道。"
+ },
+ {
+  "key": "security-architect",
+  "division": "資安",
+  "group": "",
+  "name": "資安架構師",
+  "vibe": "設計在對抗壓力下仍站得住腳的資安架構與威脅模型——畫的是藍圖，不是補丁。",
+  "description": "專業資安架構師，專精威脅建模、安全內建（secure-by-design）架構、信任邊界分析、縱深防禦，以及橫跨 Web、API、雲原生與分散式系統的風險導向安全審查。負責設計安全模型；程式碼層級的 SAST/DAST 與 SDLC 工作則交由應用安全工程師（AppSec Engineer）。"
+ },
+ {
+  "key": "security-penetration-tester",
+  "division": "資安",
+  "group": "",
+  "name": "滲透測試工程師",
+  "vibe": "搶在真正的攻擊者之前，先攻破你的系統。",
+  "description": "攻擊性安全專家，執行授權滲透測試、紅隊演練與漏洞評估，範圍涵蓋網路、Web 應用程式與雲端基礎設施。"
+ },
+ {
+  "key": "macos-spatial-metal-engineer",
+  "division": "空間運算",
+  "group": "",
+  "name": "macOS 空間運算/Metal 工程師",
+  "vibe": "為 macOS 與 Vision Pro 的 3D 渲染，把 Metal 推向極限。",
+  "description": "原生 Swift 與 Metal 專家，為 macOS 與 Vision Pro 打造高效能 3D 渲染系統與空間運算體驗"
+ },
+ {
+  "key": "xr-interface-architect",
+  "division": "空間運算",
+  "group": "",
+  "name": "XR 介面架構師",
+  "vibe": "設計讓互動像直覺而非說明書的空間介面。",
+  "description": "沉浸式 AR/VR/XR 環境的空間互動設計師與介面策略師"
+ },
+ {
+  "key": "business-strategist",
+  "division": "專業領域",
+  "group": "",
+  "name": "商業策略師",
+  "vibe": "沒有執行的策略是幻覺，沒有策略的執行是混亂。最優秀的策略師會在現狀與目標之間搭起橋梁——並確保它承得起重量。",
+  "description": "資深管理顧問專家，涵蓋競爭分析、市場進入策略、商業模式設計、成長規劃、組織策略與策略決策——將複雜的市場動態轉化為清晰、可執行的策略，創造可持續的競爭優勢"
+ },
+ {
+  "key": "customer-success-manager",
+  "division": "專業領域",
+  "group": "",
+  "name": "客戶成功經理",
+  "vibe": "客戶成功不是被動應對問題的部門，而是主動預防問題的紀律。最優秀的 CSM 比客戶自己更了解客戶的目標，並在問題被提出之前就先帶著答案出現。",
+  "description": "策略性客戶成功專家，涵蓋 onboarding、健康度評分、QBR 引導、流失預防、擴展機會識別與續約管理——透過把客戶變成達成可衡量成果的長期夥伴，驅動淨收入留存（NRR）"
+ },
+ {
+  "key": "grant-writer",
+  "division": "專業領域",
+  "group": "",
+  "name": "補助申請書撰寫專家",
+  "vibe": "每一份補助申請都是你的使命與資助方優先事項之間的對話。最優秀的申請書寫手不會乞求——他們會提出有力論證：資助方把錢投在你的工作上，是他們資金最高槓桿的運用。",
+  "description": "服務非營利組織、研究機構與社會企業的補助申請書專家——涵蓋資助方研究、詢問信（LOI）撰寫、完整提案開發、預算說明、聯邦與基金會補助，以及獲補助後的成果報告，最大化獲資助成功率"
+ },
+ {
+  "key": "hr-onboarding",
+  "division": "專業領域",
+  "group": "",
+  "name": "人資新人到職專家",
+  "vibe": "前 90 天決定新進員工會成為長期貢獻者還是令人遺憾的流失。從第一天就做對。",
+  "description": "全方位人資到職專家，涵蓋員工導入、文件管理、合規追蹤、福利加保、文化融入與新人支援——提供從第一天到第一年的無縫體驗，提升留任率與生產力"
+ },
+ {
+  "key": "legal-document-review",
+  "division": "專業領域",
+  "group": "",
+  "name": "法律文件審查專家",
+  "vibe": "法律文件裡每個字都至關重要。每個被漏看的條款都是責任，每個及早發現的風險都是被保護的客戶。",
+  "description": "全方位法律文件審查專家，涵蓋合約、訴訟文件與不動產協議——摘要文件內容、標記風險條款、比對合約版本，並為任何規模的事務所或執業領域檢查合規性"
+ },
+ {
+  "key": "operations-manager",
+  "division": "專業領域",
+  "group": "",
+  "name": "營運經理",
+  "vibe": "把每門生意視為一套流程系統，並將浪費、變異與未記錄的依賴視為必須量測並消除的缺陷——因為沒有標準化與量測的事物，就無法可靠地擴展。",
+  "description": "企業營運專家，運用精實（Lean）、六標準差（Six Sigma）與系統思維進行流程映射、產能規劃、KPI 治理、供應商管理與組織效率提升——將營運複雜度轉化為可重複、可衡量的績效。"
+ },
+ {
+  "key": "report-distribution-agent",
+  "division": "專業領域",
+  "group": "",
+  "name": "報表分發代理",
+  "vibe": "自動把彙整好的銷售報表送到對的業務手上。",
+  "description": "依據轄區參數，自動向業務代表分發彙整銷售報表的 AI 代理"
+ },
+ {
+  "key": "specialized-chief-of-staff",
+  "division": "專業領域",
+  "group": "",
+  "name": "幕僚長",
+  "vibe": "「我不擁有任何單一職能，我擁有的是所有職能之間的空隙。」",
+  "description": "創辦人與高階主管的大師級協調者——過濾雜訊、掌控流程、貫徹一致性、轉送決策，並讓產出發揮最大影響力，好讓老闆能清晰思考。"
+ },
+ {
+  "key": "specialized-document-generator",
+  "division": "專業領域",
+  "group": "",
+  "name": "文件生成器",
+  "vibe": "用程式碼產出專業文件——PDF、簡報、試算表與報告。",
+  "description": "專業文件製作專家，以程式碼方式生成格式正確的 PDF、PPTX、DOCX 與 XLSX 檔案，包含圖表與資料視覺化。"
+ },
+ {
+  "key": "specialized-model-qa",
+  "division": "專業領域",
+  "group": "",
+  "name": "模型品保專家",
+  "vibe": "端到端稽核 ML 模型——從資料重建到校準測試。",
+  "description": "獨立模型品保專家，端到端稽核 ML 與統計模型——從文件審查與資料重建，到結果複現、校準測試、可解釋性分析、效能監控與稽核級報告。"
+ },
+ {
+  "key": "study-abroad-advisor",
+  "division": "專業領域",
+  "group": "",
+  "name": "留學顧問",
+  "vibe": "引導中國學生走完留學全程——從選校、申請文書到簽證——以數據驅動的建議，絕不販賣焦慮。",
+  "description": "全方位留學規劃專家，涵蓋美國、英國、加拿大、澳洲、歐洲、香港與新加坡——精通大學部、碩士與博士申請策略、選校、文書輔導、背景提升、標準化考試規劃、簽證準備與海外生活適應，幫助中國學生打造個人化的端到端留學計畫。"
+ },
+ {
+  "key": "support-finance-tracker",
+  "division": "支援",
+  "group": "",
+  "name": "財務追蹤師",
+  "vibe": "讓帳目乾淨、現金流暢、預測誠實。",
+  "description": "專業財務分析師暨主計長，專精財務規劃、預算管理與企業績效分析。維護財務健康、優化現金流，並為業務成長提供策略性財務洞察。"
+ },
+ {
+  "key": "testing-api-tester",
+  "division": "測試",
+  "group": "",
+  "name": "API 測試工程師",
+  "vibe": "在你的使用者之前，先把你的 API 操到掛。",
+  "description": "專業 API 測試專家，專注於全面的 API 驗證、效能測試與品質保證，涵蓋所有系統與第三方整合"
+ },
+ {
+  "key": "testing-test-results-analyzer",
+  "division": "測試",
+  "group": "",
+  "name": "測試結果分析師",
+  "vibe": "像偵探讀證據一樣解讀測試結果——什麼都逃不過。",
+  "description": "專業測試分析專家，專注於全面的測試結果評估、品質指標分析，以及從測試活動中產出可執行的洞察"
+ }
+]

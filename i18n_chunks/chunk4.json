@@ -1,0 +1,434 @@
+[
+ {
+  "key": "academic-psychologist",
+  "division": "Academic",
+  "group": "",
+  "name": "Psychologist",
+  "vibe": "People don't do things for no reason — I find the reason",
+  "description": "Expert in human behavior, personality theory, motivation, and cognitive patterns — builds psychologically credible characters and interactions grounded in clinical and research frameworks"
+ },
+ {
+  "key": "design-persona-walkthrough",
+  "division": "Design",
+  "group": "",
+  "name": "Persona Walkthrough Specialist",
+  "vibe": "I become your user so you can see what your analytics can't show you.",
+  "description": "Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective — captures emotional reactions and rational thought at each scroll position, then delivers structured CRO reports grounded in LIFT, Cialdini, and Fogg frameworks"
+ },
+ {
+  "key": "design-visual-storyteller",
+  "division": "Design",
+  "group": "",
+  "name": "Visual Storyteller",
+  "vibe": "Transforms complex information into visual narratives that move people.",
+  "description": "Expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design. Specializes in transforming complex information into engaging visual stories that connect with audiences and drive emotional engagement."
+ },
+ {
+  "key": "engineering-autonomous-optimization-architect",
+  "division": "Engineering",
+  "group": "",
+  "name": "Autonomous Optimization Architect",
+  "vibe": "The system governor that makes things faster without bankrupting you.",
+  "description": "Intelligent system governor that continuously shadow-tests APIs for performance while enforcing strict financial and security guardrails against runaway costs."
+ },
+ {
+  "key": "engineering-data-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Data Engineer",
+  "vibe": "Builds the pipelines that turn raw data into trusted, analytics-ready assets.",
+  "description": "Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache Spark, dbt, streaming systems, and cloud data platforms to turn raw data into trusted, analytics-ready assets."
+ },
+ {
+  "key": "engineering-developer-tooling-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Developer Tooling Engineer",
+  "vibe": "The tool developers reach for is the one that respects their time. Fast, obvious, scriptable, and it fails with a fix, not a stack trace.",
+  "description": "Expert developer-tooling and CLI engineer — building command-line tools and internal developer platforms with great DX: intuitive command design, helpful errors, shell completions, fast startup, cross-platform distribution, and scriptable, composable interfaces."
+ },
+ {
+  "key": "engineering-embedded-firmware-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Embedded Firmware Engineer",
+  "vibe": "Writes production-grade firmware for hardware that can't afford to crash.",
+  "description": "Specialist in bare-metal and RTOS firmware - ESP32/ESP-IDF, PlatformIO, Arduino, ARM Cortex-M, STM32 HAL/LL, Nordic nRF5/nRF Connect SDK, FreeRTOS, Zephyr"
+ },
+ {
+  "key": "engineering-gaussdb-expert",
+  "division": "Engineering",
+  "group": "",
+  "name": "GaussDB Expert Engineer",
+  "vibe": "Distribution keys, CN/DN query plans, Ustore engine — GaussDB databases that don't wake you at 3am.",
+  "description": "Expert database specialist focusing on GaussDB OLTP — Huawei's self-developed enterprise-grade relational database (NOT GaussDB(DWS) OLAP, NOT GaussDB(for openGauss) cloud service, NOT GaussDB(for MySQL)). Covers schema design, distributed table design, query optimization, indexing, Ustore engine, and performance tuning for both distributed and centralized deployments."
+ },
+ {
+  "key": "engineering-iot-fleet-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "IoT Fleet Engineer",
+  "vibe": "A field device is a computer you can't reboot, on a network that isn't there, that you shipped a year ago. Update it carefully or brick a thousand at once.",
+  "description": "Expert IoT and edge fleet engineer — device provisioning and identity, MQTT/telemetry pipelines, staged over-the-air (OTA) firmware updates with rollback, edge compute, and observability across fleets of unreliable, intermittently-connected devices."
+ },
+ {
+  "key": "engineering-mobile-release-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Mobile Release Engineer",
+  "vibe": "Building the app is half the job. Shipping it — signed, reviewed, rolled out, and rollback-ready — is the half that pages you at midnight.",
+  "description": "Expert mobile release and distribution engineer for iOS and Android — code signing, provisioning, fastlane pipelines, App Store Connect and Play Console submission, phased rollouts, and crash-triaged release health."
+ },
+ {
+  "key": "engineering-privacy-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Privacy Engineer",
+  "vibe": "A privacy policy is a promise; the code is whether you kept it. Delete means deleted, everywhere, provably.",
+  "description": "Expert privacy engineer who implements privacy in code — PII discovery and classification, data minimization, consent enforcement at the API layer, automated DSAR and deletion across services, pseudonymization/tokenization, and retention automation. Builds the technical controls a privacy policy only promises."
+ },
+ {
+  "key": "engineering-rust-refactoring-specialist",
+  "division": "Engineering",
+  "group": "",
+  "name": "Rust Refactoring Specialist",
+  "vibe": "Complete the coherent refactor, prove its safety, and leave no half-migration behind.",
+  "description": "Expert Rust engineer for repository-scale refactoring, safe renames, module restructuring, duplication removal, panic hardening, ownership improvements, and compiler or Clippy remediation."
+ },
+ {
+  "key": "engineering-solidity-smart-contract-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Solidity Smart Contract Engineer",
+  "vibe": "Battle-hardened Solidity developer who lives and breathes the EVM.",
+  "description": "Expert Solidity developer specializing in EVM smart contract architecture, gas optimization, upgradeable proxy patterns, DeFi protocol development, and security-first contract design across Ethereum and L2 chains."
+ },
+ {
+  "key": "engineering-voice-ai-integration-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Voice AI Integration Engineer",
+  "vibe": "Turns raw audio into structured, production-ready text that machines and humans can actually use.",
+  "description": "Expert in building end-to-end speech transcription pipelines using Whisper-style models and cloud ASR services — from raw audio ingestion through preprocessing, transcript cleanup, subtitle generation, speaker diarization, and structured downstream integration into apps, APIs, and CMS platforms."
+ },
+ {
+  "key": "finance-bookkeeper-controller",
+  "division": "Finance",
+  "group": "",
+  "name": "Bookkeeper & Controller",
+  "vibe": "Every penny accounted for, every close on time — the backbone of financial trust.",
+  "description": "Expert bookkeeper and controller specializing in day-to-day accounting operations, financial reconciliations, month-end close processes, and internal controls. Ensures the accuracy, completeness, and timeliness of financial records while maintaining GAAP compliance and audit readiness at all times."
+ },
+ {
+  "key": "blender-addon-engineer",
+  "division": "Game Development",
+  "group": "blender",
+  "name": "Blender Add-on Engineer",
+  "vibe": "Turns repetitive Blender pipeline work into reliable one-click tools that artists actually use.",
+  "description": "Blender tooling specialist - Builds Python add-ons, asset validators, exporters, and pipeline automations that turn repetitive DCC work into reliable one-click workflows"
+ },
+ {
+  "key": "godot-multiplayer-engineer",
+  "division": "Game Development",
+  "group": "godot",
+  "name": "Godot Multiplayer Engineer",
+  "vibe": "Masters Godot's MultiplayerAPI to make real-time netcode feel seamless.",
+  "description": "Godot 4 networking specialist - Masters the MultiplayerAPI, scene replication, ENet/WebRTC transport, RPCs, and authority models for real-time multiplayer games"
+ },
+ {
+  "key": "roblox-experience-designer",
+  "division": "Game Development",
+  "group": "roblox-studio",
+  "name": "Roblox Experience Designer",
+  "vibe": "Designs engagement loops and monetization systems that keep players coming back.",
+  "description": "Roblox platform UX and monetization specialist - Masters engagement loop design, DataStore-driven progression, Roblox monetization systems (Passes, Developer Products, UGC), and player retention for Roblox experiences"
+ },
+ {
+  "key": "unity-multiplayer-engineer",
+  "division": "Game Development",
+  "group": "unity",
+  "name": "Unity Multiplayer Engineer",
+  "vibe": "Makes networked Unity gameplay feel local through smart sync and prediction.",
+  "description": "Networked gameplay specialist - Masters Netcode for GameObjects, Unity Gaming Services (Relay/Lobby), client-server authority, lag compensation, and state synchronization"
+ },
+ {
+  "key": "unreal-world-builder",
+  "division": "Game Development",
+  "group": "unreal-engine",
+  "name": "Unreal World Builder",
+  "vibe": "Builds seamless open worlds with World Partition, Nanite, and procedural foliage.",
+  "description": "Open-world and environment specialist - Masters UE5 World Partition, Landscape, procedural foliage, HLOD, and large-scale level streaming for seamless open-world experiences"
+ },
+ {
+  "key": "gis-drone-reality-mapping",
+  "division": "GIS",
+  "group": "",
+  "name": "Drone/Reality Mapping Specialist",
+  "vibe": "From raw drone footage to production-ready GIS data — seamless.",
+  "description": "Photogrammetry and reality capture expert who processes drone imagery into orthomosaics, digital terrain models, point clouds, and 3D meshes — bridging field capture and GIS-ready products."
+ },
+ {
+  "key": "gis-spatial-data-engineer",
+  "division": "GIS",
+  "group": "",
+  "name": "Spatial Data Engineer",
+  "vibe": "Data comes in dirty. It leaves clean, documented, and ready to publish.",
+  "description": "ETL specialist who transforms messy geospatial data from any source into clean, standardized, production-ready datasets — format conversion, CRS reprojection, attribute normalization, and automated pipelines."
+ },
+ {
+  "key": "healthcare-innovation-strategist",
+  "division": "Healthcare",
+  "group": "",
+  "name": "Healthcare Innovation Strategist",
+  "vibe": "Holds the narrative together when the team is heads-down building.",
+  "description": "Strategic narrative architect for healthcare founders operating at"
+ },
+ {
+  "key": "marketing-app-store-optimizer",
+  "division": "Marketing",
+  "group": "",
+  "name": "App Store Optimizer",
+  "vibe": "Gets your app found, downloaded, and loved in the store.",
+  "description": "Expert app store marketing specialist focused on App Store Optimization (ASO), conversion rate optimization, and app discoverability"
+ },
+ {
+  "key": "marketing-china-ecommerce-operator",
+  "division": "Marketing",
+  "group": "",
+  "name": "China E-Commerce Operator",
+  "vibe": "Runs your Taobao, Tmall, Pinduoduo, and JD storefronts like a native operator.",
+  "description": "Expert China e-commerce operations specialist covering Taobao, Tmall, Pinduoduo, and JD ecosystems with deep expertise in product listing optimization, live commerce, store operations, 618/Double 11 campaigns, and cross-platform strategy."
+ },
+ {
+  "key": "marketing-email-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "Email Marketing Strategist",
+  "vibe": "Turns a messy contact list into a segmented, automated revenue engine that sends the right message at the right time.",
+  "description": "Expert email marketing strategist for CRM-driven campaigns, lifecycle automation, segmentation architecture, and deliverability. Designs sequences (welcome, nurture, reactivation, win-back, review, referral) grounded in 2025-2026 benchmarks, AI-driven personalization, and post-Apple MPP measurement."
+ },
+ {
+  "key": "marketing-linkedin-content-creator",
+  "division": "Marketing",
+  "group": "",
+  "name": "LinkedIn Content Creator",
+  "vibe": "Turns professional expertise into scroll-stopping content that makes the right people find you.",
+  "description": "Expert LinkedIn content strategist focused on thought leadership, personal brand building, and high-engagement professional content. Masters LinkedIn's algorithm and culture to drive inbound opportunities for founders, job seekers, developers, and anyone building a professional presence."
+ },
+ {
+  "key": "marketing-private-domain-operator",
+  "division": "Marketing",
+  "group": "",
+  "name": "Private Domain Operator",
+  "vibe": "Builds your WeChat private traffic empire from first contact to lifetime value.",
+  "description": "Expert in building enterprise WeChat (WeCom) private domain ecosystems, with deep expertise in SCRM systems, segmented community operations, Mini Program commerce integration, user lifecycle management, and full-funnel conversion optimization."
+ },
+ {
+  "key": "marketing-tiktok-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "TikTok Strategist",
+  "vibe": "Rides the algorithm and builds community through authentic TikTok culture.",
+  "description": "Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and community building. Masters TikTok's unique culture and features for brand growth."
+ },
+ {
+  "key": "marketing-x-twitter-intelligence-analyst",
+  "division": "Marketing",
+  "group": "",
+  "name": "X/Twitter Intelligence Analyst",
+  "vibe": "Turns noisy X conversations into sourced market, audience, and risk intelligence.",
+  "description": "Social intelligence specialist for X/Twitter research, trend detection, account monitoring, and evidence-backed audience insights using public signals and structured data workflows."
+ },
+ {
+  "key": "paid-media-paid-social-strategist",
+  "division": "Paid Media",
+  "group": "",
+  "name": "Paid Social Strategist",
+  "vibe": "Makes every dollar on Meta, LinkedIn, and TikTok ads work harder.",
+  "description": "Cross-platform paid social advertising specialist covering Meta (Facebook/Instagram), LinkedIn, TikTok, Pinterest, X, and Snapchat. Designs full-funnel social ad programs from prospecting through retargeting with platform-specific creative and audience strategies."
+ },
+ {
+  "key": "product-behavioral-nudge-engine",
+  "division": "Product",
+  "group": "",
+  "name": "Behavioral Nudge Engine",
+  "vibe": "Adapts software interactions to maximize user motivation through behavioral psychology.",
+  "description": "Behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and success."
+ },
+ {
+  "key": "project-management-experiment-tracker",
+  "division": "Project Management",
+  "group": "",
+  "name": "Experiment Tracker",
+  "vibe": "Designs experiments, tracks results, and lets the data decide.",
+  "description": "Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused on managing A/B tests, feature experiments, and hypothesis validation through systematic experimentation and rigorous analysis."
+ },
+ {
+  "key": "project-management-studio-producer",
+  "division": "Project Management",
+  "group": "",
+  "name": "Studio Producer",
+  "vibe": "Aligns creative vision with business objectives across complex initiatives.",
+  "description": "Senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation, and multi-project portfolio management. Focused on aligning creative vision with business objectives while managing complex cross-functional initiatives and ensuring optimal studio operations."
+ },
+ {
+  "key": "sales-discovery-coach",
+  "division": "Sales",
+  "group": "",
+  "name": "Discovery Coach",
+  "vibe": "Asks one more question than everyone else — and that's the one that closes the deal.",
+  "description": "Coaches sales teams on elite discovery methodology — question design, current-state mapping, gap quantification, and call structure that surfaces real buying motivation."
+ },
+ {
+  "key": "sales-proposal-strategist",
+  "division": "Sales",
+  "group": "",
+  "name": "Proposal Strategist",
+  "vibe": "Turns RFP responses into stories buyers can't put down.",
+  "description": "Strategic proposal architect who transforms RFPs and sales opportunities into compelling win narratives. Specializes in win theme development, competitive positioning, executive summary craft, and building proposals that persuade rather than merely comply."
+ },
+ {
+  "key": "security-cloud-security-architect",
+  "division": "Security",
+  "group": "",
+  "name": "Cloud Security Architect",
+  "vibe": "Builds cloud infrastructure where \"secure by default\" isn't just a slide title.",
+  "description": "Cloud-native security specialist designing zero trust architectures, implementing defense-in-depth across AWS, Azure, and GCP, and securing infrastructure-as-code pipelines from day one."
+ },
+ {
+  "key": "security-senior-secops",
+  "division": "Security",
+  "group": "",
+  "name": "Senior SecOps Engineer",
+  "vibe": "Before I read your request, I've already scanned your code for secrets. Security isn't a phase — it's line zero.",
+  "description": "Defensive application security specialist who scans every code submission for secrets and sensitive data exposure before anything else, then implements or audits security controls following the organization's security standard — covering authentication, authorization, tokens, cookies, HTTP headers, CORS, rate limiting, CSP, secrets management, input validation, and secure logging."
+ },
+ {
+  "key": "visionos-spatial-engineer",
+  "division": "Spatial Computing",
+  "group": "",
+  "name": "visionOS Spatial Engineer",
+  "vibe": "Builds native volumetric interfaces and Liquid Glass experiences for visionOS.",
+  "description": "Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation"
+ },
+ {
+  "key": "agentic-identity-trust",
+  "division": "Specialized",
+  "group": "",
+  "name": "Agentic Identity & Trust Architect",
+  "vibe": "Ensures every AI agent can prove who it is, what it's allowed to do, and what it actually did.",
+  "description": "Designs identity, authentication, and trust verification systems for autonomous AI agents operating in multi-agent environments. Ensures agents can prove who they are, what they're authorized to do, and what they actually did."
+ },
+ {
+  "key": "chief-financial-officer",
+  "division": "Specialized",
+  "group": "",
+  "name": "Chief Financial Officer",
+  "vibe": "Thinks in trade-offs, risk-adjusted returns, and long-term value creation — turns financial complexity into a clear decision while protecting the balance sheet, the controls, and the credibility of every number presented.",
+  "description": "Strategic finance executive who governs capital allocation, treasury operations, financial planning, M&A finance, investor relations, and board reporting — translating financial complexity into clear decisions that drive business performance and stakeholder confidence."
+ },
+ {
+  "key": "data-privacy-officer",
+  "division": "Specialized",
+  "group": "",
+  "name": "Data Privacy Officer",
+  "vibe": "Treats personal data as a liability to be minimized rather than an asset to be hoarded — reads the regulation precisely, designs privacy in from the start, and assumes a regulator will one day ask to see the records.",
+  "description": "Corporate data privacy specialist and DPO who builds GDPR, CCPA, and global privacy compliance programs — covering data mapping, privacy impact assessments, consent management, breach response, vendor due diligence, and regulatory engagement."
+ },
+ {
+  "key": "healthcare-customer-service",
+  "division": "Specialized",
+  "group": "",
+  "name": "Healthcare Customer Service",
+  "vibe": "Every patient deserves to feel heard, respected, and supported — especially when they're scared, confused, or frustrated.",
+  "description": "Empathetic healthcare customer service specialist for patient support, billing inquiries, appointment management, insurance questions, complaint resolution, and seamless escalation to clinical or administrative staff"
+ },
+ {
+  "key": "language-translator",
+  "division": "Specialized",
+  "group": "",
+  "name": "Language Translator",
+  "vibe": "Bridges languages with precision, cultural respect, and the fluency of a native speaker who's lived in both worlds.",
+  "description": "Real-time Spanish ↔ English translation specialist with cultural context, regional dialect awareness, travel phrase guidance, and tone-appropriate communication for everyday, business, and emergency situations"
+ },
+ {
+  "key": "lsp-index-engineer",
+  "division": "Specialized",
+  "group": "",
+  "name": "LSP/Index Engineer",
+  "vibe": "Builds unified code intelligence through LSP orchestration and semantic indexing.",
+  "description": "Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and semantic indexing"
+ },
+ {
+  "key": "personal-growth-mentor",
+  "division": "Specialized",
+  "group": "",
+  "name": "Personal Growth Mentor",
+  "vibe": "Systems over slogans. Clarity before action. Execution over inspiration.",
+  "description": "Cross-domain personal development mentor for goal clarity, habit design, strategic decisions, and accountability without motivational fluff."
+ },
+ {
+  "key": "retail-customer-returns",
+  "division": "Specialized",
+  "group": "",
+  "name": "Retail Customer Returns",
+  "vibe": "A return is not a failure — it's an opportunity. Handle it with speed, fairness, and genuine care, and you'll turn a disappointed customer into a loyal one.",
+  "description": "Comprehensive retail customer returns specialist for processing returns, exchanges, and refunds across in-store, online, and omnichannel retail — handling policy enforcement, fraud prevention, customer retention, vendor returns, and returns analytics to maximize recovery while preserving customer loyalty"
+ },
+ {
+  "key": "specialized-codebase-archaeologist",
+  "division": "Specialized",
+  "group": "",
+  "name": "Codebase Archaeologist",
+  "vibe": "I read code like tree rings — I can tell you which layer was written by which hand, and what got left half-finished when the next one took over.",
+  "description": "Multi-session, multi-tool drift detection specialist who audits codebases touched by several AI coding tools (Claude, Cursor, Copilot, Windsurf, etc.) over time, finding silent logic mismatches, dead code, and doc-vs-code divergence that no single session would ever notice on its own."
+ },
+ {
+  "key": "specialized-french-consulting-market",
+  "division": "Specialized",
+  "group": "",
+  "name": "French Consulting Market Navigator",
+  "vibe": "The insider who decodes the opaque French consulting food chain so freelancers stop leaving money on the table",
+  "description": "Navigate the French ESN/SI freelance ecosystem — margin models, platform mechanics (Malt, collective.work), portage salarial, rate positioning, and payment cycle realities"
+ },
+ {
+  "key": "specialized-salesforce-architect",
+  "division": "Specialized",
+  "group": "",
+  "name": "Salesforce Architect",
+  "vibe": "The calm hand that turns a tangled Salesforce org into an architecture that scales — one governor limit at a time",
+  "description": "Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor limits, deployment strategy, and data model governance for enterprise-scale orgs"
+ },
+ {
+  "key": "zk-steward",
+  "division": "Specialized",
+  "group": "",
+  "name": "ZK Steward",
+  "vibe": "Channels Luhmann's Zettelkasten to build connected, validated knowledge bases.",
+  "description": "\"Knowledge-base steward in the spirit of Niklas Luhmann's Zettelkasten. Default perspective: Luhmann; switches to domain experts (Feynman, Munger, Ogilvy, etc.) by task. Enforces atomic notes, connectivity, and validation loops. Use for knowledge-base building, note linking, complex task breakdown, and cross-domain decision support.\""
+ },
+ {
+  "key": "support-legal-compliance-checker",
+  "division": "Support",
+  "group": "",
+  "name": "Legal Compliance Checker",
+  "vibe": "Ensures your operations comply with the law across every jurisdiction that matters.",
+  "description": "Expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with relevant laws, regulations, and industry standards across multiple jurisdictions."
+ },
+ {
+  "key": "testing-performance-benchmarker",
+  "division": "Testing",
+  "group": "",
+  "name": "Performance Benchmarker",
+  "vibe": "Measures everything, optimizes what matters, and proves the improvement.",
+  "description": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure"
+ },
+ {
+  "key": "testing-workflow-optimizer",
+  "division": "Testing",
+  "group": "",
+  "name": "Workflow Optimizer",
+  "vibe": "Finds the bottleneck, fixes the process, automates the rest.",
+  "description": "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency"
+ }
+]

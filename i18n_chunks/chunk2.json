@@ -1,0 +1,434 @@
+[
+ {
+  "key": "academic-historian",
+  "division": "Academic",
+  "group": "",
+  "name": "Historian",
+  "vibe": "History doesn't repeat, but it rhymes — and I know all the verses",
+  "description": "Expert in historical analysis, periodization, material culture, and historiography — validates historical coherence and enriches settings with authentic period detail grounded in primary and secondary sources"
+ },
+ {
+  "key": "design-image-prompt-engineer",
+  "division": "Design",
+  "group": "",
+  "name": "Image Prompt Engineer",
+  "vibe": "Translates visual concepts into precise prompts that produce stunning AI photography.",
+  "description": "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography through generative AI tools."
+ },
+ {
+  "key": "design-ux-architect",
+  "division": "Design",
+  "group": "",
+  "name": "UX Architect",
+  "vibe": "Gives developers solid foundations, CSS systems, and clear implementation paths.",
+  "description": "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance"
+ },
+ {
+  "key": "engineering-ai-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "AI Engineer",
+  "vibe": "Turns ML models into production features that actually scale.",
+  "description": "Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions."
+ },
+ {
+  "key": "engineering-code-reviewer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Code Reviewer",
+  "vibe": "Reviews code like a mentor, not a gatekeeper. Every comment teaches something.",
+  "description": "Expert code reviewer who provides constructive, actionable feedback focused on correctness, maintainability, security, and performance — not style preferences."
+ },
+ {
+  "key": "engineering-database-reliability-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Database Reliability Engineer",
+  "vibe": "The backup you never tested is a file, not a backup. Prove the restore, rehearse the failover, migrate without a maintenance window.",
+  "description": "Expert database reliability engineer (DBRE) — high availability and replication, automated failover, backup and point-in-time recovery, zero-downtime online schema migrations, connection pooling, and disaster-recovery drills. Focused on keeping data safe and available, not query tuning."
+ },
+ {
+  "key": "engineering-drupal-shopping-cart",
+  "division": "Engineering",
+  "group": "",
+  "name": "Drupal Shopping Cart Engineer",
+  "vibe": "A meticulous Drupal commerce engineer who treats every storefront as a system of record for someone's revenue — building reliable, scalable shopping experiences on Drupal Commerce where prices are always correct, orders never disappear, payments reconcile to the cent, and the checkout works on the worst phone on the slowest network, because in commerce the cart isn't a feature, it's a promise.",
+  "description": "Expert Drupal e-commerce engineer specializing in Drupal Commerce for product catalog management, payment gateway integration, checkout workflow design, order management, tax and promotion configuration, and high-reliability storefront delivery on Drupal 10/11"
+ },
+ {
+  "key": "engineering-finops-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "FinOps Engineer",
+  "vibe": "Every idle resource is a subscription nobody canceled. Allocate first, optimize second, and never trade a reliability incident for a rounding error.",
+  "description": "Expert cloud cost engineer for AWS/GCP/Azure — cost allocation and tagging, rightsizing, commitment planning (reserved instances/savings plans), egress and storage optimization, and unit-economics dashboards that tie spend to business value."
+ },
+ {
+  "key": "engineering-identity-access-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Identity & Access Engineer",
+  "vibe": "Nobody praises login until it breaks, leaks, or locks out the CEO during the board demo. Standards over cleverness, always.",
+  "description": "Expert identity engineer for OAuth 2.0/OIDC flows, enterprise SSO (SAML/OIDC) and SCIM provisioning, passkeys/WebAuthn, session architecture, and multi-tenant authorization with RBAC/ABAC."
+ },
+ {
+  "key": "engineering-minimal-change-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Minimal Change Engineer",
+  "vibe": "The smallest diff that solves the problem — every extra line is a liability.",
+  "description": "Engineering specialist focused on minimum-viable diffs — fixes only what was asked, refuses scope creep, prefers three similar lines over a premature abstraction. The discipline that prevents bug-fix PRs from becoming refactor avalanches."
+ },
+ {
+  "key": "engineering-orgscript-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "OrgScript Engineer",
+  "vibe": "Process-oriented, strict on semantics, focused on turning human processes into AI-friendly logic.",
+  "description": "Expert in designing, parsing, and implementing OrgScript grammar, AST validation, and business logic definitions."
+ },
+ {
+  "key": "engineering-rapid-prototyper",
+  "division": "Engineering",
+  "group": "",
+  "name": "Rapid Prototyper",
+  "vibe": "Turns an idea into a working prototype before the meeting's over.",
+  "description": "Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and frameworks"
+ },
+ {
+  "key": "engineering-senior-developer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Senior Developer",
+  "vibe": "Premium full-stack craftsperson — Laravel, Livewire, Three.js, advanced CSS.",
+  "description": "Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integration"
+ },
+ {
+  "key": "engineering-uswds-developer",
+  "division": "Engineering",
+  "group": "",
+  "name": "USWDS Developer",
+  "vibe": "A government-focused frontend developer who builds trustworthy, accessible, consistent federal interfaces with the U.S. Web Design System — theming through design tokens and Sass settings instead of overriding the framework, reaching for the maintained USWDS component before hand-rolling a custom one, and treating accessibility and 21st Century IDEA conformance as the baseline rather than a later phase, because a federal site that looks official but locks users out has failed the public it exists to serve.",
+  "description": "Expert U.S. Web Design System frontend developer specializing in USWDS components and design tokens, accessible-by-default patterns, responsive government UI, Sass settings/theming, the federal design language, integration into CMS platforms (Drupal/WordPress), and compliance with 21st Century IDEA and the Federal Website Standards"
+ },
+ {
+  "key": "engineering-wordpress-performance",
+  "division": "Engineering",
+  "group": "",
+  "name": "WordPress Performance Engineer",
+  "vibe": "A pragmatic WordPress performance engineer who turns sluggish sites into fast, Core-Web-Vitals-passing storefronts through smart caching and query discipline — profiling with Query Monitor before touching anything, killing the autoloaded-options bloat and the plugin that fires forty queries per request, layering object cache and page cache and CDN so they reinforce instead of fight, and refusing to call a page done until it loads fast on a real phone, because a plugin-heavy site that looks fine on the developer's fiber connection is still losing the customer on 4G.",
+  "description": "Expert WordPress performance engineer specializing in Core Web Vitals, object caching (Redis/Memcached), page caching, database and WP_Query optimization, the Transients API, asset minification/deferral/critical CSS, image optimization and lazy loading, CDN integration, plugin performance auditing, and PHP-FPM/opcache tuning for fast, audit-passing sites"
+ },
+ {
+  "key": "finance-investment-researcher",
+  "division": "Finance",
+  "group": "",
+  "name": "Investment Researcher",
+  "vibe": "Digs deeper than the consensus — finds alpha in the footnotes and risks in the narratives.",
+  "description": "Expert investment researcher specializing in market research, due diligence, portfolio analysis, and asset valuation. Conducts rigorous fundamental and quantitative analysis to identify investment opportunities, assess risks, and support data-driven portfolio decisions across public equities, private markets, and alternative assets."
+ },
+ {
+  "key": "game-designer",
+  "division": "Game Development",
+  "group": "",
+  "name": "Game Designer",
+  "vibe": "Thinks in loops, levers, and player motivations to architect compelling gameplay.",
+  "description": "Systems and mechanics architect - Masters GDD authorship, player psychology, economy balancing, and gameplay loop design across all engines and genres"
+ },
+ {
+  "key": "narrative-designer",
+  "division": "Game Development",
+  "group": "",
+  "name": "Narrative Designer",
+  "vibe": "Architects story systems where narrative and gameplay are inseparable.",
+  "description": "Story systems and dialogue architect - Masters GDD-aligned narrative design, branching dialogue, lore architecture, and environmental storytelling across all game engines"
+ },
+ {
+  "key": "unity-architect",
+  "division": "Game Development",
+  "group": "unity",
+  "name": "Unity Architect",
+  "vibe": "Designs data-driven, decoupled Unity systems that scale without spaghetti.",
+  "description": "Data-driven modularity specialist - Masters ScriptableObjects, decoupled systems, and single-responsibility component design for scalable Unity projects"
+ },
+ {
+  "key": "unreal-systems-engineer",
+  "division": "Game Development",
+  "group": "unreal-engine",
+  "name": "Unreal Systems Engineer",
+  "vibe": "Masters the C++/Blueprint continuum for AAA-grade Unreal Engine projects.",
+  "description": "Performance and hybrid architecture specialist - Masters C++/Blueprint continuum, Nanite geometry, Lumen GI, and Gameplay Ability System for AAA-grade Unreal Engine projects"
+ },
+ {
+  "key": "gis-bim-specialist",
+  "division": "GIS",
+  "group": "",
+  "name": "BIM/GIS Specialist",
+  "vibe": "Where buildings meet geography — the spatial side of the built world.",
+  "description": "Integration specialist who bridges Building Information Modeling and Geographic Information Systems — Revit/IFC data conversion, indoor mapping, digital twin architecture, and facility management data models."
+ },
+ {
+  "key": "gis-qa-engineer",
+  "division": "GIS",
+  "group": "",
+  "name": "GIS QA Engineer",
+  "vibe": "Data doesn't ship until QA says it ships.",
+  "description": "Quality assurance specialist who validates geospatial data integrity — topology checks, metadata audits, CRS consistency, accuracy assessment, and compliance verification."
+ },
+ {
+  "key": "gis-web-gis-developer",
+  "division": "GIS",
+  "group": "",
+  "name": "Web GIS Developer",
+  "vibe": "Maps on the web that actually work — fast, responsive, and beautiful.",
+  "description": "Full-stack web GIS engineer who builds interactive mapping applications — MapLibre GL JS, ArcGIS JS API, Leaflet, real-time dashboards, REST API integration, and geospatial web services."
+ },
+ {
+  "key": "marketing-agentic-search-optimizer",
+  "division": "Marketing",
+  "group": "",
+  "name": "Agentic Search Optimizer",
+  "vibe": "While everyone else is optimizing to get cited by AI, this agent makes sure AI can actually do the thing on your site",
+  "description": "Expert in WebMCP readiness and agentic task completion — audits whether AI agents can actually accomplish tasks on your site (book, buy, register, subscribe), implements WebMCP declarative and imperative patterns, and measures task completion rates across AI browsing agents"
+ },
+ {
+  "key": "marketing-book-co-author",
+  "division": "Marketing",
+  "group": "",
+  "name": "Book Co-Author",
+  "vibe": "Turns rough expertise into a recognizable book people can quote, remember, and buy into.",
+  "description": "Strategic thought-leadership book collaborator for founders, experts, and operators turning voice notes, fragments, and positioning into structured first-person chapters."
+ },
+ {
+  "key": "marketing-cross-border-ecommerce",
+  "division": "Marketing",
+  "group": "",
+  "name": "Cross-Border E-Commerce Specialist",
+  "vibe": "Takes your products from Chinese factories to global bestseller lists.",
+  "description": "Full-funnel cross-border e-commerce strategist covering Amazon, Shopee, Lazada, AliExpress, Temu, and TikTok Shop operations, international logistics and overseas warehousing, compliance and taxation, multilingual listing optimization, brand globalization, and DTC independent site development."
+ },
+ {
+  "key": "marketing-instagram-curator",
+  "division": "Marketing",
+  "group": "",
+  "name": "Instagram Curator",
+  "vibe": "Masters the grid aesthetic and turns scrollers into an engaged community.",
+  "description": "Expert Instagram marketing specialist focused on visual storytelling, community building, and multi-format content optimization. Masters aesthetic development and drives meaningful engagement."
+ },
+ {
+  "key": "marketing-podcast-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "Podcast Strategist",
+  "vibe": "Guides your podcast from concept to loyal audience in China's booming audio scene.",
+  "description": "Content strategy and operations expert for the Chinese podcast market, with deep expertise in Xiaoyuzhou, Ximalaya, and other major audio platforms, covering show positioning, audio production, audience growth, multi-platform distribution, and monetization to help podcast creators build sticky audio content brands."
+ },
+ {
+  "key": "marketing-short-video-editing-coach",
+  "division": "Marketing",
+  "group": "",
+  "name": "Short-Video Editing Coach",
+  "vibe": "Turns raw footage into scroll-stopping short videos with professional polish.",
+  "description": "Hands-on short-video editing coach covering the full post-production pipeline, with mastery of CapCut Pro, Premiere Pro, DaVinci Resolve, and Final Cut Pro across composition and camera language, color grading, audio engineering, motion graphics and VFX, subtitle design, multi-platform export optimization, editing workflow efficiency, and AI-assisted editing."
+ },
+ {
+  "key": "marketing-wechat-official-account",
+  "division": "Marketing",
+  "group": "",
+  "name": "WeChat Official Account Manager",
+  "vibe": "Grows loyal WeChat subscriber communities through consistent value delivery.",
+  "description": "Expert WeChat Official Account (OA) strategist specializing in content marketing, subscriber engagement, and conversion optimization. Masters multi-format content and builds loyal communities through consistent value delivery."
+ },
+ {
+  "key": "paid-media-auditor",
+  "division": "Paid Media",
+  "group": "",
+  "name": "Paid Media Auditor",
+  "vibe": "Finds the waste in your ad spend before your CFO does.",
+  "description": "Comprehensive paid media auditor who systematically evaluates Google Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints spanning account structure, tracking, bidding, creative, audiences, and competitive positioning. Produces actionable audit reports with prioritized recommendations and projected impact."
+ },
+ {
+  "key": "paid-media-search-query-analyst",
+  "division": "Paid Media",
+  "group": "",
+  "name": "Search Query Analyst",
+  "vibe": "Mines search queries to find the gold your competitors are missing.",
+  "description": "Specialist in search term analysis, negative keyword architecture, and query-to-intent mapping. Turns raw search query data into actionable optimizations that eliminate waste and amplify high-intent traffic across paid search accounts."
+ },
+ {
+  "key": "product-sprint-prioritizer",
+  "division": "Product",
+  "group": "",
+  "name": "Sprint Prioritizer",
+  "vibe": "Maximizes sprint value through data-driven prioritization and ruthless focus.",
+  "description": "Expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation. Focused on maximizing team velocity and business value delivery through data-driven prioritization frameworks."
+ },
+ {
+  "key": "project-management-project-shepherd",
+  "division": "Project Management",
+  "group": "",
+  "name": "Project Shepherd",
+  "vibe": "Herds cross-functional chaos into on-time, on-scope delivery.",
+  "description": "Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment. Focused on shepherding projects from conception to completion while managing resources, risks, and communications across multiple teams and departments."
+ },
+ {
+  "key": "sales-coach",
+  "division": "Sales",
+  "group": "",
+  "name": "Sales Coach",
+  "vibe": "Asks the question that makes the rep rethink the entire deal.",
+  "description": "Expert sales coaching specialist focused on rep development, pipeline review facilitation, call coaching, deal strategy, and forecast accuracy. Makes every rep and every deal better through structured coaching methodology and behavioral feedback."
+ },
+ {
+  "key": "sales-outbound-strategist",
+  "division": "Sales",
+  "group": "",
+  "name": "Outbound Strategist",
+  "vibe": "Turns buying signals into booked meetings before the competition even notices.",
+  "description": "Signal-based outbound specialist who designs multi-channel prospecting sequences, defines ICPs, and builds pipeline through research-driven personalization — not volume."
+ },
+ {
+  "key": "security-architect",
+  "division": "Security",
+  "group": "",
+  "name": "Security Architect",
+  "vibe": "Designs the security architecture and threat models that hold under adversarial pressure — the blueprint, not the bug-fix.",
+  "description": "Expert security architect specializing in threat modeling, secure-by-design architecture, trust-boundary analysis, defense-in-depth, and risk-based security reviews across web, API, cloud-native, and distributed systems. Designs the security model; hands code-level SAST/DAST and SDLC work to the AppSec Engineer."
+ },
+ {
+  "key": "security-penetration-tester",
+  "division": "Security",
+  "group": "",
+  "name": "Penetration Tester",
+  "vibe": "Breaks into your systems so the real attackers can't.",
+  "description": "Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessments across networks, web applications, and cloud infrastructure."
+ },
+ {
+  "key": "macos-spatial-metal-engineer",
+  "division": "Spatial Computing",
+  "group": "",
+  "name": "macOS Spatial/Metal Engineer",
+  "vibe": "Pushes Metal to its limits for 3D rendering on macOS and Vision Pro.",
+  "description": "Native Swift and Metal specialist building high-performance 3D rendering systems and spatial computing experiences for macOS and Vision Pro"
+ },
+ {
+  "key": "xr-interface-architect",
+  "division": "Spatial Computing",
+  "group": "",
+  "name": "XR Interface Architect",
+  "vibe": "Designs spatial interfaces where interaction feels like instinct, not instruction.",
+  "description": "Spatial interaction designer and interface strategist for immersive AR/VR/XR environments"
+ },
+ {
+  "key": "business-strategist",
+  "division": "Specialized",
+  "group": "",
+  "name": "Business Strategist",
+  "vibe": "Strategy without execution is hallucination. Execution without strategy is chaos. The best strategists build the bridge between where you are and where you need to be — and make sure it holds weight.",
+  "description": "Senior management consulting specialist for competitive analysis, market entry strategy, business model design, growth planning, organizational strategy, and strategic decision-making — translating complex market dynamics into clear, actionable strategies that create sustainable competitive advantage"
+ },
+ {
+  "key": "customer-success-manager",
+  "division": "Specialized",
+  "group": "",
+  "name": "Customer Success Manager",
+  "vibe": "Customer success isn't a department that reacts to problems — it's a discipline that prevents them. The best CSMs know their customers' goals better than the customers do, and show up with answers before questions are asked.",
+  "description": "Strategic customer success specialist for onboarding, health scoring, QBR facilitation, churn prevention, expansion identification, and renewal management — driving net revenue retention by turning customers into long-term partners who achieve measurable outcomes"
+ },
+ {
+  "key": "grant-writer",
+  "division": "Specialized",
+  "group": "",
+  "name": "Grant Writer",
+  "vibe": "Every grant is a conversation between your mission and a funder's priorities. The best grant writers don't beg — they build a compelling case that a funder's investment in your work is the highest-leverage use of their dollars.",
+  "description": "Expert grant writing specialist for nonprofits, research institutions, and social enterprises — covering prospect research, letter of inquiry writing, full proposal development, budget narratives, federal and foundation grants, and post-award reporting to maximize funding success"
+ },
+ {
+  "key": "hr-onboarding",
+  "division": "Specialized",
+  "group": "",
+  "name": "HR Onboarding",
+  "vibe": "The first 90 days determine whether a new hire becomes a long-term contributor or a regrettable turnover. Get it right from day one.",
+  "description": "Comprehensive HR onboarding specialist for employee orientation, documentation management, compliance tracking, benefits enrollment, culture integration, and new hire support — delivering a seamless first-day-to-first-year experience that drives retention and productivity"
+ },
+ {
+  "key": "legal-document-review",
+  "division": "Specialized",
+  "group": "",
+  "name": "Legal Document Review",
+  "vibe": "Every word in a legal document matters. Every missed clause is a liability. Every risk caught early is a client protected.",
+  "description": "Comprehensive legal document review specialist for contracts, litigation documents, and real estate agreements — summarizing documents, flagging risk clauses, comparing contract versions, and checking compliance across any law firm size or practice area"
+ },
+ {
+  "key": "operations-manager",
+  "division": "Specialized",
+  "group": "",
+  "name": "Operations Manager",
+  "vibe": "Sees every business as a system of processes and treats waste, variation, and undocumented dependencies as defects to be measured and removed — because what isn't standardized and measured can't be scaled reliably.",
+  "description": "Business operations specialist who applies Lean, Six Sigma, and systems thinking to process mapping, capacity planning, KPI governance, vendor management, and organizational efficiency — turning operational complexity into repeatable, measurable performance."
+ },
+ {
+  "key": "report-distribution-agent",
+  "division": "Specialized",
+  "group": "",
+  "name": "Report Distribution Agent",
+  "vibe": "Automates delivery of consolidated sales reports to the right reps.",
+  "description": "AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters"
+ },
+ {
+  "key": "specialized-chief-of-staff",
+  "division": "Specialized",
+  "group": "",
+  "name": "Chief of Staff",
+  "vibe": "\"I don't own any function. I own the space between all of them.\"",
+  "description": "Master coordinator for founders and executives — filters noise, owns processes, enforces consistency, routes decisions, and positions outputs for impact so the boss can think clearly."
+ },
+ {
+  "key": "specialized-document-generator",
+  "division": "Specialized",
+  "group": "",
+  "name": "Document Generator",
+  "vibe": "Professional documents from code — PDFs, slides, spreadsheets, and reports.",
+  "description": "Expert document creation specialist who generates professional PDF, PPTX, DOCX, and XLSX files using code-based approaches with proper formatting, charts, and data visualization."
+ },
+ {
+  "key": "specialized-model-qa",
+  "division": "Specialized",
+  "group": "",
+  "name": "Model QA Specialist",
+  "vibe": "Audits ML models end-to-end — from data reconstruction to calibration testing.",
+  "description": "Independent model QA expert who audits ML and statistical models end-to-end - from documentation review and data reconstruction to replication, calibration testing, interpretability analysis, performance monitoring, and audit-grade reporting."
+ },
+ {
+  "key": "study-abroad-advisor",
+  "division": "Specialized",
+  "group": "",
+  "name": "Study Abroad Advisor",
+  "vibe": "Guides Chinese students through the entire study abroad journey — from school selection and essays to visas — with data-driven advice and zero anxiety selling.",
+  "description": "Full-spectrum study abroad planning expert covering the US, UK, Canada, Australia, Europe, Hong Kong, and Singapore — proficient in undergraduate, master's, and PhD application strategy, school selection, essay coaching, profile enhancement, standardized test planning, visa preparation, and overseas life adaptation, helping Chinese students craft personalized end-to-end study abroad plans."
+ },
+ {
+  "key": "support-finance-tracker",
+  "division": "Support",
+  "group": "",
+  "name": "Finance Tracker",
+  "vibe": "Keeps the books clean, the cash flowing, and the forecasts honest.",
+  "description": "Expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis. Maintains financial health, optimizes cash flow, and provides strategic financial insights for business growth."
+ },
+ {
+  "key": "testing-api-tester",
+  "division": "Testing",
+  "group": "",
+  "name": "API Tester",
+  "vibe": "Breaks your API before your users do.",
+  "description": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations"
+ },
+ {
+  "key": "testing-test-results-analyzer",
+  "division": "Testing",
+  "group": "",
+  "name": "Test Results Analyzer",
+  "vibe": "Reads test results like a detective reads evidence — nothing gets past.",
+  "description": "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities"
+ }
+]

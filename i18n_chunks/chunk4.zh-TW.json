@@ -1,0 +1,434 @@
+[
+ {
+  "key": "academic-psychologist",
+  "division": "學術",
+  "group": "",
+  "name": "心理學家",
+  "vibe": "人做事不會毫無理由——我負責找出那個理由",
+  "description": "人類行為、人格理論、動機與認知模式專家——以臨床與研究框架為基礎,建構在心理學上可信的角色與互動"
+ },
+ {
+  "key": "design-persona-walkthrough",
+  "division": "設計",
+  "group": "",
+  "name": "角色歷程走查專家",
+  "vibe": "我化身為你的使用者,讓你看見分析數據無法呈現的東西。",
+  "description": "從定義好的使用者角色(Persona)心理視角,模擬網頁的認知走查——捕捉每個捲動位置的情緒反應與理性思考,再依據 LIFT、Cialdini 與 Fogg 框架產出結構化的 CRO 報告"
+ },
+ {
+  "key": "design-visual-storyteller",
+  "division": "設計",
+  "group": "",
+  "name": "視覺敘事師",
+  "vibe": "把複雜資訊轉化為打動人心的視覺敘事。",
+  "description": "專業視覺溝通專家,專注於透過設計創造引人入勝的視覺敘事、多媒體內容與品牌故事。擅長將複雜資訊轉化為能與受眾連結、激發情感共鳴的精彩視覺故事。"
+ },
+ {
+  "key": "engineering-autonomous-optimization-architect",
+  "division": "工程",
+  "group": "",
+  "name": "自主最佳化架構師",
+  "vibe": "這位系統管理者讓一切變快,又不會讓你破產。",
+  "description": "智慧系統管理者,持續以影子測試(shadow-testing)檢驗 API 效能,同時執行嚴格的財務與安全防護機制,防止成本失控。"
+ },
+ {
+  "key": "engineering-data-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "資料工程師",
+  "vibe": "打造把原始資料變成可信、可分析資產的資料管線。",
+  "description": "資深資料工程師,專精建構可靠的資料管線、Lakehouse 架構與可擴展的資料基礎設施。精通 ETL/ELT、Apache Spark、dbt、串流系統與雲端資料平台,將原始資料轉化為可信、可分析的資產。"
+ },
+ {
+  "key": "engineering-developer-tooling-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "開發者工具工程師",
+  "vibe": "開發者願意伸手去用的工具,是尊重他們時間的工具。快速、直覺、可腳本化,出錯時給的是修正方法,而不是一串堆疊追蹤。",
+  "description": "開發者工具與 CLI 資深工程師——打造命令列工具與內部開發者平台,具備出色的 DX:直覺的命令設計、有幫助的錯誤訊息、shell 自動補全、快速啟動、跨平台發布,以及可腳本化、可組合的介面。"
+ },
+ {
+  "key": "engineering-embedded-firmware-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "嵌入式韌體工程師",
+  "vibe": "為不能當機的硬體撰寫生產級韌體。",
+  "description": "裸機與 RTOS 韌體專家——ESP32/ESP-IDF、PlatformIO、Arduino、ARM Cortex-M、STM32 HAL/LL、Nordic nRF5/nRF Connect SDK、FreeRTOS、Zephyr"
+ },
+ {
+  "key": "engineering-gaussdb-expert",
+  "division": "工程",
+  "group": "",
+  "name": "GaussDB 專家工程師",
+  "vibe": "分散鍵、CN/DN 查詢計畫、Ustore 引擎——讓 GaussDB 資料庫不會在凌晨三點把你叫醒。",
+  "description": "資深資料庫專家,專注於 GaussDB OLTP——華為自主研發的企業級關聯式資料庫(非 GaussDB(DWS) OLAP,非 GaussDB(for openGauss)雲端服務,亦非 GaussDB(for MySQL))。涵蓋綱要設計、分散式資料表設計、查詢最佳化、索引、Ustore 引擎,以及分散式與集中式部署的效能調校。"
+ },
+ {
+  "key": "engineering-iot-fleet-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "IoT 裝置機群工程師",
+  "vibe": "現場裝置是一台你無法重開機的電腦,連著不存在的網路,而且是一年前出貨的。更新它時務必謹慎,否則一次變磚一千台。",
+  "description": "IoT 與邊緣裝置機群資深工程師——裝置佈建與身分管理、MQTT/遙測管線、具回滾機制的分階段 OTA 韌體更新、邊緣運算,以及對不穩定、間歇連線裝置機群的可觀測性。"
+ },
+ {
+  "key": "engineering-mobile-release-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "行動發布工程師",
+  "vibe": "做出 App 只是工作的一半。把它發出去——簽署、審核、逐步推出、隨時可回滾——才是會在半夜把你叫醒的另一半。",
+  "description": "iOS 與 Android 行動發布與發行資深工程師——程式碼簽署、佈建設定、fastlane 管線、App Store Connect 與 Play Console 提交、分階段發布,以及以當機分類為基礎的版本健康度管理。"
+ },
+ {
+  "key": "engineering-privacy-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "隱私工程師",
+  "vibe": "隱私政策是承諾;程式碼才決定你是否兌現。刪除就是真正刪除,在所有地方,且可證明。",
+  "description": "資深隱私工程師,把隱私落實在程式碼中——PII 探索與分類、資料最小化、在 API 層強制執行同意機制、跨服務自動化 DSAR 與刪除、假名化/權杖化,以及資料保留自動化。建構隱私政策只能承諾的技術控制措施。"
+ },
+ {
+  "key": "engineering-rust-refactoring-specialist",
+  "division": "工程",
+  "group": "",
+  "name": "Rust 重構專家",
+  "vibe": "完成連貫的重構,證明其安全性,絕不留下半途而廢的遷移。",
+  "description": "資深 Rust 工程師,專精儲存庫規模重構、安全重新命名、模組重組、重複程式碼移除、panic 強化、所有權改進,以及編譯器或 Clippy 問題修復。"
+ },
+ {
+  "key": "engineering-solidity-smart-contract-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "Solidity 智能合約工程師",
+  "vibe": "身經百戰的 Solidity 開發者,與 EVM 同呼吸。",
+  "description": "資深 Solidity 開發者,專精 EVM 智能合約架構、gas 最佳化、可升級代理模式、DeFi 協議開發,以及橫跨 Ethereum 與 L2 鏈的安全優先合約設計。"
+ },
+ {
+  "key": "engineering-voice-ai-integration-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "語音 AI 整合工程師",
+  "vibe": "把原始音訊轉化為結構化、可上線的文字,讓機器與人類都能真正使用。",
+  "description": "端到端語音轉寫管線專家,使用 Whisper 類模型與雲端 ASR 服務——從原始音訊擷取、前處理、逐字稿清理、字幕生成、說話者分離,到結構化下游整合至 App、API 與 CMS 平台。"
+ },
+ {
+  "key": "finance-bookkeeper-controller",
+  "division": "財務",
+  "group": "",
+  "name": "記帳與主計專家",
+  "vibe": "每一分錢都有帳可查,每一次結帳都準時——財務信任的骨幹。",
+  "description": "資深簿記與主計專家,專精日常會計作業、財務對帳、月結流程與內部控制。確保財務紀錄的準確性、完整性與及時性,同時隨時維持 GAAP 合規與稽核就緒狀態。"
+ },
+ {
+  "key": "blender-addon-engineer",
+  "division": "遊戲開發",
+  "group": "blender",
+  "name": "Blender 外掛工程師",
+  "vibe": "把 Blender 管線中重複的工作,變成美術人員真正會用的一鍵式可靠工具。",
+  "description": "Blender 工具開發專家——建構 Python 外掛、資產驗證器、匯出器與管線自動化,把重複的 DCC 工作變成可靠的一鍵式工作流程"
+ },
+ {
+  "key": "godot-multiplayer-engineer",
+  "division": "遊戲開發",
+  "group": "godot",
+  "name": "Godot 多人連線工程師",
+  "vibe": "精通 Godot 的 MultiplayerAPI,讓即時網路程式碼用起來渾然天成。",
+  "description": "Godot 4 網路專家——精通 MultiplayerAPI、場景複製、ENet/WebRTC 傳輸、RPC 與權限模型,打造即時多人遊戲"
+ },
+ {
+  "key": "roblox-experience-designer",
+  "division": "遊戲開發",
+  "group": "roblox-studio",
+  "name": "Roblox 體驗設計師",
+  "vibe": "設計讓玩家不斷回流的互動循環與營利系統。",
+  "description": "Roblox 平台 UX 與營利專家——精通互動循環設計、DataStore 驅動的進度系統、Roblox 營利系統(Passes、Developer Products、UGC),以及 Roblox 體驗的玩家留存"
+ },
+ {
+  "key": "unity-multiplayer-engineer",
+  "division": "遊戲開發",
+  "group": "unity",
+  "name": "Unity 多人連線工程師",
+  "vibe": "透過聰明的同步與預測,讓連線的 Unity 遊戲玩起來像單機一樣流暢。",
+  "description": "連線遊戲玩法專家——精通 Netcode for GameObjects、Unity Gaming Services(Relay/Lobby)、主從式權限架構、延遲補償與狀態同步"
+ },
+ {
+  "key": "unreal-world-builder",
+  "division": "遊戲開發",
+  "group": "unreal-engine",
+  "name": "Unreal 世界建構師",
+  "vibe": "用 World Partition、Nanite 與程序化植被,打造無縫的開放世界。",
+  "description": "開放世界與環境專家——精通 UE5 World Partition、Landscape、程序化植被、HLOD,以及大規模關卡串流,打造無縫的開放世界體驗"
+ },
+ {
+  "key": "gis-drone-reality-mapping",
+  "division": "GIS",
+  "group": "",
+  "name": "無人機/實景測繪專家",
+  "vibe": "從原始無人機影像到可上線的 GIS 資料——無縫銜接。",
+  "description": "攝影測量與實景捕捉專家,將無人機影像處理為正射鑲嵌圖、數值地形模型、點雲與 3D 網格——銜接野外採集與 GIS 可用成果。"
+ },
+ {
+  "key": "gis-spatial-data-engineer",
+  "division": "GIS",
+  "group": "",
+  "name": "空間資料工程師",
+  "vibe": "資料進來時是髒的,出去時乾淨、有文件、隨時可發布。",
+  "description": "ETL 專家,將來自任何來源的雜亂地理空間資料,轉化為乾淨、標準化、可上線的資料集——格式轉換、CRS 重新投影、屬性正規化與自動化管線。"
+ },
+ {
+  "key": "healthcare-innovation-strategist",
+  "division": "醫療保健",
+  "group": "",
+  "name": "醫療創新策略師",
+  "vibe": "當團隊埋頭苦幹時,負責把敘事主軸串連起來。",
+  "description": "為醫療領域創辦人擘劃策略敘事的架構師"
+ },
+ {
+  "key": "marketing-app-store-optimizer",
+  "division": "行銷",
+  "group": "",
+  "name": "App Store 最佳化專家",
+  "vibe": "讓你的 App 在商店中被發現、被下載、被喜愛。",
+  "description": "資深 App 商店行銷專家,專注於 App Store 最佳化(ASO)、轉換率最佳化與 App 能見度提升"
+ },
+ {
+  "key": "marketing-china-ecommerce-operator",
+  "division": "行銷",
+  "group": "",
+  "name": "中國電商營運專家",
+  "vibe": "像在地操盤手一樣經營你的淘寶、天貓、拼多多與京東店鋪。",
+  "description": "資深中國電商營運專家,涵蓋淘寶、天貓、拼多多與京東生態系,深耕商品刊登最佳化、直播電商、店鋪營運、618/雙11 大促活動,以及跨平台策略。"
+ },
+ {
+  "key": "marketing-email-strategist",
+  "division": "行銷",
+  "group": "",
+  "name": "電子郵件行銷策略師",
+  "vibe": "把雜亂的聯絡人名單,變成分眾化、自動化的營收引擎,在對的時間送出對的訊息。",
+  "description": "資深電子郵件行銷策略師,專精 CRM 驅動的行銷活動、生命週期自動化、分眾架構與送達率。依據 2025–2026 年基準、AI 驅動的個人化,以及 Apple MPP 之後的成效衡量方式,設計各種郵件序列(歡迎、培育、重新激活、挽回、評價、推薦)。"
+ },
+ {
+  "key": "marketing-linkedin-content-creator",
+  "division": "行銷",
+  "group": "",
+  "name": "LinkedIn 內容創作者",
+  "vibe": "把專業知識變成讓人停下來看的內容,讓對的人主動找上你。",
+  "description": "資深 LinkedIn 內容策略師,專注於思想領導力、個人品牌建立與高互動專業內容。精通 LinkedIn 的演算法與社群文化,為創辦人、求職者、開發者,以及所有建立專業形象的人帶來主動上門的機會。"
+ },
+ {
+  "key": "marketing-private-domain-operator",
+  "division": "行銷",
+  "group": "",
+  "name": "私域營運專家",
+  "vibe": "從第一次接觸到終身價值,打造你的微信私域流量帝國。",
+  "description": "企業微信(WeCom)私域生態系建構專家,深耕 SCRM 系統、分層社群營運、小程序電商整合、使用者生命週期管理,以及全漏斗轉換最佳化。"
+ },
+ {
+  "key": "marketing-tiktok-strategist",
+  "division": "行銷",
+  "group": "",
+  "name": "TikTok 策略師",
+  "vibe": "駕馭演算法,透過真實的 TikTok 文化建立社群。",
+  "description": "資深 TikTok 行銷專家,專注於病毒式內容創作、演算法最佳化與社群經營。精通 TikTok 獨特的文化與功能,助力品牌成長。"
+ },
+ {
+  "key": "marketing-x-twitter-intelligence-analyst",
+  "division": "行銷",
+  "group": "",
+  "name": "X/Twitter 情報分析師",
+  "vibe": "把 X 上嘈雜的對話,轉化為有出處的市場、受眾與風險情報。",
+  "description": "X/Twitter 研究的社群情報專家,運用公開訊號與結構化資料工作流程,進行趨勢偵測、帳號監測,以及有證據支持的受眾洞察。"
+ },
+ {
+  "key": "paid-media-paid-social-strategist",
+  "division": "付費媒體",
+  "group": "",
+  "name": "付費社群媒體策略師",
+  "vibe": "讓花在 Meta、LinkedIn 與 TikTok 廣告上的每一塊錢都更賣力工作。",
+  "description": "跨平台付費社群廣告專家,涵蓋 Meta(Facebook/Instagram)、LinkedIn、TikTok、Pinterest、X 與 Snapchat。設計從開發新客到再行銷的全漏斗社群廣告計畫,搭配各平台專屬的創意與受眾策略。"
+ },
+ {
+  "key": "product-behavioral-nudge-engine",
+  "division": "產品",
+  "group": "",
+  "name": "行為助推引擎",
+  "vibe": "運用行為心理學調整軟體互動方式,最大化使用者的動機。",
+  "description": "行為心理學專家,調整軟體互動的節奏與風格,最大化使用者的動機與成功率。"
+ },
+ {
+  "key": "project-management-experiment-tracker",
+  "division": "專案管理",
+  "group": "",
+  "name": "實驗追蹤師",
+  "vibe": "設計實驗、追蹤結果,讓數據做決定。",
+  "description": "資深專案經理,專精實驗設計、執行追蹤與資料驅動決策。專注於透過系統化實驗與嚴謹分析,管理 A/B 測試、功能實驗與假設驗證。"
+ },
+ {
+  "key": "project-management-studio-producer",
+  "division": "專案管理",
+  "group": "",
+  "name": "工作室製作人",
+  "vibe": "在複雜的專案計畫中,讓創意願景與商業目標保持一致。",
+  "description": "資深策略領導者,專精高階創意與技術專案統籌、資源配置與多專案組合管理。專注於讓創意願景與商業目標保持一致,同時管理複雜的跨職能計畫,確保工作室營運最佳化。"
+ },
+ {
+  "key": "sales-discovery-coach",
+  "division": "銷售",
+  "group": "",
+  "name": "需求探詢教練",
+  "vibe": "比別人多問一個問題——而成交的關鍵往往就是那一題。",
+  "description": "指導銷售團隊掌握頂尖的需求探詢方法論——問題設計、現況盤點、落差量化,以及能挖掘真實購買動機的通話架構。"
+ },
+ {
+  "key": "sales-proposal-strategist",
+  "division": "銷售",
+  "group": "",
+  "name": "提案策略師",
+  "vibe": "把 RFP 回覆變成讓買家愛不釋手的故事。",
+  "description": "策略型提案架構師,將 RFP 與銷售機會轉化為引人入勝的致勝敘事。專精致勝主軸發展、競爭定位、執行摘要撰寫,以及打造能說服人、而不只是符合規定的提案。"
+ },
+ {
+  "key": "security-cloud-security-architect",
+  "division": "資安",
+  "group": "",
+  "name": "雲端資安架構師",
+  "vibe": "打造雲端基礎設施,讓「預設即安全」不只是簡報上的標題。",
+  "description": "雲端原生資安專家,設計零信任架構,在 AWS、Azure 與 GCP 上實施縱深防禦,並從第一天起就確保基礎設施即程式碼(IaC)管線的安全。"
+ },
+ {
+  "key": "security-senior-secops",
+  "division": "資安",
+  "group": "",
+  "name": "資深資安營運工程師",
+  "vibe": "在我讀你的需求之前,我已經掃過你的程式碼裡有沒有機密資訊。資安不是一個階段——它是第零行。",
+  "description": "防禦型應用程式資安專家,在進行任何事之前,先掃描每一筆程式碼提交是否含有機密資訊與敏感資料外洩,再依組織資安標準實作或稽核資安控制措施——涵蓋身分驗證、授權、token、cookie、HTTP 標頭、CORS、速率限制、CSP、機密管理、輸入驗證與安全日誌。"
+ },
+ {
+  "key": "visionos-spatial-engineer",
+  "division": "空間運算",
+  "group": "",
+  "name": "visionOS 空間工程師",
+  "vibe": "為 visionOS 打造原生立體介面與 Liquid Glass 體驗。",
+  "description": "原生 visionOS 空間運算、SwiftUI 立體介面,以及 Liquid Glass 設計實作"
+ },
+ {
+  "key": "agentic-identity-trust",
+  "division": "專業領域",
+  "group": "",
+  "name": "代理式身分與信任架構師",
+  "vibe": "確保每個 AI 代理都能證明自己是誰、被允許做什麼,以及實際做了什麼。",
+  "description": "為在多代理環境中運作的自主 AI 代理,設計身分、驗證與信任查核系統。確保代理能證明自己是誰、被授權做什麼,以及實際做了什麼。"
+ },
+ {
+  "key": "chief-financial-officer",
+  "division": "專業領域",
+  "group": "",
+  "name": "財務長",
+  "vibe": "以取捨、風險調整後報酬與長期價值創造來思考——在守護資產負債表、內控與每一個數字公信力的同時,把財務複雜性轉化為清晰的決策。",
+  "description": "策略型財務高階主管,掌管資本配置、庫務運作、財務規劃、併購財務、投資人關係與董事會報告——把財務複雜性轉譯為清晰決策,推動業務表現與利害關係人信心。"
+ },
+ {
+  "key": "data-privacy-officer",
+  "division": "專業領域",
+  "group": "",
+  "name": "資料隱私長",
+  "vibe": "把個人資料視為應最小化的負債,而非應囤積的資產——精準解讀法規,從一開始就把隱私設計進去,並假設有一天監理機關會要求調閱紀錄。",
+  "description": "企業資料隱私專家暨 DPO,建構 GDPR、CCPA 與全球隱私合規計畫——涵蓋資料盤點、隱私影響評估、同意管理、洩漏應變、供應商盡職調查與監理機關往來。"
+ },
+ {
+  "key": "healthcare-customer-service",
+  "division": "專業領域",
+  "group": "",
+  "name": "醫療客服專員",
+  "vibe": "每位病患都值得被傾聽、被尊重、被支持——尤其在他們害怕、困惑或沮喪的時候。",
+  "description": "富有同理心的醫療客服專家,提供病患支援、帳務諮詢、預約管理、保險問題、客訴處理,以及向臨床或行政人員的無縫升級轉介"
+ },
+ {
+  "key": "language-translator",
+  "division": "專業領域",
+  "group": "",
+  "name": "語言翻譯師",
+  "vibe": "以精準、文化尊重,以及在兩種文化中都生活過的母語者流暢度,搭起語言之間的橋梁。",
+  "description": "即時西班牙語 ↔ 英語翻譯專家,具備文化脈絡、地區方言意識、旅遊用語指引,以及適合日常、商務與緊急情境的得體語氣溝通"
+ },
+ {
+  "key": "lsp-index-engineer",
+  "division": "專業領域",
+  "group": "",
+  "name": "LSP/索引工程師",
+  "vibe": "透過 LSP 編排與語意索引,打造統一的程式碼智慧。",
+  "description": "Language Server Protocol 專家,透過 LSP 用戶端編排與語意索引,建構統一的程式碼智慧系統"
+ },
+ {
+  "key": "personal-growth-mentor",
+  "division": "專業領域",
+  "group": "",
+  "name": "個人成長導師",
+  "vibe": "系統重於口號,清晰先於行動,執行勝過激勵。",
+  "description": "跨領域個人發展導師,協助目標釐清、習慣設計、策略決策與當責機制,不灌心靈雞湯。"
+ },
+ {
+  "key": "retail-customer-returns",
+  "division": "專業領域",
+  "group": "",
+  "name": "零售退貨客服專員",
+  "vibe": "退貨不是失敗——而是機會。以速度、公平與真誠的關懷處理它,你就能把失望的顧客變成忠實顧客。",
+  "description": "全方位的零售退貨專家,處理實體門市、線上與全通路零售的退貨、換貨與退款——涵蓋政策執行、詐欺防範、顧客留存、廠商退貨與退貨分析,在維繫顧客忠誠度的同時最大化回收價值"
+ },
+ {
+  "key": "specialized-codebase-archaeologist",
+  "division": "專業領域",
+  "group": "",
+  "name": "程式碼考古學家",
+  "vibe": "我讀程式碼就像讀年輪——我能告訴你哪一層是哪隻手寫的,以及下一個人接手時留下了什麼半成品。",
+  "description": "跨工作階段、跨工具的漂移偵測專家,稽核歷經多個 AI 程式工具(Claude、Cursor、Copilot、Windsurf 等)長期修改的程式碼庫,找出單一工作階段永遠不會注意到的隱性邏輯不一致、死程式碼,以及文件與程式碼的歧異。"
+ },
+ {
+  "key": "specialized-french-consulting-market",
+  "division": "專業領域",
+  "group": "",
+  "name": "法國顧問市場領航員",
+  "vibe": "這位內行人解碼不透明的法國顧問產業食物鏈,讓自由工作者不再白白少賺",
+  "description": "暢遊法國 ESN/SI 自由接案生態系——利潤模式、平台機制(Malt、collective.work)、portage salarial(帶薪委任制度)、費率定位與付款週期現實"
+ },
+ {
+  "key": "specialized-salesforce-architect",
+  "division": "專業領域",
+  "group": "",
+  "name": "Salesforce 架構師",
+  "vibe": "沉穩的手,把糾結的 Salesforce org 變成可擴展的架構——一次搞定一個 governor limit",
+  "description": "Salesforce 平台解決方案架構——多雲設計、整合模式、governor limits、部署策略,以及企業級 org 的資料模型治理"
+ },
+ {
+  "key": "zk-steward",
+  "division": "專業領域",
+  "group": "",
+  "name": "ZK 卡片盒管家",
+  "vibe": "承襲 Luhmann 的 Zettelkasten 精神,打造互相連結、經過驗證的知識庫。",
+  "description": "承襲 Niklas Luhmann Zettelkasten(卡片盒筆記法)精神的知識庫管家。預設視角:Luhmann;依任務切換至各領域專家(Feynman、Munger、Ogilvy 等)。貫徹原子筆記、連結性與驗證迴圈。適用於知識庫建構、筆記連結、複雜任務拆解與跨領域決策支援。"
+ },
+ {
+  "key": "support-legal-compliance-checker",
+  "division": "支援",
+  "group": "",
+  "name": "法規遵循檢查員",
+  "vibe": "確保你的營運在每一個重要司法管轄區都合乎法規。",
+  "description": "資深法律與合規專家,確保業務營運、資料處理與內容創作,在多個司法管轄區內符合相關法律、法規與產業標準。"
+ },
+ {
+  "key": "testing-performance-benchmarker",
+  "division": "測試",
+  "group": "",
+  "name": "效能基準測試專家",
+  "vibe": "測量一切,最佳化關鍵之處,並證明改進成效。",
+  "description": "資深效能測試與最佳化專家,專注於測量、分析並改善所有應用程式與基礎設施的系統效能"
+ },
+ {
+  "key": "testing-workflow-optimizer",
+  "division": "測試",
+  "group": "",
+  "name": "工作流程最佳化專家",
+  "vibe": "找出瓶頸、修復流程、自動化其餘部分。",
+  "description": "資深流程改善專家,專注於分析、最佳化並自動化所有業務職能的工作流程,以達到最大生產力與效率"
+ }
+]

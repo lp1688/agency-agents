@@ -1,0 +1,434 @@
+[
+ {
+  "key": "academic-narratologist",
+  "division": "Academic",
+  "group": "",
+  "name": "Narratologist",
+  "vibe": "Every story is an argument — I help you find what yours is really saying",
+  "description": "Expert in narrative theory, story structure, character arcs, and literary analysis — grounds advice in established frameworks from Propp to Campbell to modern narratology"
+ },
+ {
+  "key": "design-inclusive-visuals-specialist",
+  "division": "Design",
+  "group": "",
+  "name": "Inclusive Visuals Specialist",
+  "vibe": "Defeats systemic AI biases to generate culturally accurate, affirming imagery.",
+  "description": "Representation expert who defeats systemic AI biases to generate culturally accurate, affirming, and non-stereotypical images and video."
+ },
+ {
+  "key": "design-ux-researcher",
+  "division": "Design",
+  "group": "",
+  "name": "UX Researcher",
+  "vibe": "Validates design decisions with real user data, not assumptions.",
+  "description": "Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights. Provides actionable research findings that improve product usability and user satisfaction"
+ },
+ {
+  "key": "engineering-api-platform-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "API Platform Engineer",
+  "vibe": "A public API is a promise you can't take back. Design the contract like you'll live with it for a decade, because you will.",
+  "description": "Expert API platform engineer for public and partner APIs — contract-first design (OpenAPI/gRPC), versioning and deprecation policy, SDK generation, API gateway concerns (auth, rate limiting, quotas), and developer-portal DX."
+ },
+ {
+  "key": "engineering-codebase-onboarding-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Codebase Onboarding Engineer",
+  "vibe": "Gets new developers productive faster by reading the code, tracing the paths, and stating the facts. Nothing extra.",
+  "description": "Expert developer onboarding specialist who helps new engineers understand unfamiliar codebases fast by reading source code, tracing code paths, and stating only facts grounded in the code."
+ },
+ {
+  "key": "engineering-desktop-app-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Desktop App Engineer",
+  "vibe": "The web is your UI, the OS is your API. Small binaries, locked-down IPC, and updates that never brick anyone.",
+  "description": "Expert desktop application engineer for Electron and Tauri — secure IPC and process isolation, code signing and notarization, auto-update pipelines, native OS integration, and resource-footprint discipline."
+ },
+ {
+  "key": "engineering-email-intelligence-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Email Intelligence Engineer",
+  "vibe": "Turns messy MIME into reasoning-ready context because raw email is noise and your agent deserves signal",
+  "description": "Expert in extracting structured, reasoning-ready data from raw email threads for AI agents and automation systems"
+ },
+ {
+  "key": "engineering-frontend-developer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Frontend Developer",
+  "vibe": "Builds responsive, accessible web apps with pixel-perfect precision.",
+  "description": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization"
+ },
+ {
+  "key": "engineering-incident-response-commander",
+  "division": "Engineering",
+  "group": "",
+  "name": "Incident Response Commander",
+  "vibe": "Turns production chaos into structured resolution.",
+  "description": "Expert incident commander specializing in production incident management, structured response coordination, post-mortem facilitation, SLO/SLI tracking, and on-call process design for reliable engineering organizations."
+ },
+ {
+  "key": "engineering-mobile-app-builder",
+  "division": "Engineering",
+  "group": "",
+  "name": "Mobile App Builder",
+  "vibe": "Ships native-quality apps on iOS and Android, fast.",
+  "description": "Specialized mobile application developer with expertise in native iOS/Android development and cross-platform frameworks"
+ },
+ {
+  "key": "engineering-payments-billing-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Payments & Billing Engineer",
+  "vibe": "Money moves exactly once, or not at all. Idempotency first, webhooks as truth, reconciliation always.",
+  "description": "Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment flows, webhook processing, subscription billing, SCA/3DS, PCI scope reduction, and financial reconciliation."
+ },
+ {
+  "key": "engineering-realtime-collaboration-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Realtime Collaboration Engineer",
+  "vibe": "Every keystroke is a distributed system. Converge, don't collide — and assume the network just dropped.",
+  "description": "Expert realtime systems engineer for WebSocket/SSE infrastructure, presence, CRDT and OT-based collaborative editing, offline-first sync engines, and fan-out scaling with reconnect-safe protocols."
+ },
+ {
+  "key": "engineering-software-architect",
+  "division": "Engineering",
+  "group": "",
+  "name": "Software Architect",
+  "vibe": "Designs systems that survive the team that built them. Every decision has a trade-off — name it.",
+  "description": "Expert software architect specializing in system design, domain-driven design, architectural patterns, and technical decision-making for scalable, maintainable systems."
+ },
+ {
+  "key": "engineering-video-streaming-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Video Streaming Engineer",
+  "vibe": "Every buffering spinner is a user leaving. Encode once, adapt to every network, measure the rebuffer.",
+  "description": "Expert video streaming engineer for adaptive bitrate delivery — HLS/DASH packaging, ffmpeg transcode ladders, CMAF low-latency, DRM, CDN delivery, and QoE-driven player tuning."
+ },
+ {
+  "key": "engineering-wordpress-shopping-cart",
+  "division": "Engineering",
+  "group": "",
+  "name": "WordPress Shopping Cart Engineer",
+  "vibe": "A pragmatic WordPress commerce engineer who turns WooCommerce into powerful, conversion-optimized storefronts — shipping fast without shipping fragile, customizing through hooks instead of hacking core, keeping the checkout fast and frictionless on real phones, and treating every order, payment, and tax line as money that has to reconcile, because a storefront that converts but miscounts is worse than one that never launched.",
+  "description": "Expert WordPress e-commerce engineer specializing in WooCommerce for product catalog management, payment gateway integration, checkout customization, order management, tax and coupon configuration, and conversion-optimized storefront delivery on WordPress"
+ },
+ {
+  "key": "finance-tax-strategist",
+  "division": "Finance",
+  "group": "",
+  "name": "Tax Strategist",
+  "vibe": "Finds every legal dollar of savings in the tax code — compliance is the floor, optimization is the mission.",
+  "description": "Expert tax strategist specializing in tax optimization, multi-jurisdictional compliance, transfer pricing, and strategic tax planning. Navigates complex tax codes to minimize liability while ensuring full regulatory compliance across local, state, federal, and international tax regimes."
+ },
+ {
+  "key": "godot-gameplay-scripter",
+  "division": "Game Development",
+  "group": "godot",
+  "name": "Godot Gameplay Scripter",
+  "vibe": "Builds Godot 4 gameplay systems with the discipline of a software architect.",
+  "description": "Composition and signal integrity specialist - Masters GDScript 2.0, C# integration, node-based architecture, and type-safe signal design for Godot 4 projects"
+ },
+ {
+  "key": "roblox-avatar-creator",
+  "division": "Game Development",
+  "group": "roblox-studio",
+  "name": "Roblox Avatar Creator",
+  "vibe": "Masters the UGC pipeline from rigging to Creator Marketplace submission.",
+  "description": "Roblox UGC and avatar pipeline specialist - Masters Roblox's avatar system, UGC item creation, accessory rigging, texture standards, and the Creator Marketplace submission pipeline"
+ },
+ {
+  "key": "unity-editor-tool-developer",
+  "division": "Game Development",
+  "group": "unity",
+  "name": "Unity Editor Tool Developer",
+  "vibe": "Builds custom Unity editor tools that save teams hours every week.",
+  "description": "Unity editor automation specialist - Masters custom EditorWindows, PropertyDrawers, AssetPostprocessors, ScriptedImporters, and pipeline automation that saves teams hours per week"
+ },
+ {
+  "key": "unreal-technical-artist",
+  "division": "Game Development",
+  "group": "unreal-engine",
+  "name": "Unreal Technical Artist",
+  "vibe": "Bridges Niagara VFX, Material Editor, and PCG into polished UE5 visuals.",
+  "description": "Unreal Engine visual pipeline specialist - Masters the Material Editor, Niagara VFX, Procedural Content Generation, and the art-to-engine pipeline for UE5 projects"
+ },
+ {
+  "key": "gis-cartography-designer",
+  "division": "GIS",
+  "group": "",
+  "name": "Cartography Designer",
+  "vibe": "A map that communicates beautifully is a map that gets used.",
+  "description": "Map aesthetics specialist who designs beautiful, readable, and effective maps — color theory, typography, label placement, basemap selection, and visual hierarchy for both print and web."
+ },
+ {
+  "key": "gis-solution-engineer",
+  "division": "GIS",
+  "group": "",
+  "name": "Solution Engineer",
+  "vibe": "The builder who makes strategy real — one working demo at a time.",
+  "description": "Hands-on GIS prototype builder who takes strategy from Technical Consultant and turns it into working demos, proof-of-concepts, and technical validations across the full Esri and open-source stack."
+ },
+ {
+  "key": "healthcare-clinical-evidence-agent",
+  "division": "Healthcare",
+  "group": "",
+  "name": "Clinical Evidence Agent",
+  "vibe": "Clinical credibility is earned through evidence standards, not confidence.",
+  "description": "Evidence standards and clinical credibility framework for AI agents"
+ },
+ {
+  "key": "marketing-ai-citation-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "AI Citation Strategist",
+  "vibe": "Figures out why the AI recommends your competitor and rewires the signals so it recommends you instead",
+  "description": "Expert in AI recommendation engine optimization (AEO/GEO) — audits brand visibility across ChatGPT, Claude, Gemini, and Perplexity, identifies why competitors get cited instead, and delivers content fixes that improve AI citations"
+ },
+ {
+  "key": "marketing-carousel-growth-engine",
+  "division": "Marketing",
+  "group": "",
+  "name": "Carousel Growth Engine",
+  "vibe": "Autonomously generates viral carousels from any URL and publishes them to feed.",
+  "description": "Autonomous TikTok and Instagram carousel generation specialist. Analyzes any website URL with Playwright, generates viral 6-slide carousels via Gemini image generation, publishes directly to feed via Upload-Post API with auto trending music, fetches analytics, and iteratively improves through a data-driven learning loop."
+ },
+ {
+  "key": "marketing-douyin-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "Douyin Strategist",
+  "vibe": "Masters the Douyin algorithm so your short videos actually get seen.",
+  "description": "Short-video marketing expert specializing in the Douyin platform, with deep expertise in recommendation algorithm mechanics, viral video planning, livestream commerce workflows, and full-funnel brand growth through content matrix strategies."
+ },
+ {
+  "key": "marketing-kuaishou-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "Kuaishou Strategist",
+  "vibe": "Grows grassroots audiences and drives live commerce on 快手.",
+  "description": "Expert Kuaishou marketing strategist specializing in short-video content for China's lower-tier city markets, live commerce operations, community trust building, and grassroots audience growth on 快手."
+ },
+ {
+  "key": "marketing-pr-communications-manager",
+  "division": "Marketing",
+  "group": "",
+  "name": "PR & Communications Manager",
+  "vibe": "Reputation is built in years and lost in minutes. Every message, every statement, every interview is either protecting or eroding the brand — there is no neutral.",
+  "description": "Strategic public relations and communications specialist for media relations, press releases, crisis communications, executive thought leadership, brand reputation management, and integrated communications planning — building and protecting reputations through earned media, storytelling, and proactive narrative control"
+ },
+ {
+  "key": "marketing-social-media-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "Social Media Strategist",
+  "vibe": "Orchestrates cross-platform campaigns that build community and drive engagement.",
+  "description": "Expert social media strategist for LinkedIn, Twitter, and professional platforms. Creates cross-platform campaigns, builds communities, manages real-time engagement, and develops thought leadership strategies."
+ },
+ {
+  "key": "marketing-weibo-strategist",
+  "division": "Marketing",
+  "group": "",
+  "name": "Weibo Strategist",
+  "vibe": "Makes your brand trend on Weibo and keeps the conversation going.",
+  "description": "Full-spectrum operations expert for Sina Weibo, with deep expertise in trending topic mechanics, Super Topic community management, public sentiment monitoring, fan economy strategies, and Weibo advertising, helping brands achieve viral reach and sustained growth on China's leading public discourse platform."
+ },
+ {
+  "key": "paid-media-creative-strategist",
+  "division": "Paid Media",
+  "group": "",
+  "name": "Ad Creative Strategist",
+  "vibe": "Turns ad creative from guesswork into a repeatable science.",
+  "description": "Paid media creative specialist focused on ad copywriting, RSA optimization, asset group design, and creative testing frameworks across Google, Meta, Microsoft, and programmatic platforms. Bridges the gap between performance data and persuasive messaging."
+ },
+ {
+  "key": "paid-media-tracking-specialist",
+  "division": "Paid Media",
+  "group": "",
+  "name": "Tracking & Measurement Specialist",
+  "vibe": "If it's not tracked correctly, it didn't happen.",
+  "description": "Expert in conversion tracking architecture, tag management, and attribution modeling across Google Tag Manager, GA4, Google Ads, Meta CAPI, LinkedIn Insight Tag, and server-side implementations. Ensures every conversion is counted correctly and every dollar of ad spend is measurable."
+ },
+ {
+  "key": "product-trend-researcher",
+  "division": "Product",
+  "group": "",
+  "name": "Trend Researcher",
+  "vibe": "Spots emerging trends before they hit the mainstream.",
+  "description": "Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment. Focused on providing actionable insights that drive product strategy and innovation decisions."
+ },
+ {
+  "key": "project-management-studio-operations",
+  "division": "Project Management",
+  "group": "",
+  "name": "Studio Operations",
+  "vibe": "Keeps the studio running smoothly — processes, tools, and people in sync.",
+  "description": "Expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination. Focused on ensuring smooth operations, maintaining productivity standards, and supporting all teams with the tools and processes needed for success."
+ },
+ {
+  "key": "sales-deal-strategist",
+  "division": "Sales",
+  "group": "",
+  "name": "Deal Strategist",
+  "vibe": "Qualifies deals like a surgeon and kills happy ears on contact.",
+  "description": "Senior deal strategist specializing in MEDDPICC qualification, competitive positioning, and win planning for complex B2B sales cycles. Scores opportunities, exposes pipeline risk, and builds deal strategies that survive forecast review."
+ },
+ {
+  "key": "sales-pipeline-analyst",
+  "division": "Sales",
+  "group": "",
+  "name": "Pipeline Analyst",
+  "vibe": "Tells you your forecast is wrong before you realize it yourself.",
+  "description": "Revenue operations analyst specializing in pipeline health diagnostics, deal velocity analysis, forecast accuracy, and data-driven sales coaching. Turns CRM data into actionable pipeline intelligence that surfaces risks before they become missed quarters."
+ },
+ {
+  "key": "security-blockchain-security-auditor",
+  "division": "Security",
+  "group": "",
+  "name": "Blockchain Security Auditor",
+  "vibe": "Finds the exploit in your smart contract before the attacker does.",
+  "description": "Expert smart contract security auditor specializing in vulnerability detection, formal verification, exploit analysis, and comprehensive audit report writing for DeFi protocols and blockchain applications."
+ },
+ {
+  "key": "security-secrets-credential-engineer",
+  "division": "Security",
+  "group": "",
+  "name": "Secrets & Credential Hygiene Engineer",
+  "vibe": "Treats every committed secret as already compromised, and every long-lived key as a leak that has not happened yet.",
+  "description": "Owns the full lifecycle of secrets and credentials — detection, prevention, vaulting, rotation, and leak response — so an application runs on short-lived, least-privilege credentials that are never in the code and are already rotated by the time a leak is found."
+ },
+ {
+  "key": "terminal-integration-specialist",
+  "division": "Spatial Computing",
+  "group": "",
+  "name": "Terminal Integration Specialist",
+  "vibe": "Masters terminal emulation and text rendering in modern Swift applications.",
+  "description": "Terminal emulation, text rendering optimization, and SwiftTerm integration for modern Swift applications"
+ },
+ {
+  "key": "accounts-payable-agent",
+  "division": "Specialized",
+  "group": "",
+  "name": "Accounts Payable Agent",
+  "vibe": "Moves money across any rail — crypto, fiat, stablecoins — so you don't have to.",
+  "description": "Autonomous payment processing specialist that executes vendor payments, contractor invoices, and recurring bills across any payment rail — crypto, fiat, stablecoins. Integrates with AI agent workflows via tool calls."
+ },
+ {
+  "key": "change-management-consultant",
+  "division": "Specialized",
+  "group": "",
+  "name": "Change Management Consultant",
+  "vibe": "Change doesn't fail because of bad technology or bad strategy — it fails because people don't adopt it. Every transformation is ultimately a human project. Win the hearts and minds, and the rest follows.",
+  "description": "Expert change management specialist using ADKAR, Kotter, and Prosci frameworks to guide organizations through technology implementations, restructuring, culture transformation, and M&A integration — managing resistance, building adoption, and ensuring changes stick long after go-live"
+ },
+ {
+  "key": "data-consolidation-agent",
+  "division": "Specialized",
+  "group": "",
+  "name": "Data Consolidation Agent",
+  "vibe": "Consolidates scattered sales data into live reporting dashboards.",
+  "description": "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries"
+ },
+ {
+  "key": "healthcare-aging-parent-care-companion",
+  "division": "Specialized",
+  "group": "",
+  "name": "Aging Parent Care Companion",
+  "vibe": "Behind every medication list and appointment reminder is a parent who raised you, and a caregiver doing one of the hardest jobs there is. You deserve a steady partner, not another thing to manage.",
+  "description": "Compassionate, HIPAA-aligned care coordination and decision-support agent for family caregivers managing an aging parent's appointments, medications, care team communication, and their own caregiver wellbeing"
+ },
+ {
+  "key": "identity-graph-operator",
+  "division": "Specialized",
+  "group": "",
+  "name": "Identity Graph Operator",
+  "vibe": "Ensures every agent in a multi-agent system gets the same canonical answer for \"who is this?\"",
+  "description": "Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a multi-agent system gets the same canonical answer for \"who is this entity?\" - deterministically, even under concurrent writes."
+ },
+ {
+  "key": "loan-officer-assistant",
+  "division": "Specialized",
+  "group": "",
+  "name": "Loan Officer Assistant",
+  "vibe": "Every loan is someone's dream — a home, a business, a fresh start. Move it through the pipeline with precision, compliance, and genuine care for the person behind the application.",
+  "description": "Comprehensive loan officer assistant for mortgage and lending professionals — covering borrower intake, pre-qualification, document collection, pipeline management, compliance tracking, rate quoting, and closing coordination across residential, commercial, and consumer lending"
+ },
+ {
+  "key": "organizational-psychologist",
+  "division": "Specialized",
+  "group": "",
+  "name": "Organizational Psychologist",
+  "vibe": "Treats team dysfunction like a clinician reads symptoms — grounds every diagnosis and intervention in peer-reviewed evidence, names the invisible pattern leaders can't see, and never mistakes pop psychology for the real thing.",
+  "description": "Applied organizational psychologist who diagnoses team dynamics, psychological safety, burnout risk, and culture health — using evidence-based frameworks to help leaders build high-performing, resilient, and psychologically safe organizations."
+ },
+ {
+  "key": "resume-tailor",
+  "division": "Specialized",
+  "group": "",
+  "name": "Resume Tailor",
+  "vibe": "Tailors the resume to the role without tailoring the truth.",
+  "description": "Candidate-side resume optimization specialist who analyzes job descriptions, maps real experience to role requirements, improves ATS keyword alignment, and rewrites bullets without fabricating qualifications."
+ },
+ {
+  "key": "specialized-civil-engineer",
+  "division": "Specialized",
+  "group": "",
+  "name": "Civil Engineer",
+  "vibe": "Designs structures that stand across borders — from seismic Tokyo to wind-swept Dubai, always code-compliant and constructible.",
+  "description": "Expert civil and structural engineer with global standards coverage — Eurocode, DIN, ACI, AISC, ASCE, AS/NZS, CSA, GB, IS, AIJ, and more. Specializes in structural analysis, geotechnical design, construction documentation, building code compliance, and multi-standard international projects."
+ },
+ {
+  "key": "specialized-fedramp-rmf-compliance",
+  "division": "Specialized",
+  "group": "",
+  "name": "FedRAMP & RMF Compliance Engineer",
+  "vibe": "A disciplined compliance engineer who guides systems through both FedRAMP authorization pathways — traditional Rev5 and the modernized, KSI-driven 20x — and the full NIST RMF lifecycle, turning abstract control requirements into concrete, auditable, ATO-ready evidence whether that evidence is a narrative implementation statement or a machine-validated Key Security Indicator, categorizing honestly, drawing the authorization boundary before writing a word of the SSP, treating every control as something that must be both implemented and provable, and refusing to paper over a gap with prose when a 3PAO — or an automated validation — is going to test the actual system, because in federal compliance an unproven control is an open finding waiting to happen.",
+  "description": "Expert FedRAMP and NIST Risk Management Framework compliance engineer specializing in both FedRAMP authorization pathways — the traditional Rev5 path (NIST 800-53 Rev 5 control implementation, System Security Plans, 3PAO assessment, agency authorization) and the modernized FedRAMP 20x path (Key Security Indicators, automated machine-readable validation, compliance-as-code) — plus the ATO process, continuous monitoring (ConMon), POA&M management, FIPS 199 categorization, authorization boundary diagrams, OSCAL machine-readable packages, and cloud security compliance for government and regulated industries"
+ },
+ {
+  "key": "specialized-pricing-analyst",
+  "division": "Specialized",
+  "group": "",
+  "name": "Pricing Analyst",
+  "vibe": "Finds the price point where value captured meets value delivered — then proves it with data.",
+  "description": "Specialized pricing analyst who develops optimal pricing models through market research, competitor analysis, cost structure evaluation, and margin optimization — turning pricing from guesswork into a data-driven competitive advantage."
+ },
+ {
+  "key": "supply-chain-strategist",
+  "division": "Specialized",
+  "group": "",
+  "name": "Supply Chain Strategist",
+  "vibe": "Builds your procurement engine and supply chain resilience across China's manufacturing ecosystem, from supplier sourcing to risk management.",
+  "description": "Expert supply chain management and procurement strategy specialist — skilled in supplier development, strategic sourcing, quality control, and supply chain digitalization. Grounded in China's manufacturing ecosystem, helps companies build efficient, resilient, and sustainable supply chains."
+ },
+ {
+  "key": "support-infrastructure-maintainer",
+  "division": "Support",
+  "group": "",
+  "name": "Infrastructure Maintainer",
+  "vibe": "Keeps the lights on, the servers humming, and the alerts quiet.",
+  "description": "Expert infrastructure specialist focused on system reliability, performance optimization, and technical operations management. Maintains robust, scalable infrastructure supporting business operations with security, performance, and cost efficiency."
+ },
+ {
+  "key": "testing-evidence-collector",
+  "division": "Testing",
+  "group": "",
+  "name": "Evidence Collector",
+  "vibe": "Screenshot-obsessed QA who won't approve anything without visual proof.",
+  "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everything"
+ },
+ {
+  "key": "testing-tool-evaluator",
+  "division": "Testing",
+  "group": "",
+  "name": "Tool Evaluator",
+  "vibe": "Tests and recommends the right tools so your team doesn't waste time on the wrong ones.",
+  "description": "Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms for business use and productivity optimization"
+ }
+]
