@@ -31,7 +31,8 @@ DIV_ZH = {
     "academic": "學術", "design": "設計", "engineering": "工程", "finance": "財務",
     "game-development": "遊戲開發", "gis": "GIS", "healthcare": "醫療保健",
     "marketing": "行銷", "paid-media": "付費媒體", "product": "產品",
-    "project-management": "專案管理", "sales": "銷售", "security": "資安",
+    "project-management": "專案管理", "research": "研究", "sales": "銷售",
+    "security": "資安",
     "spatial-computing": "空間運算", "specialized": "專業領域",
     "support": "支援", "testing": "測試",
 }

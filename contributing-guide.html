@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Agency Contributing Guide — Adding &amp; Improving Agents</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft JhengHei", sans-serif; margin:0; background:#0f1115; color:#e5e7eb; line-height:1.7; }
+  header { padding:32px 40px 20px; background:#161922; border-bottom:1px solid #262b38; position:sticky; top:0; z-index:10; }
+  header h1 { margin:0 0 6px; font-size:24px; }
+  header p { margin:0; color:#9ca3af; font-size:14px; }
+  .wrap { display:flex; }
+  nav { width:250px; flex-shrink:0; padding:24px 16px; position:sticky; top:130px; align-self:flex-start; max-height:calc(100vh - 130px); overflow:auto; }
+  nav a { display:block; padding:7px 12px; margin-bottom:3px; color:#d1d5db; text-decoration:none; border-radius:6px; font-size:13.5px; border-left:3px solid #374151; }
+  nav a:hover { background:#1f2430; color:#fff; }
+  main { flex:1; padding:24px 48px 100px; min-width:0; max-width:980px; }
+  section { margin-bottom:56px; }
+  h2 { font-size:21px; padding:8px 14px; border-left:6px solid #3b82f6; background:#161922; border-radius:0 8px 8px 0; }
+  h3 { font-size:16.5px; color:#93c5fd; margin:28px 0 10px; }
+  p, li { font-size:14.5px; color:#d1d5db; }
+  code { background:#1f2430; padding:2px 6px; border-radius:4px; font-size:13px; color:#fbbf24; }
+  pre { background:#161922; border:1px solid #262b38; border-radius:10px; padding:16px 18px; overflow-x:auto; }
+  pre code { background:none; padding:0; color:#e5e7eb; font-size:13px; line-height:1.6; }
+  table { border-collapse:collapse; width:100%; margin:12px 0; font-size:13.5px; }
+  th, td { border:1px solid #262b38; padding:8px 12px; text-align:left; vertical-align:top; }
+  th { background:#161922; color:#93c5fd; }
+  td { color:#d1d5db; }
+  .step { background:#161922; border:1px solid #262b38; border-radius:10px; padding:16px 20px; margin:12px 0; }
+  .step-title { font-weight:700; color:#fff; font-size:15px; margin-bottom:6px; }
+  .step-num { display:inline-block; background:#3b82f6; color:#fff; border-radius:50%; width:24px; height:24px; text-align:center; line-height:24px; font-size:13px; margin-right:8px; }
+  .ok { color:#34d399; }
+  .no { color:#f87171; }
+  .warn-box { background:#292217; border:1px solid #854d0e; border-left:5px solid #f59e0b; border-radius:8px; padding:12px 16px; margin:14px 0; font-size:14px; }
+  .tip-box { background:#14201a; border:1px solid #166534; border-left:5px solid #22c55e; border-radius:8px; padding:12px 16px; margin:14px 0; font-size:14px; }
+  .info-box { background:#152030; border:1px solid #1d4ed8; border-left:5px solid #3b82f6; border-radius:8px; padding:12px 16px; margin:14px 0; font-size:14px; }
+  a { color:#93c5fd; }
+  footer { padding:24px 40px; color:#6b7280; font-size:13px; border-top:1px solid #262b38; }
+  @media (max-width:860px) { nav { display:none; } header { padding:20px; } main { padding:20px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>🤝 The Agency Contributing Guide</h1>
+  <p>The complete process for adding or improving agents · distilled from <a href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a>' CONTRIBUTING.md, CI scripts, and workflows</p>
+</header>
+<div class="wrap">
+<nav>
+  <a href="#overview">1. Overview: Structure &amp; Contribution Types</a>
+  <a href="#add-agent">2. Adding an Agent: 9 Steps</a>
+  <a href="#improve-agent">3. Improving an Existing Agent</a>
+  <a href="#new-division">4. Proposing a New Division</a>
+  <a href="#file-spec">5. Agent File Specification</a>
+  <a href="#design">6. Design Principles: Dos &amp; Don'ts</a>
+  <a href="#ci">7. CI Checks &amp; Local Validation</a>
+  <a href="#pr">8. PR Conventions &amp; Review</a>
+  <a href="#style">9. Style Guide</a>
+  <a href="#pitfalls">10. Common Pitfalls</a>
+  <a href="#local-kimi">11. Extra: Testing Locally with Kimi Code</a>
+  <a href="#resources">12. Resources</a>
+</nav>
+<main>
+
+<section id="overview">
+<h2>1. Overview: Project Structure &amp; Contribution Types</h2>
+<p>The Agency is a pure-Markdown agent collection. Each agent is a single <code>.md</code> file under its division's top-level directory. Conversion and installation are handled by scripts — <strong>contributors only need to write one good .md file</strong>.</p>
+<table>
+  <tr><th>Path</th><th>Nature</th><th>Description</th></tr>
+  <tr><td><code>engineering/</code>, <code>marketing/</code>, … 18 directories</td><td>Division (agent source)</td><td>Where agent .md files live; the authoritative list is <code>divisions.json</code> at the repo root</td></tr>
+  <tr><td><code>divisions.json</code></td><td>Single source of truth for divisions</td><td>Defines each division's label, icon, and color; CI verifies it against on-disk directories with <code>check-divisions.sh</code></td></tr>
+  <tr><td><code>tools.json</code></td><td>Single source of truth for tool integrations</td><td>Defines conversion targets for 17 tools — Claude Code, Cursor, Kimi, Codex, and more</td></tr>
+  <tr><td><code>integrations/</code></td><td><strong>Output, not source</strong></td><td>Output directory of <code>convert.sh</code>; only each tool's <code>README.md</code> is tracked by git, everything else is gitignored</td></tr>
+  <tr><td><code>strategy/</code>, <code>examples/</code></td><td>Not divisions</td><td>Playbooks and examples; no agent frontmatter</td></tr>
+  <tr><td><code>scripts/</code></td><td>Infrastructure</td><td><code>convert.sh</code> (conversion), <code>install.sh</code> (installation), <code>lint-agents.sh</code> (format checks), <code>check-agent-originality.sh</code> (originality), and more</td></tr>
+</table>
+<h3>Four ways to contribute</h3>
+<ul>
+  <li><strong>Add an agent</strong> — one new .md file (the most welcome contribution)</li>
+  <li><strong>Improve an existing agent</strong> — add real examples, update code samples, refine workflows, add success metrics, fix typos</li>
+  <li><strong>Share success stories</strong> — Discussions posts, README case studies, blog posts, video tutorials</li>
+  <li><strong>Report issues</strong> — search existing issues first; include clear reproduction steps and your use case</li>
+</ul>
+<div class="info-box">💡 Officially stated: <strong>the fastest PRs to merge are "one markdown file"</strong> — adding or improving a single agent. Anything beyond that scope usually needs a Discussion first to align on direction.</div>
+</section>
+
+<section id="add-agent">
+<h2>2. Adding an Agent: The Complete 9-Step Process</h2>
+
+<div class="step"><div class="step-title"><span class="step-num">1</span>Fork &amp; Clone the Repository</div>
+<pre><code># Fork msitarzewski/agency-agents on GitHub, then:
+git clone https://github.com/&lt;your-account&gt;/agency-agents
+cd agency-agents</code></pre>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">2</span>Choose Its Division</div>
+<p>Browse the division directories and find the closest fit (web frontend → <code>engineering/</code>, community building → <code>marketing/</code>, penetration testing → <code>security/</code>, literature &amp; evidence synthesis → <code>research/</code>). The authoritative list of 18 divisions is <code>divisions.json</code>. Only consider proposing a new division (see §4) when nothing fits — <code>specialized/</code> is the catch-all for agents that fit nowhere else.</p>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">3</span>Create the File, Follow Naming Conventions</div>
+<p>Filename format: <code>&lt;division&gt;-&lt;agent-name&gt;.md</code>, all lowercase, kebab-case. Examples:</p>
+<pre><code>engineering/engineering-frontend-developer.md
+marketing/marketing-xiaohongshu-specialist.md
+game-development/unity/unity-architect.md   ← game-development has engine subdirectories</code></pre>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">4</span>Write the YAML Frontmatter</div>
+<pre><code>---
+name: Agent Name
+description: One-line description of the agent's specialty and focus
+color: colorname or "#hexcode"
+emoji: 🎯
+vibe: One-line personality hook — what makes this agent memorable
+services:                              # optional — only if the agent depends on external services
+  - name: Service Name
+    url: https://service-url.com
+    tier: free                         # free / freemium / paid
+---</code></pre>
+<p><code>name</code>, <code>description</code>, and <code>color</code> are <strong>required by CI</strong> (missing = hard ERROR); <code>emoji</code>, <code>vibe</code>, and <code>services</code> are optional.</p>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">5</span>Write the Body from the Template (Persona + Operations)</div>
+<p>Sections fall into two semantic groups. <code>convert.sh</code> splits agents into per-tool formats based on section headings, so keep the grouping and the English heading keywords (Identity / Core Mission / Critical Rules…):</p>
+<table>
+  <tr><th>Group</th><th>Section</th><th>Content</th></tr>
+  <tr><td rowspan="3"><strong>Persona</strong><br>(who this agent is)</td><td>🧠 Your Identity &amp; Memory</td><td>Role / Personality / Memory / Experience</td></tr>
+  <tr><td>💭 Your Communication Style</td><td>Tone, signature phrasing, communication patterns</td></tr>
+  <tr><td>🚨 Critical Rules You Must Follow</td><td>Domain-specific hard rules and boundaries</td></tr>
+  <tr><td rowspan="5"><strong>Operations</strong><br>(what this agent does)</td><td>🎯 Your Core Mission</td><td>Primary responsibilities (each with a concrete deliverable) + default requirements</td></tr>
+  <tr><td>📋 Your Technical Deliverables</td><td>Concrete outputs: code examples, templates, frameworks, documents</td></tr>
+  <tr><td>🔄 Your Workflow Process</td><td>Phased, step-by-step process</td></tr>
+  <tr><td>🎯 Your Success Metrics</td><td>Quantifiable outcome metrics (with numbers)</td></tr>
+  <tr><td>🚀 Advanced Capabilities</td><td>Advanced techniques</td></tr>
+</table>
+<p>See §5 for the full template skeleton.</p>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">6</span>Local Validation: Lint + Originality + Convert-Output Checks</div>
+<pre><code># Format check (required fields, line endings, sections)
+./scripts/lint-agents.sh engineering/engineering-your-agent.md
+
+# Originality check (compared against all 279 agents; defeats find-replace reskins)
+./scripts/check-agent-originality.sh engineering/engineering-your-agent.md
+
+# Convert-output check (confirms your agent survives every tool's converter intact)
+./scripts/test-convert-outputs.sh</code></pre>
+<p>Originality thresholds: similarity <strong>≥ 20% warns, ≥ 40% is flagged as a duplicate (CI failure)</strong>. The highest similarity anywhere in the existing roster is only ~1.5%, so double digits are an anomaly. The check neutralizes country/platform proper nouns, so reskins like "swap TikTok for Douyin" can't escape it.</p>
+<p><code>test-convert-outputs.sh</code> regenerates every tool's output into a scratch directory and checks the <strong>product, not the syntax</strong>: every agent's description round-trips intact, every generated file parses with a real YAML/TOML parser, every tool emits exactly one output per agent, and every source file parses the way the desktop app reads it. Adding or editing an agent changes the generated product, so it will report <strong>manifest drift</strong> naming your agent — that's expected, and on pull requests it is <strong>advisory</strong>: CI prints it but does not fail. You don't need to touch <code>scripts/convert-outputs.sha256</code>; the maintainers regenerate it when your PR lands. (Running <code>--update</code> yourself is fine too — the manifest has one line per agent, so it won't conflict with anyone else's PR, and the hashes are identical on Windows, macOS, and Linux.)</p>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">7</span>Test in Real Scenarios</div>
+<p>The project asks for "battle-tested, not theoretical": actually use the agent (e.g. load it in Kimi Code on a real task — see §11), then iterate based on the results.</p>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">8</span>Commit &amp; Push to Your Fork</div>
+<pre><code>git checkout -b add-your-agent-name
+git add engineering/engineering-your-agent.md
+git commit -m "Add Your Agent Name specialist"
+git push origin add-your-agent-name</code></pre>
+</div>
+
+<div class="step"><div class="step-title"><span class="step-num">9</span>Open a Pull Request</div>
+<ul>
+  <li>Title format: <code>Add [Agent Name] - [Category]</code></li>
+  <li>Body: what the agent does, why it's needed (what gap it fills), how you tested it</li>
+  <li>Complete the PR template checklist (see §8)</li>
+</ul>
+<p>Then the review loop: community feedback → iterate → maintainer approval → merge.</p>
+</div>
+</section>
+
+<section id="improve-agent">
+<h2>3. Improving an Existing Agent</h2>
+<p>Improving existing agents is just as welcome as adding new ones, and follows the same "one-file PR" route. The officially listed improvement directions:</p>
+<ul>
+  <li>Add <strong>real-world examples and use cases</strong></li>
+  <li>Update code examples with <strong>modern patterns</strong> (e.g. old syntax → current framework idioms)</li>
+  <li>Refresh <strong>workflows</strong> to current best practices</li>
+  <li>Add <strong>success metrics and benchmarks</strong></li>
+  <li>Fix typos, improve clarity, complete documentation</li>
+</ul>
+<h3>Process</h3>
+<ol>
+  <li>Fork → branch (e.g. <code>improve-frontend-developer-examples</code>), same as adding</li>
+  <li>Edit the target .md file; run <code>./scripts/lint-agents.sh &lt;file&gt;</code> afterwards to confirm nothing broke</li>
+  <li>Commit (e.g. <code>Improve frontend-developer: add React 19 examples</code>) → push → open PR</li>
+  <li>In the PR body, explain "what changed and why it's better"</li>
+</ol>
+<div class="warn-box">⚠️ <strong>Do not batch-edit large numbers of existing agents in one PR</strong> — even well-intentioned reformatting causes merge conflicts for other contributors, and the maintainers explicitly close such PRs. For broad restructuring, open a Discussion first.</div>
+</section>
+
+<section id="new-division">
+<h2>4. Proposing a New Division</h2>
+<p>A new division is an "architectural change" — <strong>always open a Discussion first</strong> to reach consensus. Once approved, the technical steps:</p>
+<ol>
+  <li>Create the new directory with at least <strong>1 agent file with frontmatter</strong> inside</li>
+  <li>Add an entry to <code>divisions.json</code>: <code>label</code> (display name), <code>icon</code> (Lucide icon name, PascalCase), <code>color</code> (hex)</li>
+  <li>Add the directory name to the <code>AGENT_DIRS</code> array in <strong>both</strong> scripts: <code>scripts/convert.sh</code> and <code>scripts/lint-agents.sh</code></li>
+  <li>Update the CI path filters (<code>paths</code> in <code>.github/workflows/lint-agents.yml</code>)</li>
+  <li>Run <code>./scripts/check-divisions.sh</code> to verify — it checks that divisions.json ↔ on-disk directories ↔ script lists are all consistent, and fails if not</li>
+</ol>
+<div class="warn-box">⚠️ <code>strategy/</code> (playbooks) and <code>integrations/</code> (convert output) are <strong>never divisions</strong> and must not be added to the division list.</div>
+</section>
+
+<section id="file-spec">
+<h2>5. Agent File Specification</h2>
+<h3>Frontmatter Fields</h3>
+<table>
+  <tr><th>Field</th><th>Required</th><th>Description</th></tr>
+  <tr><td><code>name</code></td><td class="no">✅ CI required</td><td>Agent display name</td></tr>
+  <tr><td><code>description</code></td><td class="no">✅ CI required</td><td>One line describing the specialty and focus</td></tr>
+  <tr><td><code>color</code></td><td class="no">✅ CI required</td><td>Color name or hex code</td></tr>
+  <tr><td><code>emoji</code></td><td>Optional</td><td>Representative emoji</td></tr>
+  <tr><td><code>vibe</code></td><td>Optional</td><td>One-line personality hook — what makes this agent memorable</td></tr>
+  <tr><td><code>services</code></td><td>Optional</td><td>External service dependencies (name / url / tier: free | freemium | paid)</td></tr>
+</table>
+<h3>Full Body Template</h3>
+<pre><code>---
+name: Agent Name
+description: One-line description of the agent's specialty and focus
+color: cyan
+emoji: 🎯
+vibe: One-line personality hook
+---
+
+# Agent Name
+
+## 🧠 Your Identity &amp; Memory
+- **Role**: Clear role description
+- **Personality**: Character traits and communication style
+- **Memory**: What this agent remembers and learns
+- **Experience**: Domain expertise and perspective
+
+## 🎯 Your Core Mission
+- Primary responsibility 1 (with concrete deliverable)
+- Primary responsibility 2 (with concrete deliverable)
+- **Default requirement**: An always-on best practice
+
+## 🚨 Critical Rules You Must Follow
+Domain-specific rules and constraints that define how the agent works
+
+## 📋 Your Technical Deliverables
+Concrete outputs: code examples / templates / frameworks / documents
+
+## 🔄 Your Workflow Process
+1. Phase one: Discovery &amp; research
+2. Phase two: Planning &amp; strategy
+3. Phase three: Execution &amp; implementation
+4. Phase four: Review &amp; optimization
+
+## 💭 Your Communication Style
+How it communicates, example phrasing, tone
+
+## 🔄 Learning &amp; Memory
+Learning from successful patterns / failed approaches / user feedback / domain evolution
+
+## 🎯 Your Success Metrics
+Quantitative metrics (with numbers), qualitative metrics, performance benchmarks
+
+## 🚀 Advanced Capabilities
+Advanced techniques and methods</code></pre>
+<div class="tip-box">✅ Keep the English keywords in section headings (Identity, Core Mission, Critical Rules, Communication Style…), because <code>lint-agents.sh</code> and <code>convert.sh</code> rely on them to recognize sections and split Persona / Operations. Missing the three recommended sections (Identity / Core Mission / Critical Rules) triggers a lint WARN (doesn't block merge, but reviewers will see it).</div>
+<h3>Principles for External Services (services)</h3>
+<ul>
+  <li>The agent must <strong>stand on its own</strong> — strip out the API calls and the persona, workflow, and expertise are still useful</li>
+  <li><strong>Don't copy-paste vendor docs</strong> — reference them instead; the file should read like an agent, not a quickstart tutorial</li>
+  <li>Prefer services with a <strong>free tier</strong>, so contributors can test</li>
+  <li>Litmus test: "Does this agent serve the user, or the vendor?"</li>
+</ul>
+</section>
+
+<section id="design">
+<h2>6. Design Principles: Dos &amp; Don'ts</h2>
+<h3>The Five Design Principles</h3>
+<ol>
+  <li><strong>🎭 Distinct persona</strong> — a unique voice and character, not "I'm a helpful assistant". Example: "By default I identify 3–5 issues and request visual evidence" (Evidence Collector)</li>
+  <li><strong>📋 Concrete deliverables</strong> — real code examples, templates, frameworks; show actual output, not vague descriptions</li>
+  <li><strong>✅ Success metrics</strong> — specific and quantifiable: "page loads under 3 seconds on 3G", "10,000+ combined karma across accounts"</li>
+  <li><strong>🔄 Battle-tested workflow</strong> — step-by-step, tested in real scenarios, not theory</li>
+  <li><strong>💡 Learning memory</strong> — which patterns to recognize, how to improve over time, what to remember across sessions</li>
+</ol>
+<h3>Side-by-Side</h3>
+<table>
+  <tr><th class="ok">✅ Great agents have</th><th class="no">❌ Avoid</th></tr>
+  <tr><td>Narrow, deep specialization</td><td>Over-broad scope (jack of all trades)</td></tr>
+  <tr><td>A unique persona and voice</td><td>Generic "helpful assistant" persona</td></tr>
+  <tr><td>Concrete code / template examples (at least 2–3)</td><td>No code examples, no deliverables</td></tr>
+  <tr><td>Quantifiable success metrics</td><td>Vague "I'll help you…" descriptions</td></tr>
+  <tr><td>Step-by-step workflow</td><td>Untested theoretical approaches</td></tr>
+  <tr><td>Real-scenario testing and iteration</td><td>Find-replace reskins of existing agents</td></tr>
+</table>
+</section>
+
+<section id="ci">
+<h2>7. CI Checks &amp; Local Validation</h2>
+<p>After you open a PR, GitHub Actions automatically runs the following checks against the changed agent files. Every one of them can be run locally first:</p>
+<table>
+  <tr><th>Check</th><th>Script / Workflow</th><th>Rules</th><th>Local command</th></tr>
+  <tr><td><strong>Format lint</strong></td><td><code>scripts/lint-agents.sh</code><br>(lint-agents.yml)</td><td>
+    ERROR (blocks merge): CRLF line endings, missing <code>---</code> frontmatter, missing <code>name</code>/<code>description</code>/<code>color</code><br>
+    WARN (non-blocking): missing Identity / Core Mission / Critical Rules sections, body &lt; 50 words, sections that don't map to converter groups</td>
+    <td><code>./scripts/lint-agents.sh &lt;file&gt;</code></td></tr>
+  <tr><td><strong>Originality</strong></td><td><code>scripts/check-agent-originality.sh</code><br>(lint-agents.yml)</td><td>8-word shingle comparison against the entire roster; country/platform names are neutralized. ≥20% WARN, ≥40% FAIL. The existing roster's baseline peaks at only ~1.5%</td>
+    <td><code>./scripts/check-agent-originality.sh &lt;file&gt;</code><br>(no argument = full-roster audit)</td></tr>
+  <tr><td><strong>Division consistency</strong></td><td><code>scripts/check-divisions.sh</code><br>(check-divisions.yml)</td><td><code>divisions.json</code> ↔ on-disk directories ↔ AGENT_DIRS in convert.sh / lint-agents.sh ↔ workflow path filters must all agree; every division needs at least 1 agent file</td>
+    <td><code>./scripts/check-divisions.sh</code></td></tr>
+  <tr><td><strong>Tool-integration consistency</strong></td><td><code>scripts/check-tools.sh</code><br>(check-tools.yml)</td><td>When adding a tool integration: <code>tools.json</code> ↔ convert.sh ↔ install.sh ↔ .gitignore ↔ integrations/&lt;tool&gt;/README.md must all align</td>
+    <td><code>./scripts/check-tools.sh</code></td></tr>
+  <tr><td><strong>Installer regression tests</strong></td><td><code>scripts/test-install.sh</code><br>(test-install.yml)</td><td>Installs into throwaway sandboxes (never your real <code>$HOME</code>) and pins the installer's observable contract: where files land, that <code>--path</code> beats the tool's env var, that <code>--division</code> / <code>--agent</code> / <code>--agents-file</code> filter, that <code>--dry-run</code> writes nothing, and that paths with spaces survive. CI runs it on Linux and macOS</td>
+    <td><code>./scripts/test-install.sh</code></td></tr>
+  <tr><td><strong>Convert-output eval</strong></td><td><code>scripts/test-convert-outputs.sh</code><br>(check-tools.yml)</td><td>Regenerates every tool's output into a scratch directory and checks the product, not the syntax: descriptions round-trip intact, generated files parse with real YAML/TOML parsers, every tool emits exactly one output per agent, and source files parse the way the desktop app reads them. When you've changed a converter on purpose it reports <strong>manifest drift</strong> — review the diff, re-run with <code>--update</code>, and commit the refreshed <code>scripts/convert-outputs.sha256</code> so reviewers see the blast radius at a glance. The manifest holds one line per agent and one per tool, with platform-neutral hashes (forward-slash paths, LF endings), so a Windows checkout produces the same file. Drift caused by adding/editing an agent is advisory on PRs and does not block merge. CI runs it on every PR</td>
+    <td><code>./scripts/test-convert-outputs.sh</code><br>(add <code>--update</code> to refresh the manifest)</td></tr>
+</table>
+<div class="info-box">💡 Requirements: bash (Git Bash works on Windows) + <code>python3</code> (needed by the originality check).</div>
+<div class="tip-box">✅ <strong>Why these checks exist</strong> (in the maintainers' words): people are building genuinely remarkable things on top of these agents, and thousands rely on them every day across a dozen different tools. That's wonderful — and it means a small slip in one converter, or a stray quote in one file, quietly reaches all of them at once. Running the suite locally is how we keep that smooth for everyone downstream. It takes about a minute, and it means your work arrives exactly as you wrote it, in every tool, for everyone. Thank you for taking the extra step — it's a real kindness to people you'll never meet.</div>
+</section>
+
+<section id="pr">
+<h2>8. PR Conventions &amp; Review Process</h2>
+<h3>Three Fates for a PR</h3>
+<table>
+  <tr><th class="ok">✅ Always welcome</th><th>💬 Open a Discussion first</th><th class="no">❌ Always closed</th></tr>
+  <tr>
+    <td>Adding one agent (one .md)<br>Improving an existing agent's content/examples/persona<br>Fixing typos, clarifying docs</td>
+    <td>New tools, build systems, CI workflows<br>Architectural changes (new directories, new scripts, site generators)<br>Changes spanning many files<br>New integration formats or platforms</td>
+    <td>Committing build output (converted <code>integrations/</code> files, <code>_site/</code>)<br>Batch-editing existing agents without discussion<br>Near-duplicate "reskin" agents</td>
+  </tr>
+</table>
+<h3>Branch / Commit / Title Formats</h3>
+<pre><code>git checkout -b add-agent-name                    # branch
+git commit -m "Add [Agent Name] specialist"       # commit
+PR title: "Add [Agent Name] - [Category]"         # PR</code></pre>
+<h3>PR Template (Official Checklist)</h3>
+<pre><code>## Agent Information
+**Agent Name**: [name]
+**Category**: [engineering/design/marketing/etc.]
+**Specialty**: [one-line description]
+
+## Motivation
+[Why is this agent needed? What gap does it fill?]
+
+## Testing
+[How did you test it? Real-world usage scenarios?]
+
+## Checklist
+- [ ] Original — not a near-duplicate (ran scripts/check-agent-originality.sh)
+- [ ] Follows the agent template structure
+- [ ] Includes a persona and voice
+- [ ] Has concrete code/template examples (at least 2–3)
+- [ ] Defines success metrics
+- [ ] Includes a step-by-step workflow
+- [ ] Proofread and properly formatted
+- [ ] Tested in a real scenario</code></pre>
+<h3>Review Process</h3>
+<p>Community review (feedback from other contributors) → iterate → maintainer approval → merge. Recognition: README acknowledgments, release-notes mentions, "Agent of the Week" features, and credit inside the agent file.</p>
+</section>
+
+<section id="style">
+<h2>9. Style Guide</h2>
+<h3>Writing</h3>
+<ul>
+  <li><strong>Be specific</strong>: "reduce page load time by 60%", not "make it faster"</li>
+  <li><strong>Be concrete</strong>: "write React components in TypeScript", not "do UI"</li>
+  <li><strong>Be memorable</strong>: give it personality, not corporate speak</li>
+  <li><strong>Be practical</strong>: real, runnable code, not pseudocode</li>
+</ul>
+<h3>Formatting</h3>
+<ul>
+  <li>Section headings carry emoji (🎯🧠📋) for scannability</li>
+  <li>All code in fenced code blocks with a language tag (syntax highlighting)</li>
+  <li>Use tables to compare options or metrics; <strong>bold</strong> for key points, <code>code</code> for terms</li>
+  <li>The four properties of a good code example: language tagged, key concepts annotated, runnable, modern best practices</li>
+</ul>
+<h3>Tone</h3>
+<ul>
+  <li>Professional but approachable — neither stiff nor sloppy</li>
+  <li>Confident, not arrogant — "this is the best practice", not "maybe you could try…"</li>
+  <li>Helpful without doing everything — assume a capable user, provide depth</li>
+  <li>Personality-driven — every agent has a unique voice</li>
+</ul>
+</section>
+
+<section id="pitfalls">
+<h2>10. Common Pitfalls</h2>
+<table>
+  <tr><th>Pitfall</th><th>Consequence</th><th>Fix</th></tr>
+  <tr><td>CRLF line endings (common on Windows)</td><td>Lint ERROR: frontmatter parsing fails with a misleading error message</td><td>Save with LF; if already polluted, <code>perl -i -pe "s/\r$//" file</code>; the repo's <code>.gitattributes</code> mandates LF</td></tr>
+  <tr><td>Committing converted output from <code>integrations/</code></td><td>PR gets sent back or closed outright</td><td>Generated output is never committed; new tool integrations must add their own .gitignore rule</td></tr>
+  <tr><td>Reskin agents (swap a platform/country name and call it new)</td><td>Originality check ≥40% = hard FAIL</td><td>If you're localizing, make the platforms, tactics, and examples genuinely different</td></tr>
+  <tr><td>Translating or renaming section headings</td><td>convert.sh can't split Persona/Operations; lint WARN</td><td>Keep the English keywords in headings (Identity, Core Mission…)</td></tr>
+  <tr><td>Editing dozens of agents in one PR</td><td>Explicitly always closed</td><td>One PR, one file; open a Discussion for big changes</td></tr>
+  <tr><td>Copy-pasting vendor docs as agent content</td><td>Rejected in review — "a quickstart wearing an agent costume"</td><td>Link to the docs; keep the persona, workflow, and professional judgment</td></tr>
+</table>
+</section>
+
+<section id="local-kimi">
+<h2>11. Extra: Testing a New Agent Locally with Kimi Code</h2>
+<p>After writing your agent and before opening the PR, you can battle-test it locally with Kimi Code (matching CONTRIBUTING's "Test Your Agent" requirement):</p>
+<pre><code># 1. Regenerate the Kimi integration files (converting only kimi is much faster)
+./scripts/convert.sh --tool kimi
+
+# 2. Install locally
+./scripts/install.sh --tool kimi
+
+# 3. Launch a real test run with your new agent
+kimi --agent-file ~/.config/kimi/agents/your-agent-name/agent.yaml</code></pre>
+<p>If you just want to try a single agent quickly without reinstalling everything, you can also paste the agent file's content into a test project's <code>AGENTS.md</code> to simulate the persona.</p>
+</section>
+
+<section id="resources">
+<h2>12. Resources</h2>
+<ul>
+  <li><a href="https://github.com/msitarzewski/agency-agents/blob/main/CONTRIBUTING.md">CONTRIBUTING.md (original English)</a> · <a href="https://github.com/msitarzewski/agency-agents/blob/main/CONTRIBUTING_zh-CN.md">Simplified Chinese edition</a></li>
+  <li>Structural examples: <a href="https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-frontend-developer.md">Frontend Developer (structure)</a> · <a href="https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-reddit-community-builder.md">Reddit Community Builder (persona)</a> · <a href="https://github.com/msitarzewski/agency-agents/blob/main/design/design-whimsy-injector.md">Whimsy Injector (creative)</a></li>
+  <li><a href="https://github.com/msitarzewski/agency-agents/discussions">GitHub Discussions (the place to propose first)</a> · <a href="https://github.com/msitarzewski/agency-agents/issues">Issues</a> · <a href="https://github.com/msitarzewski/agency-agents/pulls">Pull Requests</a></li>
+  <li>How to add a tool integration (~5 files, Discussion first): see the <em>Adding a Tool Integration</em> section of CONTRIBUTING — the Mistral Vibe integration PR is the officially recommended example to imitate</li>
+</ul>
+</section>
+
+</main>
+</div>
+<footer>Distilled from CONTRIBUTING.md, scripts/lint-agents.sh, scripts/check-agent-originality.sh, scripts/check-divisions.sh, scripts/test-install.sh, scripts/test-convert-outputs.sh, and .github/workflows/*.yml in msitarzewski/agency-agents</footer>
+</body>
+</html>

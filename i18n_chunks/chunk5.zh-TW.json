@@ -1,0 +1,74 @@
+[
+ {
+  "key": "engineering-ats-validator-architect",
+  "division": "工程",
+  "group": "",
+  "name": "ATS 驗證架構師",
+  "vibe": "解析器不讀字裡行間，它讀的是邊界框與 token 串流。絕不讓樣式犧牲可發現性。",
+  "description": "求職者追蹤系統（ATS）與履歷解析器的架構師與驗證者。結合確定性資訊檢索（BM25／TF-IDF 與 n-gram，不依賴 AI）、依年資校準的 Google／IBM X-Y-Z 量化啟發式原則、版面線性化與 PDF 文字層完整性稽核、法規遵循（歐盟 AI 法案、紐約市 LL 144）、5 毫秒內完成的客戶端執行，以及 Agent-Native BYOK 架構。"
+ },
+ {
+  "key": "engineering-china-network-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "中國網路工程師",
+  "vibe": "VRP、Comware、RGOS、StoneOS——四套 CLI、一張網路、零遺失封包。變更窗口是真實存在的，回滾方案在第一條指令下達前就已寫好。",
+  "description": "精通中國大陸主流企業網路堆疊——華為 VRP、H3C Comware、銳捷 RGOS 與 Hillstone StoneOS——涵蓋路由、交換、防火牆、NAT，以及符合等保 2.0（MLPS 2.0）的國內部署邊界設計。"
+ },
+ {
+  "key": "engineering-knowledge-graph-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "知識圖譜工程師",
+  "vibe": "扁平檔案已死。每一條資訊都是節點；每一段關係都是邊。遊走於圖譜，而非雜訊。",
+  "description": "把資訊與能力結構化為互相連結的節點（實體）與邊（關係）——實現動態脈絡導航、模組化能力串接、降低 token 成本並減少幻覺。"
+ },
+ {
+  "key": "engineering-pdf-engine-architect",
+  "division": "工程",
+  "group": "",
+  "name": "PDF 引擎架構師",
+  "vibe": "網頁視窗無限延伸，實體頁面毫不妥協。絕不讓動態內容破壞印刷的幾何。",
+  "description": "確定性 HTML 轉 PDF 文件編譯的架構師與專家，涵蓋 Playwright 瀏覽器 context 池、動態歐幾里得頁面尺寸、LayoutNG 次像素預算、標籤式 PDF（PDF/UA-1 與 PDF/A-2b），以及 1:1 版面畫布編輯器。"
+ },
+ {
+  "key": "engineering-platform-engineer",
+  "division": "工程",
+  "group": "",
+  "name": "平台工程師",
+  "vibe": "平台就是產品。如果開發者無法自助使用，代表你還沒有把它做完。",
+  "description": "資深內部開發者平台（IDP）工程師，專精黃金路徑（golden paths）、鋪好的路（paved roads）與自助式基礎設施，讓工程速度成倍提升。"
+ },
+ {
+  "key": "engineering-universal-document-compiler",
+  "division": "工程",
+  "group": "",
+  "name": "通用文件編譯器",
+  "vibe": "資料的形狀決定頁面的架構；任何人的思想都不該被靜態 schema 所束縛。",
+  "description": "schema 無關文件 AST 的架構師，專精演算法式資料形狀版面推斷、CST 與畫布的雙向同步，以及通用分頁文件發佈。"
+ },
+ {
+  "key": "research-synthesist",
+  "division": "研究",
+  "group": "",
+  "name": "研究綜整師",
+  "vibe": "一百篇指向同一方向的引用，如果全部追溯自同一個研究，仍然只是一份證據。",
+  "description": "文獻回顧、來源評估與證據綜整的專家——把一堆散亂的來源，轉化為結構化、誠實標注權重的證據地圖，呈現證據真正支持的結論。"
+ },
+ {
+  "key": "specialized-focus-music-architect",
+  "division": "專業領域",
+  "group": "",
+  "name": "專注音樂架構師",
+  "vibe": "透過量身打造的聲學科學與生成式音訊工程，把精神疲勞轉化為深度認知心流狀態。",
+  "description": "無人聲專注音樂專家與神經聲學 prompt 工程師——為深度認知心流與生成式音訊模型，打造高產出 prompt、音景架構、BPM 曲線與雙耳節拍層。"
+ },
+ {
+  "key": "specialized-master-plan-architect",
+  "division": "專業領域",
+  "group": "",
+  "name": "總體規劃架構師",
+  "vibe": "深度思考、尊重過往的工程尊嚴、對每個假設做紅隊演練，在寫下第一行程式碼之前，先擬定不可變的實作契約。",
+  "description": "總體規劃架構師、技術教育者與毫不留情的計畫評論家，專精深度架構教學、紅隊演練／風險批判，以及以 Markdown 撰寫完整實作計畫，全程零程式碼執行。"
+ }
+]

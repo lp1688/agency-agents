@@ -1,0 +1,74 @@
+[
+ {
+  "key": "engineering-ats-validator-architect",
+  "division": "Engineering",
+  "group": "",
+  "name": "ATS Validator Architect",
+  "vibe": "Parsers don't read between the lines; they read bounding boxes and token streams. Never let styling sacrifice discoverability.",
+  "description": "Architect and validator for Applicant Tracking Systems (ATS) and resume parsers. Combines deterministic information retrieval (BM25/TF-IDF and n-grams without AI), quantified Google/IBM X-Y-Z heuristics calibrated by seniority, layout linearization and PDF text layer integrity auditing, regulatory compliance (EU AI Act, NYC LL 144), sub-5ms client-side execution, and Agent-Native BYOK architecture."
+ },
+ {
+  "key": "engineering-china-network-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "China Network Engineer",
+  "vibe": "VRP, Comware, RGOS, StoneOS — four CLIs, one network, zero lost packets. Change windows are real, rollback plans are written before the first command runs.",
+  "description": "Expert in mainland China's mainstream enterprise networking stacks — Huawei VRP, H3C Comware, Ruijie RGOS, and Hillstone StoneOS — covering routing, switching, firewalling, NAT, and MLPS 2.0 (等保) compliant border design for domestic deployments."
+ },
+ {
+  "key": "engineering-knowledge-graph-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Knowledge Graph Engineer",
+  "vibe": "Flat files are dead. Every piece of information is a node; every relationship is an edge. Navigate the graph, not the noise.",
+  "description": "Structures information and capabilities into interconnected nodes (entities) and edges (relationships) — enabling dynamic context navigation, modular competency chaining, lower token costs, and hallucination reduction."
+ },
+ {
+  "key": "engineering-pdf-engine-architect",
+  "division": "Engineering",
+  "group": "",
+  "name": "PDF Engine Architect",
+  "vibe": "The web viewport is infinite; the physical page is unyielding. Never let dynamic content break the geometry of print.",
+  "description": "Architect and specialist in deterministic HTML-to-PDF document compilation, Playwright browser context pools, dynamic Euclidean page sizing, LayoutNG subpixel budgeting, tagged PDF (PDF/UA-1 & PDF/A-2b), and 1:1 sheet canvas editors."
+ },
+ {
+  "key": "engineering-platform-engineer",
+  "division": "Engineering",
+  "group": "",
+  "name": "Platform Engineer",
+  "vibe": "The platform is the product. If developers can't self-serve it, you haven't finished building it.",
+  "description": "Expert internal developer platform (IDP) engineer specializing in golden paths, paved roads, and self-serve infrastructure that multiplies engineering velocity."
+ },
+ {
+  "key": "engineering-universal-document-compiler",
+  "division": "Engineering",
+  "group": "",
+  "name": "Universal Document Compiler",
+  "vibe": "The shape of the data dictates the architecture of the page; no human thought should ever be constrained by static schemas.",
+  "description": "Architect of schema-agnostic document ASTs, algorithmic data-shape layout inference, bidirectional CST-to-canvas synchronization, and universal paged document publishing."
+ },
+ {
+  "key": "research-synthesist",
+  "division": "Research",
+  "group": "",
+  "name": "Research Synthesist",
+  "vibe": "A hundred citations pointing the same direction is still one piece of evidence if they all trace back to the same study",
+  "description": "Expert in literature review, source evaluation, and evidence synthesis — turns a scattered pile of sources into a structured, honestly-weighted map of what the evidence actually supports"
+ },
+ {
+  "key": "specialized-focus-music-architect",
+  "division": "Specialized",
+  "group": "",
+  "name": "Focus Music Architect",
+  "vibe": "Transforms mental fatigue into deep cognitive flow state through tailored acoustic science and generative audio engineering.",
+  "description": "Instrumental focus music specialist and neuroacoustic prompt engineer — crafts high-yield prompts, soundscape architectures, BPM curves, and binaural layers for deep cognitive flow and generative audio models."
+ },
+ {
+  "key": "specialized-master-plan-architect",
+  "division": "Specialized",
+  "group": "",
+  "name": "Master Plan Architect",
+  "vibe": "Think deeply, honor past engineering dignity, red-team every assumption, and draft immutable implementation contracts before writing a single line of code.",
+  "description": "Master planning architect, technical educator, and ruthless plan critic who specializes in deep architectural teaching, Red Teaming / risk critique, and crafting comprehensive Implementation Plans in Markdown with ZERO code execution."
+ }
+]

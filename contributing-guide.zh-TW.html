@@ -66,7 +66,7 @@
 <p>The Agency 是一個純 Markdown 的 agent 集合。每個 agent 是一個 <code>.md</code> 檔，放在所屬「division（部門）」的頂層目錄下。轉換與安裝由各腳本處理，<strong>貢獻者只需要寫好一個 .md 檔</strong>。</p>
 <table>
   <tr><th>路徑</th><th>性質</th><th>說明</th></tr>
-  <tr><td><code>engineering/</code>、<code>marketing/</code> 等 17 個目錄</td><td>Division（agent 來源）</td><td>agent .md 檔的存放處；權威清單是根目錄的 <code>divisions.json</code></td></tr>
+  <tr><td><code>engineering/</code>、<code>marketing/</code> 等 18 個目錄</td><td>Division（agent 來源）</td><td>agent .md 檔的存放處；權威清單是根目錄的 <code>divisions.json</code></td></tr>
   <tr><td><code>divisions.json</code></td><td>Division 的唯一真相來源</td><td>定義每個 division 的 label、icon、顏色；CI 會用 <code>check-divisions.sh</code> 驗證它與磁碟目錄一致</td></tr>
   <tr><td><code>tools.json</code></td><td>工具整合的唯一真相來源</td><td>定義 Claude Code / Cursor / Kimi / Codex 等 17 種工具的轉換目標</td></tr>
   <tr><td><code>integrations/</code></td><td><strong>產出物，不是來源</strong></td><td><code>convert.sh</code> 的輸出目錄，只有各工具的 <code>README.md</code> 會被 git 追蹤，其餘全部 gitignore</td></tr>
@@ -93,7 +93,7 @@ cd agency-agents</code></pre>
 </div>
 
 <div class="step"><div class="step-title"><span class="step-num">2</span>選擇所屬 Division</div>
-<p>瀏覽各 division 目錄，找最貼近的歸屬（例如網頁前端 → <code>engineering/</code>、社群經營 → <code>marketing/</code>、滲透測試 → <code>security/</code>）。17 個 division 的權威清單看 <code>divisions.json</code>。都不適合才考慮提案新 division（見第 4 節），<code>specialized/</code> 是「放不進任何類別」的收容所。</p>
+<p>瀏覽各 division 目錄，找最貼近的歸屬（例如網頁前端 → <code>engineering/</code>、社群經營 → <code>marketing/</code>、滲透測試 → <code>security/</code>、文獻與證據綜整 → <code>research/</code>）。18 個 division 的權威清單看 <code>divisions.json</code>。都不適合才考慮提案新 division（見第 4 節），<code>specialized/</code> 是「放不進任何類別」的收容所。</p>
 </div>
 
 <div class="step"><div class="step-title"><span class="step-num">3</span>建立檔案，命名遵循慣例</div>
@@ -134,13 +134,17 @@ services:                              # 選填 — 僅當 agent 依賴外部服
 <p>完整範本骨架見第 5 節。</p>
 </div>
 
-<div class="step"><div class="step-title"><span class="step-num">6</span>本地驗證：lint + 原創性檢查</div>
+<div class="step"><div class="step-title"><span class="step-num">6</span>本地驗證：lint + 原創性 + 轉換輸出檢查</div>
 <pre><code># 格式檢查（必填欄位、換行符號、章節）
 ./scripts/lint-agents.sh engineering/engineering-your-agent.md
 
-# 原創性檢查（與全部 270 個 agent 比對，防 find-replace 換皮）
-./scripts/check-agent-originality.sh engineering/engineering-your-agent.md</code></pre>
+# 原創性檢查（與全部 279 個 agent 比對，防 find-replace 換皮）
+./scripts/check-agent-originality.sh engineering/engineering-your-agent.md
+
+# 轉換輸出檢查（確認你的 agent 能完好通過每一個工具的轉換器）
+./scripts/test-convert-outputs.sh</code></pre>
 <p>原創性門檻：相似度 <strong>≥ 20% 警告、≥ 40% 判定重複（CI 失敗）</strong>。現有庫內最高相似度僅約 1.5%，雙位數就是異常。檢查會把國家/平台專有名詞中性化，所以「把 TikTok 換成抖音」這種換皮逃不掉。</p>
+<p><code>test-convert-outputs.sh</code> 會把所有工具的輸出重新產生到暫存目錄，檢查的是<strong>產品本身</strong>而非語法：每個 agent 的 description 是否完整往返、每個產生檔能否被真正的 YAML/TOML parser 解析、每個工具是否恰好為每個 agent 產生一份輸出、每個來源檔是否以桌面 App 讀取的方式解析。新增或修改 agent 本來就會改變產出，所以它會回報指向你 agent 的 <strong>manifest drift</strong>——這是預期的，而且在 PR 上只是<strong>提示性（advisory）</strong>：CI 會印出來但不會因此失敗。你不需要動 <code>scripts/convert-outputs.sha256</code>，維護者會在 PR 合併後重新產生（自己跑 <code>--update</code> 也可以：manifest 每個 agent 一行，不會與別人的 PR 衝突，且在 Windows / macOS / Linux 上雜湊值一致）。</p>
 </div>
 
 <div class="step"><div class="step-title"><span class="step-num">7</span>真實場景實測</div>
@@ -301,8 +305,13 @@ vibe: One-line personality hook
     <td><code>./scripts/check-divisions.sh</code></td></tr>
   <tr><td><strong>工具整合一致性</strong></td><td><code>scripts/check-tools.sh</code><br>(check-tools.yml)</td><td>新增工具整合時：<code>tools.json</code> ↔ convert.sh ↔ install.sh ↔ .gitignore ↔ integrations/&lt;tool&gt;/README.md 全部對齊</td>
     <td><code>./scripts/check-tools.sh</code></td></tr>
+  <tr><td><strong>安裝器回歸測試</strong></td><td><code>scripts/test-install.sh</code><br>(test-install.yml)</td><td>在拋棄式沙箱（絕不用你真正的 <code>$HOME</code>）中釘住安裝器的可觀察契約：檔案落在哪裡、<code>--path</code> 優先於工具的環境變數、<code>--division</code> / <code>--agent</code> / <code>--agents-file</code> 篩選、<code>--dry-run</code> 不寫任何東西、含空格的路徑可用。CI 在 Linux 與 macOS 上執行</td>
+    <td><code>./scripts/test-install.sh</code></td></tr>
+  <tr><td><strong>轉換輸出評測</strong></td><td><code>scripts/test-convert-outputs.sh</code><br>(check-tools.yml)</td><td>把每個工具的輸出重新產生到暫存目錄，檢查產品本身：description 完整往返、產生檔可被真正的 YAML/TOML parser 解析、每個工具恰好為每個 agent 產生一份輸出、來源檔以桌面 App 讀取的方式解析。有意修改轉換器時會回報 <strong>manifest drift</strong>——檢視差異後用 <code>--update</code> 重跑並提交更新後的 <code>scripts/convert-outputs.sha256</code>，讓審核者一眼看出影響範圍。manifest 每個 agent 一行、每個工具一行，雜湊跨平台一致（正斜線路徑、LF 換行），Windows checkout 產生的檔案相同。新增／修改 agent 造成的 drift 在 PR 上僅為提示性，不會擋合併。CI 對每個 PR 執行</td>
+    <td><code>./scripts/test-convert-outputs.sh</code><br>（更新 manifest 加 <code>--update</code>）</td></tr>
 </table>
 <div class="info-box">💡 環境需求：bash（Windows 用 Git Bash 即可）＋ <code>python3</code>（原創性檢查需要）。</div>
+<div class="tip-box">✅ <strong>為什麼有這些檢查？</strong>（官方原話大意）大家正在用這些 agent 打造出真正出色的東西，每天有數千人在十幾種工具上依賴它們。這很棒——但也代表某個轉換器的小疏失、或某個檔案裡多了一個引號，會悄悄地同時影響所有人。在本地跑這套測試，就是讓下游所有人都能順暢使用的方式。大約只要一分鐘，就能保證你的作品在每個工具、對每個人，都完全以你撰寫的原樣送達。謝謝你願意多走這一步——這是給素未謀面的人一份真正的善意。</div>
 </section>
 
 <section id="pr">
