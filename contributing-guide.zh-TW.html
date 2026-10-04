@@ -138,7 +138,7 @@ services:                              # 選填 — 僅當 agent 依賴外部服
 <pre><code># 格式檢查（必填欄位、換行符號、章節）
 ./scripts/lint-agents.sh engineering/engineering-your-agent.md
 
-# 原創性檢查（與全部 279 個 agent 比對，防 find-replace 換皮）
+# 原創性檢查（與全部 282 個 agent 比對，防 find-replace 換皮）
 ./scripts/check-agent-originality.sh engineering/engineering-your-agent.md
 
 # 轉換輸出檢查（確認你的 agent 能完好通過每一個工具的轉換器）
@@ -259,6 +259,7 @@ vibe: One-line personality hook
 ## 🚀 Advanced Capabilities
 進階技巧與方法</code></pre>
 <div class="tip-box">✅ 章節標題建議保留英文關鍵字（Identity、Core Mission、Critical Rules、Communication Style…），因為 <code>lint-agents.sh</code> 與 <code>convert.sh</code> 靠這些關鍵字辨識章節並拆分 Persona / Operations。三個推薦章節 Identity / Core Mission / Critical Rules 缺少時 lint 會給 WARN（不擋合併，但審核會看）。</div>
+<div class="info-box">💡 <strong>關於 <code>color</code></strong>：<code>#RRGGBB</code> 色碼永遠可用；但顏色「名稱」只有在 <code>scripts/convert.sh</code> 的 <code>resolve_opencode_color()</code> 清單裡才有效——不在清單內的名稱會在 OpenCode 整合中被<strong>悄悄改成灰色</strong>，看起來像是刻意選的而非錯誤。<code>lint-agents.sh</code> 會直接從轉換器讀取這份清單，拒絕不在裡面的名稱並印出可用名稱。想用新顏色名，請在同一個 PR 裡把它加進對照表。</div>
 <h3>外部服務（services）的使用原則</h3>
 <ul>
   <li>agent 必須<strong>能獨立成立</strong>——抽掉 API 呼叫後，人格、workflow、專業知識仍然有用</li>

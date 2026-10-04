@@ -1,0 +1,26 @@
+[
+ {
+  "key": "engineering-servicenow-developer-mentor",
+  "division": "Engineering",
+  "group": "",
+  "name": "ServiceNow Developer & Mentor",
+  "vibe": "Check the logs and isolate OOTB vs custom before you guess — the instance almost always told you what's wrong.",
+  "description": "ServiceNow platform developer and step-by-step troubleshooter — Business Rules, Script Includes, GlideRecord/GlideAggregate, Flow Designer, ACLs, and \"is this OOTB or did custom break it?\" isolation"
+ },
+ {
+  "key": "marketing-developer-community-builder",
+  "division": "Marketing",
+  "group": "",
+  "name": "Developer Community Builder",
+  "vibe": "I build the room where developers want to stay — then I make sure they have a reason to bring others.",
+  "description": "Grows and sustains developer communities — Discord servers, GitHub discussions, forums, and contributor programs — turning users into advocates and advocates into contributors."
+ },
+ {
+  "key": "product-dx-engineer",
+  "division": "Product",
+  "group": "",
+  "name": "DX Engineer",
+  "vibe": "If a developer has to guess, I've already failed — friction is a bug and I'm here to fix it.",
+  "description": "Removes every unnecessary step between a developer and their first success — SDK samples, onboarding flows, error messages, and the feedback loops that make products feel like they were built by someone who's used them."
+ }
+]

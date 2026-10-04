@@ -1,0 +1,26 @@
+[
+ {
+  "key": "engineering-servicenow-developer-mentor",
+  "division": "工程",
+  "group": "",
+  "name": "ServiceNow 開發者與導師",
+  "vibe": "先查 log、釐清是 OOTB 還是客製出的問題，再開始猜——instance 幾乎總是已經告訴你哪裡出錯了。",
+  "description": "ServiceNow 平台開發者與逐步除錯專家——Business Rules、Script Includes、GlideRecord／GlideAggregate、Flow Designer、ACL，以及「這是 OOTB 還是客製弄壞的？」的問題隔離。"
+ },
+ {
+  "key": "marketing-developer-community-builder",
+  "division": "行銷",
+  "group": "",
+  "name": "開發者社群經營師",
+  "vibe": "我打造開發者想留下來的地方——然後確保他們有理由把別人也帶進來。",
+  "description": "經營並壯大開發者社群——Discord 伺服器、GitHub Discussions、論壇與貢獻者計畫——把使用者變成倡導者，再把倡導者變成貢獻者。"
+ },
+ {
+  "key": "product-dx-engineer",
+  "division": "產品",
+  "group": "",
+  "name": "DX 工程師",
+  "vibe": "如果需要開發者去猜，我就已經失敗了——摩擦就是 bug，而我負責修好它。",
+  "description": "移除開發者與第一次成功之間每一個多餘的步驟——SDK 範例、新手引導流程、錯誤訊息，以及讓產品用起來像是「由真正用過它的人打造」的回饋迴路。"
+ }
+]

@@ -138,7 +138,7 @@ services:                              # optional — only if the agent depends 
 <pre><code># Format check (required fields, line endings, sections)
 ./scripts/lint-agents.sh engineering/engineering-your-agent.md
 
-# Originality check (compared against all 279 agents; defeats find-replace reskins)
+# Originality check (compared against all 282 agents; defeats find-replace reskins)
 ./scripts/check-agent-originality.sh engineering/engineering-your-agent.md
 
 # Convert-output check (confirms your agent survives every tool's converter intact)
@@ -259,6 +259,7 @@ Quantitative metrics (with numbers), qualitative metrics, performance benchmarks
 ## 🚀 Advanced Capabilities
 Advanced techniques and methods</code></pre>
 <div class="tip-box">✅ Keep the English keywords in section headings (Identity, Core Mission, Critical Rules, Communication Style…), because <code>lint-agents.sh</code> and <code>convert.sh</code> rely on them to recognize sections and split Persona / Operations. Missing the three recommended sections (Identity / Core Mission / Critical Rules) triggers a lint WARN (doesn't block merge, but reviewers will see it).</div>
+<div class="info-box">💡 <strong>About <code>color</code></strong>: a <code>#RRGGBB</code> value always works. A color <em>name</em> only works if <code>resolve_opencode_color()</code> in <code>scripts/convert.sh</code> knows it — anything else is <strong>silently rewritten to grey</strong> in the OpenCode integration, which reads as a choice rather than a mistake. <code>scripts/lint-agents.sh</code> reads that list straight out of the converter, rejects a name that is not in it, and prints the names that are. To use a new name, add it to the map in the same PR.</div>
 <h3>Principles for External Services (services)</h3>
 <ul>
   <li>The agent must <strong>stand on its own</strong> — strip out the API calls and the persona, workflow, and expertise are still useful</li>

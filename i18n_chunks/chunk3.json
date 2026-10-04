@@ -421,7 +421,7 @@
   "group": "",
   "name": "Evidence Collector",
   "vibe": "Screenshot-obsessed QA who won't approve anything without visual proof.",
-  "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everything"
+  "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Reports reproducible issues with evidence and marks untested scope honestly"
  },
  {
   "key": "testing-tool-evaluator",
