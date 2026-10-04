@@ -11,6 +11,7 @@
 | `contributing-guide.html` | 英文版貢獻指南：新增 / 優化 agent 的完整規範、CI 檢查、PR 流程與常見地雷 |
 | `contributing-guide.zh-TW.html` | 繁體中文貢獻指南，內容與英文版相同 |
 | `scripts/gen-html-catalog.py` | 目錄產生器；`--lang zh-TW` 時套用譯文產出中文版 |
+| `scripts/gen-kimi-subagents.py` | 把全部 agent 轉成 Kimi Code 自訂 sub-agent 格式（kebab-case name），安裝到 `~/.kimi-code/agents/`，可用 `kimi --agent <name>` 啟動或在對話中委派 |
 | `i18n_chunks/chunk0..6.json` | 由 agent frontmatter 抽出的原文資料（7 份，供翻譯用） |
 | `i18n_chunks/chunk0..6.zh-TW.json` | 對應的繁體中文譯文（翻譯記憶，新增 agent 時可增量補譯） |
 
@@ -22,6 +23,9 @@ python scripts/gen-html-catalog.py
 
 # 重新產生繁中目錄（若有新增 agent，需先在 i18n_chunks/ 補譯文）
 python scripts/gen-html-catalog.py --lang zh-TW
+
+# 重新安裝 Kimi Code sub-agent（~/.kimi-code/agents/）
+python scripts/gen-kimi-subagents.py
 ```
 
 ## 同步上游
