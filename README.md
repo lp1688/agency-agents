@@ -1,5 +1,13 @@
 # 🎭 The Agency: AI Specialists Ready to Transform Your Workflow
 
+> **agency-agents 中文版（AI 智能体专家团队）**
+>
+> 🌐 [简体中文](CONTRIBUTING_zh-CN.md) | [繁體中文](usage-guide.zh-TW.md) | [English (upstream)](https://github.com/msitarzewski/agency-agents)
+>
+> **283 个即插即用的 AI 专家角色** — 本 fork 額外提供：繁體中文 agent 目錄（[agents-catalog.zh-TW.html](agents-catalog.zh-TW.html)）、雙語貢獻指南（[contributing-guide.zh-TW.html](contributing-guide.zh-TW.html) / [English](contributing-guide.html)）、繁中使用指南（[usage-guide.zh-TW.md](usage-guide.zh-TW.md) ＋ [PDF](usage-guide.zh-TW.pdf)）、Kimi Code sub-agent 轉換腳本（`scripts/gen-kimi-subagents.py`）。詳見 [FORK_NOTES.md](FORK_NOTES.md)。
+
+---
+
 > **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
 
 [![GitHub stars](https://img.shields.io/github/stars/msitarzewski/agency-agents?style=social)](https://github.com/msitarzewski/agency-agents)
