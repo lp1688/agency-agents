@@ -1,0 +1,260 @@
+- generic [active] [ref=e1]:
+  - heading "🎭 The Agency Agents 使用指南" [level=1] [ref=e2]
+  - blockquote [ref=e3]:
+    - text: 282 個專家 agent 的使用方式 ＋ 多 Agent 接力具體步驟 來源：
+    - link "msitarzewski/agency-agents" [ref=e4] [cursor=pointer]:
+      - /url: https://github.com/msitarzewski/agency-agents
+    - text: （fork：lp1688/agency-agents）
+  - heading "一、這些 Agent 是什麼" [level=2] [ref=e5]
+  - paragraph [ref=e6]:
+    - text: 每個 agent 是一個「專家角色設定檔」：
+    - strong [ref=e7]: 人格 ＋ 專業知識 ＋ 工作流程 ＋ 交付物模板 ＋ 成功指標
+    - text: ，打包成 system prompt。
+  - paragraph [ref=e8]: 載入後，Kimi 就會以該專家的身分、語氣與方法論工作——例如「資安架構師」會用威脅建模的角度看問題、「小紅書專家」會用種草文的邏輯寫文案。工具能力（讀檔、跑指令）不變，變的是「腦袋」。這比叫通用助手「扮演 XXX」效果好得多，因為每個檔案都有完整的工作流程、交付物模板和量化指標。
+  - heading "二、目前的安裝狀態" [level=2] [ref=e9]
+  - paragraph [ref=e10]: 本機已裝好兩種格式，全部 282 個 agent：
+  - table [ref=e11]:
+    - rowgroup [ref=e12]:
+      - row [ref=e13]:
+        - columnheader "格式" [ref=e14]
+        - columnheader "位置" [ref=e15]
+        - columnheader "用途" [ref=e16]
+      - row [ref=e17]:
+        - cell [ref=e18]:
+          - code [ref=e19]: agent.yaml
+          - text: ＋
+          - code [ref=e20]: system.md
+        - cell [ref=e21]:
+          - code [ref=e22]: ~/.config/kimi/agents/<name>/
+        - cell [ref=e23]:
+          - text: 用
+          - code [ref=e24]: "--agent-file"
+          - text: 載入（repo 官方整合格式）
+      - row [ref=e25]:
+        - cell [ref=e26]:
+          - text: 單一
+          - code [ref=e27]: .md
+        - cell [ref=e28]:
+          - code [ref=e29]: ~/.kimi-code/agents/<name>.md
+        - cell [ref=e30]:
+          - text: 用
+          - code [ref=e31]: "--agent <name>"
+          - text: 啟動，或在對話中委派為 sub-agent
+  - heading "三、挑選要用的 Agent" [level=2] [ref=e32]
+  - list [ref=e33]:
+    - listitem [ref=e34]:
+      - text: 用瀏覽器開啟 repo 根目錄的
+      - code [ref=e35]: agents-catalog.zh-TW.html
+      - text: ：依 18 個部門瀏覽，支援中英文搜尋（例如「小紅書」「資安」「react」）
+    - listitem [ref=e36]:
+      - text: 或直接看清單：
+      - code [ref=e37]: ls ~/.kimi-code/agents/
+  - paragraph [ref=e38]: 常用入口：
+  - table [ref=e39]:
+    - rowgroup [ref=e40]:
+      - row [ref=e41]:
+        - columnheader "需求" [ref=e42]
+        - columnheader "Agent" [ref=e43]
+      - row [ref=e44]:
+        - cell "寫前端 / 後端" [ref=e45]
+        - cell [ref=e46]:
+          - code [ref=e47]: frontend-developer
+          - text: /
+          - code [ref=e48]: backend-architect
+      - row [ref=e49]:
+        - cell "審查程式碼" [ref=e50]
+        - cell [ref=e51]:
+          - code [ref=e52]: code-reviewer
+      - row [ref=e53]:
+        - cell "資安檢測" [ref=e54]
+        - cell [ref=e55]:
+          - code [ref=e56]: penetration-tester
+          - text: /
+          - code [ref=e57]: security-architect
+      - row [ref=e58]:
+        - cell "社群內容" [ref=e59]
+        - cell [ref=e60]:
+          - code [ref=e61]: xiaohongshu-specialist
+          - text: /
+          - code [ref=e62]: douyin-strategist
+      - row [ref=e63]:
+        - cell "研究與文獻綜整" [ref=e64]
+        - cell [ref=e65]:
+          - code [ref=e66]: research-synthesist
+      - row [ref=e67]:
+        - cell "產品規劃" [ref=e68]
+        - cell [ref=e69]:
+          - code [ref=e70]: product-manager
+          - text: /
+          - code [ref=e71]: product-manager-senior
+  - heading "四、基本使用方式" [level=2] [ref=e72]
+  - heading "1. 互動模式（整個 session 都用這個人格）" [level=3] [ref=e73]
+  - code [ref=e75]: kimi --agent frontend-developer
+  - heading "2. 單次執行（適合腳本或快速問答）" [level=3] [ref=e76]
+  - code [ref=e78]: kimi -p "幫我 review 這個分支的改動" --agent code-reviewer
+  - heading "3. 在專案目錄裡用（agent 才能操作你的程式碼）" [level=3] [ref=e79]
+  - code [ref=e81]: cd /your/project kimi --agent backend-architect
+  - heading "4. 用 repo 官方格式（agent.yaml）" [level=3] [ref=e82]
+  - code [ref=e84]: kimi --agent-file ~/.config/kimi/agents/frontend-developer/agent.yaml
+  - heading "重要規則" [level=3] [ref=e85]
+  - list [ref=e86]:
+    - listitem [ref=e87]:
+      - strong [ref=e88]: 一個 session 一個角色
+      - text: ：agent 在 session 建立時綁定，中途不能換
+    - listitem [ref=e89]:
+      - code [ref=e90]: kimi --continue
+      - text: 或
+      - code [ref=e91]: kimi --session
+      - text: 續聊時會
+      - strong [ref=e92]: 自動沿用
+      - text: 原本綁定的 agent，不需（也不能）再下
+      - code [ref=e93]: "--agent"
+    - listitem [ref=e94]: 想換角色 → 開新 session
+  - heading "五、多 Agent 接力：具體步驟" [level=2] [ref=e95]
+  - heading "核心概念" [level=3] [ref=e96]
+  - blockquote [ref=e97]:
+    - strong [ref=e98]: 每個角色開一個 session，用「檔案」當交接棒。
+    - text: session 之間看不到彼此的聊天記錄，唯一溝通管道是專案裡的檔案。
+  - heading "範例：一天做完 Landing Page（4 個 agent 接力）" [level=3] [ref=e99]
+  - paragraph [ref=e100]:
+    - strong [ref=e101]: 第 0 步：建專案，規劃交接文件
+  - code [ref=e103]: mkdir flowsync-landing && cd flowsync-landing
+  - table [ref=e104]:
+    - rowgroup [ref=e105]:
+      - row [ref=e106]:
+        - columnheader "棒次" [ref=e107]
+        - columnheader "Agent" [ref=e108]
+        - columnheader "產出檔" [ref=e109]
+      - row [ref=e110]:
+        - cell "1 文案" [ref=e111]
+        - cell [ref=e112]:
+          - code [ref=e113]: content-creator
+        - cell [ref=e114]:
+          - code [ref=e115]: docs/01-copy.md
+      - row [ref=e116]:
+        - cell "2 設計" [ref=e117]
+        - cell [ref=e118]:
+          - code [ref=e119]: ui-designer
+        - cell [ref=e120]:
+          - code [ref=e121]: docs/02-design.md
+      - row [ref=e122]:
+        - cell "3 實作" [ref=e123]
+        - cell [ref=e124]:
+          - code [ref=e125]: frontend-developer
+        - cell [ref=e126]:
+          - code [ref=e127]: index.html
+      - row [ref=e128]:
+        - cell "4 優化" [ref=e129]
+        - cell [ref=e130]:
+          - code [ref=e131]: growth-hacker
+        - cell [ref=e132]:
+          - text: 直接改
+          - code [ref=e133]: index.html
+  - paragraph [ref=e134]:
+    - strong [ref=e135]: 第 1 棒：文案
+  - code [ref=e137]: kimi --agent content-creator
+  - paragraph [ref=e138]:
+    - text: 進入後下指令（
+    - strong [ref=e139]: 關鍵：要求把產出寫成檔
+    - text: ）：
+  - generic [ref=e140]: 為 FlowSync（API 整合平台，5 分鐘串起任意兩個 SaaS）寫 landing page 文案。 目標受眾：中型公司的開發者和技術 PM。語氣：自信、簡潔、微幽默。 需要：Hero、痛點×3、運作方式×3、社會證明、三層定價、結尾 CTA。 完成後把全文存到 docs/01-copy.md。
+  - paragraph [ref=e141]:
+    - strong [ref=e142]: 第 2 棒：設計
+    - text: （可與第 1 棒同時開另一個終端機平行跑）
+  - code [ref=e144]: kimi --agent ui-designer
+  - generic [ref=e145]: 讀 docs/01-copy.md，為這個 SaaS landing page 出設計規格 （Linear/Vercel 風格、深色模式）：版面線框、色票、字體搭配、 元件規格（hero/卡片/定價表/CTA）、響應式斷點。 存到 docs/02-design.md。
+  - paragraph [ref=e146]:
+    - strong [ref=e147]: 第 3 棒：實作
+  - code [ref=e149]: kimi --agent frontend-developer
+  - generic [ref=e150]: 讀 docs/01-copy.md 和 docs/02-design.md，用 HTML + Tailwind + 少量 vanilla JS 做出 index.html：行動優先、無障礙、 含 email 註冊表單（action=/api/subscribe）。
+  - paragraph [ref=e151]:
+    - strong [ref=e152]: 第 4 棒：轉化優化
+  - code [ref=e154]: kimi --agent growth-hacker
+  - generic [ref=e155]: 讀 index.html，從轉化率角度提出 3–5 個問題並直接修改： CTA 文案、社會證明位置、表單阻力、行動版體驗。
+  - paragraph [ref=e156]:
+    - strong [ref=e157]: 需要改其中一棒？
+    - text: 回到該角色的 session 續聊，它的記憶還在：
+  - code [ref=e159]: "cd flowsync-landing kimi --session # 從清單選回 content-creator 那個 session"
+  - heading "接力三規則" [level=3] [ref=e160]
+  - list [ref=e161]:
+    - listitem [ref=e162]:
+      - strong [ref=e163]: 交接物是檔案，不是對話
+      - text: ——下一棒完全不知道上一棒聊過什麼，指令裡一定要寫「讀 docs/xx.md」
+    - listitem [ref=e164]:
+      - strong [ref=e165]: 每棒產出要明確落地
+      - text: ——指令結尾加「存到 docs/yy.md」，不要讓產出只留在對話裡
+    - listitem [ref=e166]:
+      - strong [ref=e167]:
+        - text: 同角色迭代用
+        - code [ref=e168]: "--session"
+        - text: 回去
+      - text: ——跨角色才開新 session
+  - heading "現成劇本（可直接抄）" [level=3] [ref=e169]
+  - list [ref=e170]:
+    - listitem [ref=e171]:
+      - code [ref=e172]: examples/workflow-landing-page.md
+      - text: — 上面的完整版
+    - listitem [ref=e173]:
+      - code [ref=e174]: examples/workflow-startup-mvp.md
+      - text: — 新創 MVP
+    - listitem [ref=e175]:
+      - code [ref=e176]: examples/workflow-book-chapter.md
+      - text: — 寫書章節
+    - listitem [ref=e177]:
+      - code [ref=e178]: strategy/playbooks/
+      - text: 、
+      - code [ref=e179]: strategy/runbooks/
+      - text: — 更大規模的多 agent 編排
+  - heading "六、進階：單一 Session 內自動接力（Sub-agent 委派）" [level=2] [ref=e180]
+  - paragraph [ref=e181]:
+    - text: 282 個 agent 已裝進
+    - code [ref=e182]: ~/.kimi-code/agents/
+    - text: ，所以直接開
+    - code [ref=e183]: kimi
+    - text: （不帶
+    - code [ref=e184]: "--agent"
+    - text: ），主 agent 會依任務
+    - strong [ref=e185]: 自動委派
+    - text: 給這些專家；也可以明示：
+  - generic [ref=e186]: 用 product-manager 把這個想法寫成 PRD 存到 docs/prd.md， 然後用 ui-designer 讀 prd 出設計規格， 最後用 frontend-developer 實作。
+  - paragraph [ref=e187]: 每個 sub-agent 在獨立 context 工作，只把最終結果交回主 agent——主對話不會被探索過程洗版，多個 sub-agent 還能平行執行。
+  - blockquote [ref=e188]:
+    - text: 同步方式：上游更新後重跑
+    - code [ref=e189]: python scripts/gen-kimi-subagents.py
+    - text: 即可更新這批 sub-agent。
+  - heading "七、給其他 AI 工具用" [level=2] [ref=e190]
+  - paragraph [ref=e191]: 這個 repo 支援 17 種工具（Claude Code、Cursor、Codex、Gemini CLI⋯⋯）：
+  - code [ref=e193]: ./scripts/convert.sh --tool cursor ./scripts/install.sh --tool cursor
+  - paragraph [ref=e194]:
+    - text: 最簡單的通用法：把 agent 的
+    - code [ref=e195]: .md
+    - text: 原始檔內容貼進任何 AI 工具的 system prompt 或專案指令檔（如
+    - code [ref=e196]: AGENTS.md
+    - text: ），人格立即生效。
+  - heading "八、常見問題" [level=2] [ref=e197]
+  - paragraph [ref=e198]:
+    - strong [ref=e199]: Q：agent 沒有照預期角色回應？
+    - text: 確認啟動指令沒打錯名字；
+    - code [ref=e200]: kimi --agent 不存在的名字
+    - text: 會列出全部可用名稱。
+  - paragraph [ref=e201]:
+    - strong [ref=e202]: Q：續聊時角色消失了？
+    - text: 不會。resume 會自動還原綁定的 agent；但
+    - code [ref=e203]: "--agent"
+    - text: /
+    - code [ref=e204]: "--agent-file"
+    - text: 不能和
+    - code [ref=e205]: "--session"
+    - text: /
+    - code [ref=e206]: "--continue"
+    - text: 並用。
+  - paragraph [ref=e207]:
+    - strong [ref=e208]: Q：上游出了新 agent 怎麼同步？
+  - code [ref=e210]: git pull origin main ./scripts/convert.sh --tool kimi && ./scripts/install.sh --tool kimi python scripts/gen-kimi-subagents.py python scripts/gen-html-catalog.py && python scripts/gen-html-catalog.py --lang zh-TW
+  - generic [ref=e211]:
+    - text: 本文件由 lp1688/agency-agents fork 產出；參考：
+    - link "Kimi Code — Agents and Sub-Agents" [ref=e212] [cursor=pointer]:
+      - /url: https://www.kimi.com/code/docs/en/kimi-code-cli/customization/agents.html
+    - text: 、
+    - link "kimi 命令列參數" [ref=e213] [cursor=pointer]:
+      - /url: https://www.kimi.com/code/docs/en/kimi-code-cli/reference/kimi-command.html

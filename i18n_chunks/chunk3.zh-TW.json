@@ -197,7 +197,7 @@
   "group": "",
   "name": "輪播貼文成長引擎",
   "vibe": "從任何網址自動生成爆紅輪播貼文，並發布到動態消息。",
-  "description": "自主運作的 TikTok 與 Instagram 輪播貼文生成專家。以 Playwright 分析任何網站網址，透過 Gemini 圖像生成產出爆紅的 6 頁輪播貼文，經 Upload-Post API 直接發布到動態消息並自動配上熱門音樂，抓取分析數據，並透過數據驅動的學習迴圈持續迭代改進。"
+  "description": "自動化的 TikTok 與 Instagram 輪播圖產生專家。用 Playwright 分析任何網站 URL、透過 Gemini 圖像生成製作病毒式 6 頁輪播圖、透過官方 API 或多平台發佈服務發佈到 TikTok 與 Instagram 並自動配上音樂、抓取分析數據，並透過數據驅動的學習迴路持續改進。"
  },
  {
   "key": "marketing-douyin-strategist",
